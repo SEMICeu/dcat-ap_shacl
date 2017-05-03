@@ -26,8 +26,6 @@
 ex:Catalog_1
   rdf:type dcat:Catalog ;
   dcterms:description "bla bla"^^rdfs:Literal ;
-  dcterms:isPartOf _:b21497 ;
-  dcterms:isPartOf _:b37846 ;
   dcterms:issued "1989-01-12"^^xsd:date ;
   dcterms:issued "1997-12-12"^^xsd:date ;
   dcterms:license <ftp://no-licence.com> ;
@@ -36,12 +34,6 @@ ex:Catalog_1
     ] ;
   dcterms:modified "1991-01-01"^^xsd:date ;
   dcterms:modified "1999-12-12"^^xsd:date ;
-  dcterms:publisher [
-      rdf:type foaf:Agent ;
-    ] ;
-  dcterms:publisher [
-      rdf:type foaf:Agent ;
-    ] ;
   dcterms:rights <http://rights.com> ;
   dcterms:rights [
       rdf:type dcterms:RightsStatement ;
@@ -51,9 +43,6 @@ ex:Catalog_1
   rdfs:label "Catalog 1" ;
   owl:versionInfo "1.2" ;
   skos:prefLabel "Catalog 1" ;
-  dcat:dataset [
-      rdf:type dcat:Dataset ;
-    ] ;
   foaf:homepage <ftp://bla.com> ;
   foaf:homepage <tcp://bla.com> ;
 .
@@ -249,80 +238,16 @@ ex:GraphValidationTestCase
   dash:expectedResult [
       rdf:type sh:ValidationResult ;
       sh:focusNode ex:Catalog_1 ;
-      sh:path dcterms:isPartOf ;
+      sh:path dcterms:publisher ;
       sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+      sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
     ] ;
   dash:expectedResult [
       rdf:type sh:ValidationResult ;
       sh:focusNode ex:Catalog_1 ;
-      sh:path dcterms:publisher ;
-      sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-    ] ;
-  dash:expectedResult [
-      rdf:type sh:ValidationResult ;
-      sh:focusNode _:b21497 ;
-      sh:path dcterms:description ;
-      sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
-    ] ;
-  dash:expectedResult [
-      rdf:type sh:ValidationResult ;
-      sh:focusNode _:b21497 ;
-      sh:path dcterms:publisher ;
-      sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
-    ] ;
-  dash:expectedResult [
-      rdf:type sh:ValidationResult ;
-      sh:focusNode _:b21497 ;
-      sh:path dcterms:title ;
-      sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
-    ] ;
-  dash:expectedResult [
-      rdf:type sh:ValidationResult ;
-      sh:focusNode _:b21497 ;
-      sh:path dcat:dataset ;
-      sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
-    ] ;
-  dash:expectedResult [
-      rdf:type sh:ValidationResult ;
-      sh:focusNode _:b37846 ;
-      sh:path dcterms:description ;
-      sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
-    ] ;
-  dash:expectedResult [
-      rdf:type sh:ValidationResult ;
-      sh:focusNode _:b37846 ;
-      sh:path dcterms:publisher ;
-      sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
-    ] ;
-  dash:expectedResult [
-      rdf:type sh:ValidationResult ;
-      sh:focusNode _:b37846 ;
-      sh:path dcterms:title ;
-      sh:severity sh:Violation ;
-      sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
-    ] ;
-  dash:expectedResult [
-      rdf:type sh:ValidationResult ;
-      sh:focusNode _:b37846 ;
       sh:path dcat:dataset ;
       sh:severity sh:Violation ;
       sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
     ] ;
   dash:includeSuggestions "true"^^xsd:boolean ;
-.
-_:b21497
-  rdf:type dcat:Catalog ;
-  <http://www.topbraid.org/c14n#true> "0"^^xsd:long ;
-.
-_:b37846
-  rdf:type dcat:Catalog ;
-  <http://www.topbraid.org/c14n#true> "1"^^xsd:long ;
 .
