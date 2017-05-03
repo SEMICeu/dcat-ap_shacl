@@ -2,6 +2,7 @@
 # imports: http://creativecommons.org/ns
 # imports: http://datashapes.org/dash
 # imports: http://purl.org/dc/terms/
+# imports: http://topbraid.org/schema/
 # imports: http://vocab.deri.ie/void
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.w3.org/2006/vcard/ns
@@ -58,7 +59,7 @@
   voaf:reliesOn <http://www.w3.org/ns/locn#> ;
   voaf:reliesOn <http://www.w3.org/ns/prov#> ;
   voaf:specializes dcat: ;
-  dcterms:abstract "The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalogue vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable a cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals."@en ;
+  dcterms:abstract "The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalog vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable a cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals."@en ;
   dcterms:alternative "DCAT-AP"@en ;
   dcterms:conformsTo <https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies> ;
   dcterms:creator [
@@ -86,7 +87,7 @@
       foaf:name "Vassilios Peristeras" ;
     ] ;
   dcterms:license <https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11> ;
-  dcterms:modified "2016-06-08"^^xsd:date ;
+  dcterms:modified "2017-06-03"^^xsd:date ;
   dcterms:publisher <http://publications.europa.eu/resource/authority/corporate-body/COM> ;
   dcterms:relation <https://joinup.ec.europa.eu/node/69559> ;
   dcterms:rights [
@@ -104,6 +105,7 @@
   owl:imports <http://creativecommons.org/ns> ;
   owl:imports <http://datashapes.org/dash> ;
   owl:imports dcterms: ;
+  owl:imports <http://topbraid.org/schema/> ;
   owl:imports <http://vocab.deri.ie/void> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <http://www.w3.org/2006/vcard/ns> ;
@@ -122,240 +124,6 @@
       foaf:page <https://joinup.ec.europa.eu/node/63580> ;
     ] ;
 .
-:Catalogue
-  rdf:type sh:Shape ;
-  dcterms:identifier "dcat-ap:Catalogue" ;
-  vann:usageNote "Mandatory class. A catalogue or repository that hosts the Datasets being described."@en ;
-  rdfs:comment "A curated collection of metadata about datasets"@en ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "Catalogue"@en ;
-  rdfs:seeAlso <https://www.w3.org/TR/vocab-dcat/#class-catalog> ;
-  vs:term_status "stable" ;
-  sh:description "A curated collection of metadata about datasets"@en ;
-  sh:name "Catalogue"@en ;
-  sh:property [
-      sh:predicate dcterms:description ;
-      sh:description "A free-text account of the catalog."@en ;
-      sh:message "dct:Catalogue must have at least one description" ;
-      sh:minCount 1 ;
-      sh:name "description" ;
-      sh:nodeKind sh:Literal ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:hasPart ;
-      sh:class dcat:Catalog ;
-      sh:message "the catalogue parts must be other catalogues" ;
-      sh:name "has part" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:hasPart ;
-      sh:message "A catalogue may have as parts other catalogues" ;
-      sh:minCount 1 ;
-      sh:name "has part" ;
-      sh:severity sh:Info ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:isPartOf ;
-      sh:class dcat:Catalog ;
-      sh:description "The phisical or logical inclussion of a Catalog into another one" ;
-      sh:maxCount 1 ;
-      sh:message "dct:Catalogue must be part of maximum one other Catalogue" ;
-      sh:name "is part of" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:isPartOf ;
-      sh:message "A Catalogue may be a part of another one. " ;
-      sh:minCount 1 ;
-      sh:name "is part of" ;
-      sh:severity sh:Info ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:issued ;
-      sh:datatype xsd:date ;
-      sh:description "Date of formal issuance (e.g., publication) of the catalog." ;
-      sh:maxCount 1 ;
-      sh:message "dct:Catalogue must have maximum one release date" ;
-      sh:name "issued" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:issued ;
-      sh:message "A Catalogue should have an issued date" ;
-      sh:minCount 1 ;
-      sh:name "issued" ;
-      sh:severity sh:Warning ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:language ;
-      sh:class dcterms:LinguisticSystem ;
-      sh:message "A catalogue's language must be a LinguisticSystem" ;
-      sh:name "language" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:language ;
-      sh:message "A Catalogue shall have a language property" ;
-      sh:minCount 1 ;
-      sh:name "language" ;
-      sh:severity sh:Warning ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:license ;
-      sh:class dcterms:LicenseDocument ;
-      sh:description "This links to the license document under which the distribution is made available." ;
-      sh:maxCount 1 ;
-      sh:message "dct:Catalogue must have maximum one license" ;
-      sh:name "license" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:license ;
-      sh:class dcterms:LicenseDocument ;
-      sh:message "A catalogue's license must be a Licensedocument" ;
-      sh:name "license" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:license ;
-      sh:message "A catalogue should have a license property" ;
-      sh:minCount 1 ;
-      sh:name "license" ;
-      sh:severity sh:Warning ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:modified ;
-      sh:datatype xsd:date ;
-      sh:description "Most recent date on which the catalog was changed, updated or modified." ;
-      sh:maxCount 1 ;
-      sh:message "dct:Catalogue must have maximum one modification date" ;
-      sh:name "modified" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:modified ;
-      sh:message "A Catalogue should have a modified date" ;
-      sh:minCount 1 ;
-      sh:name "modified" ;
-      sh:severity sh:Warning ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:publisher ;
-      sh:class foaf:Agent ;
-      sh:description "An entity responsible for making the catalog available." ;
-      sh:maxCount 1 ;
-      sh:message "dct:Catalogue must have exactly one publisher" ;
-      sh:minCount 1 ;
-      sh:name "publisher" ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:publisher ;
-      sh:class foaf:Agent ;
-      sh:message "dct:Catalogue must have at least one publisher" ;
-      sh:name "publisher" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:rights ;
-      sh:class dcterms:RightsStatement ;
-      sh:description "This describes the rights under which the catalog can be used/reused and not the datasets. Even if theses rights apply to all the catalog datasets and distributions, it should be replicated on each distribution." ;
-      sh:maxCount 1 ;
-      sh:message "dct:Catalogue must have maximum one rights statement" ;
-      sh:name "rights" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:rights ;
-      sh:message "The Catalogue may have rights propoerty" ;
-      sh:minCount 1 ;
-      sh:name "rights" ;
-      sh:severity sh:Info ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:spatial ;
-      sh:class dcterms:Location ;
-      sh:message "The spatial propoerty of a Catalogue must be a Location" ;
-      sh:name "spatial" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:spatial ;
-      sh:message "A Catalogue may have a spatial property" ;
-      sh:minCount 1 ;
-      sh:name "spatial" ;
-      sh:severity sh:Info ;
-    ] ;
-  sh:property [
-      sh:predicate dcterms:title ;
-      sh:description "A name given to the catalog."@en ;
-      sh:message "dct:Catalogue must have at least one title" ;
-      sh:minCount 1 ;
-      sh:name "title" ;
-      sh:nodeKind sh:Literal ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcat:dataset ;
-      sh:class dcat:Dataset ;
-      sh:description "A dataset that is part of the catalog." ;
-      sh:message "dct:Catalogue must have at least one dataset" ;
-      sh:minCount 1 ;
-      sh:name "dataset" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcat:record ;
-      sh:class dcat:CatalogRecord ;
-      sh:message "Catalogue records must be of type CatalogRecords" ;
-      sh:name "record" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcat:record ;
-      sh:message "The Catalogue may have record property" ;
-      sh:minCount 1 ;
-      sh:name "record" ;
-      sh:severity sh:Info ;
-    ] ;
-  sh:property [
-      sh:predicate dcat:themeTaxonomy ;
-      sh:class skos:ConceptScheme ;
-      sh:message "A catalogue's themeTaxonomy must be a ConceptScheme" ;
-      sh:name "theme taxonomy" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate dcat:themeTaxonomy ;
-      sh:message "A Catalogue should have a themeTaxonomy property" ;
-      sh:minCount 1 ;
-      sh:name "theme taxonomy" ;
-      sh:severity sh:Warning ;
-    ] ;
-  sh:property [
-      sh:predicate foaf:homepage ;
-      sh:class foaf:Document ;
-      sh:description "The homepage of the catalog." ;
-      sh:maxCount 1 ;
-      sh:message "dct:Catalogue must have maximum one homepage" ;
-      sh:name "homepage" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate foaf:homepage ;
-      sh:class foaf:Document ;
-      sh:message "Catalogue's homepage shall be a foaf:Document" ;
-      sh:severity sh:Violation ;
-    ] ;
-  sh:property [
-      sh:predicate foaf:homepage ;
-      sh:message "A Catalogue shall have a homepage" ;
-      sh:minCount 1 ;
-      sh:severity sh:Warning ;
-    ] ;
-  sh:targetClass dcat:Catalog ;
-.
 <http://publications.europa.eu/resource/authority/corporate-body/COM>
   rdf:type org:Organization ;
   foaf:homepage <http://ec.europa.eu/> ;
@@ -371,6 +139,73 @@
   foaf:homepage <http://publications.europa.eu> ;
   foaf:name "Publication Office" ;
 .
+dcterms:Frequency
+  rdf:type sh:Shape ;
+.
+dcterms:LicenseDocument
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate dcterms:type ;
+      sh:class skos:Concept ;
+      sh:maxCount 1 ;
+      sh:name "type" ;
+      sh:nodeKind sh:IRI ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+dcterms:LinguisticSystem
+  rdf:type sh:Shape ;
+.
+dcterms:Location
+  rdf:type sh:Shape ;
+.
+dcterms:MediaTypeOrExtent
+  rdf:type sh:Shape ;
+.
+dcterms:PeriodOfTime
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate schema:endDate ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate schema:startDate ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+dcterms:ProvenanceStatement
+  rdf:type sh:Shape ;
+.
+dcterms:RightsStatement
+  rdf:type sh:Shape ;
+.
+dcterms:Standard
+  rdf:type sh:Shape ;
+.
+spdx:Checksum
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate spdx:algorithm ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "algorithm" ;
+      sh:nodeKind sh:IRI ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate spdx:checksumValue ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "checksum value" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+.
 <http://www.ami-consult.com/>
   rdf:type org:Organization ;
   foaf:homepage <http://www.makxdekkers.com/> ;
@@ -380,6 +215,529 @@
   rdf:type org:Organization ;
   foaf:homepage <http://www.pwc.com/gx/en/eu-institutions-services> ;
   foaf:name "PwC EU Services" ;
+.
+skos:Concept
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate skos:prefLabel ;
+      sh:minCount 1 ;
+      sh:name "pref label" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+skos:ConceptScheme
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate dcterms:title ;
+      sh:minCount 1 ;
+      sh:name "title" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+vcard:Kind
+  rdf:type sh:Shape ;
+.
+adms:Identifier
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate skos:notation ;
+      sh:maxCount 1 ;
+      sh:name "notation" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+dcat:Catalog
+  rdf:type sh:Shape ;
+  vs:term_status "stable" ;
+  sh:name "Catalog"@en ;
+  sh:property [
+      sh:predicate dcterms:description ;
+      sh:description "A free-text account of the catalog."@en ;
+      sh:message "Catalog must have at least one description" ;
+      sh:minCount 1 ;
+      sh:name "description" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:hasPart ;
+      sh:class dcat:Catalog ;
+      sh:message "The Catalog parts must be other Catalogs" ;
+      sh:name "has part" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:isPartOf ;
+      sh:class dcat:Catalog ;
+      sh:description "The phisical or logical inclussion of a Catalog into another one" ;
+      sh:maxCount 1 ;
+      sh:message "Catalog must be part of maximum one other Catalog" ;
+      sh:name "is part of" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:issued ;
+      sh:datatype xsd:date ;
+      sh:description "Date of formal issuance (e.g., publication) of the catalog." ;
+      sh:maxCount 1 ;
+      sh:message "Catalog must have maximum one release date" ;
+      sh:name "issued" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:issued ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:name "issued" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:language ;
+      sh:class dcterms:LinguisticSystem ;
+      sh:message "Catalog's language must be a LinguisticSystem" ;
+      sh:name "language" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:license ;
+      sh:class dcterms:LicenseDocument ;
+      sh:description "This links to the license document under which the distribution is made available." ;
+      sh:maxCount 1 ;
+      sh:message "Catalog must have maximum one license" ;
+      sh:name "license" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:modified ;
+      sh:datatype xsd:date ;
+      sh:description "Most recent date on which the catalog was changed, updated or modified." ;
+      sh:maxCount 1 ;
+      sh:message "Catalog must have maximum one modification date" ;
+      sh:name "modified" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:publisher ;
+      sh:class foaf:Agent ;
+      sh:description "An entity responsible for making the catalog available." ;
+      sh:maxCount 1 ;
+      sh:message "Catalog must have exactly one publisher" ;
+      sh:minCount 1 ;
+      sh:name "publisher" ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:rights ;
+      sh:class dcterms:RightsStatement ;
+      sh:description "This describes the rights under which the catalog can be used/reused and not the datasets. Even if theses rights apply to all the catalog datasets and distributions, it should be replicated on each distribution." ;
+      sh:maxCount 1 ;
+      sh:message "Catalog must have maximum one rights statement" ;
+      sh:name "rights" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:spatial ;
+      sh:class dcterms:Location ;
+      sh:message "The spatial propoerty of a Catalog must be a Location" ;
+      sh:name "spatial" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:title ;
+      sh:description "A name given to the catalog."@en ;
+      sh:message "Catalog must have at least one title" ;
+      sh:minCount 1 ;
+      sh:name "title" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:dataset ;
+      sh:class dcat:Dataset ;
+      sh:description "A dataset that is part of the catalog." ;
+      sh:message "Catalog must have at least one dataset" ;
+      sh:minCount 1 ;
+      sh:name "dataset" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:record ;
+      sh:class dcat:CatalogRecord ;
+      sh:message "Catalog records must be of type CatalogRecords" ;
+      sh:name "record" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:themeTaxonomy ;
+      sh:class skos:ConceptScheme ;
+      sh:message "Catalog's themeTaxonomy must be a ConceptScheme" ;
+      sh:name "theme taxonomy" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate foaf:homepage ;
+      sh:class foaf:Document ;
+      sh:description "The homepage of the catalog." ;
+      sh:maxCount 1 ;
+      sh:message "Catalog must have maximum one homepage" ;
+      sh:name "homepage" ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+dcat:CatalogRecord
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate dcterms:conformsTo ;
+      sh:class dcterms:Standard ;
+      sh:maxCount 1 ;
+      sh:name "conforms to" ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:issued ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:name "issued" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:language ;
+      sh:class dcterms:LinguisticSystem ;
+      sh:name "language" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:modified ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "modified" ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:source ;
+      sh:class dcat:CatalogRecord ;
+      sh:maxCount 1 ;
+      sh:name "source" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:title ;
+      sh:name "title" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate adms:status ;
+      sh:class skos:Concept ;
+      sh:maxCount 1 ;
+      sh:name "status" ;
+      sh:nodeKind sh:IRI ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate foaf:primaryTopic ;
+      sh:class dcat:Dataset ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+dcat:Dataset
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate dcterms:accessRights ;
+      sh:class dcterms:RightsStatement ;
+      sh:maxCount 1 ;
+      sh:name "access rights" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:accrualPeriodicity ;
+      sh:class dcterms:Frequency ;
+      sh:maxCount 1 ;
+      sh:name "accrual periodicity" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:conformsTo ;
+      sh:class dcterms:Standard ;
+      sh:name "conforms to" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:description ;
+      sh:minCount 1 ;
+      sh:name "description" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:hasVersion ;
+      sh:class dcat:Dataset ;
+      sh:name "has version" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:isVersionOf ;
+      sh:class dcat:Dataset ;
+      sh:name "is version of" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:issued ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:name "issued" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:language ;
+      sh:class dcterms:LinguisticSystem ;
+      sh:name "language" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:modified ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:name "modified" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:provenance ;
+      sh:class dcterms:ProvenanceStatement ;
+      sh:name "provenance" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:publisher ;
+      sh:class foaf:Agent ;
+      sh:maxCount 1 ;
+      sh:name "publisher" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:relation ;
+      sh:class rdfs:Resource ;
+      sh:name "relation" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:source ;
+      sh:class dcat:Dataset ;
+      sh:name "source" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:spatial ;
+      sh:class dcterms:Location ;
+      sh:name "spatial" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:temporal ;
+      sh:class dcterms:PeriodOfTime ;
+      sh:name "temporal" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:title ;
+      sh:minCount 1 ;
+      sh:name "title" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:type ;
+      sh:class skos:Concept ;
+      sh:maxCount 1 ;
+      sh:name "type" ;
+      sh:nodeKind sh:IRI ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate owl:versionInfo ;
+      sh:maxCount 1 ;
+      sh:name "version info" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate adms:identifier ;
+      sh:class adms:Identifier ;
+      sh:name "sample" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate adms:sample ;
+      sh:class dcat:Distribution ;
+      sh:name "sample" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:contactPoint ;
+      sh:class vcard:Kind ;
+      sh:name "contact point" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:distribution ;
+      sh:class dcat:Distribution ;
+      sh:name "distribution" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:landingPage ;
+      sh:class foaf:Document ;
+      sh:name "landing page" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:theme ;
+      sh:class skos:Concept ;
+      sh:name "theme" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate foaf:page ;
+      sh:class foaf:Document ;
+      sh:name "page" ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+dcat:Distribution
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate dcterms:conformsTo ;
+      sh:name "conforms to" ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:description ;
+      sh:name "description" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:format ;
+      sh:class dcterms:MediaTypeOrExtent ;
+      sh:maxCount 1 ;
+      sh:name "format" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:issued ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:name "issued" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:language ;
+      sh:class dcterms:LinguisticSystem ;
+      sh:message "Catalog's language must be a LinguisticSystem" ;
+      sh:name "language" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:license ;
+      sh:class dcterms:LicenseDocument ;
+      sh:maxCount 1 ;
+      sh:name "license" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:modified ;
+      sh:datatype xsd:dateTime ;
+      sh:maxCount 1 ;
+      sh:name "modified" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:rights ;
+      sh:class dcterms:RightsStatement ;
+      sh:maxCount 1 ;
+      sh:name "rights" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcterms:title ;
+      sh:name "title" ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate spdx:checksum ;
+      sh:class spdx:Checksum ;
+      sh:maxCount 1 ;
+      sh:name "checksum" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate adms:status ;
+      sh:class skos:Concept ;
+      sh:maxCount 1 ;
+      sh:name "status" ;
+      sh:nodeKind sh:IRI ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:accessURL ;
+      sh:class rdfs:Resource ;
+      sh:minCount 1 ;
+      sh:name "access URL" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:byteSize ;
+      sh:datatype xsd:decimal ;
+      sh:maxCount 1 ;
+      sh:name "byte size" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:downloadURL ;
+      sh:class rdfs:Resource ;
+      sh:name "download URL" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate dcat:mediaType ;
+      sh:class dcterms:MediaTypeOrExtent ;
+      sh:maxCount 1 ;
+      sh:name "media type" ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate foaf:page ;
+      sh:class foaf:Document ;
+      sh:name "page" ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+foaf:Agent
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate dcterms:type ;
+      sh:class skos:Concept ;
+      sh:maxCount 1 ;
+      sh:name "type" ;
+      sh:nodeKind sh:IRI ;
+      sh:severity sh:Violation ;
+    ] ;
+  sh:property [
+      sh:predicate foaf:name ;
+      sh:minCount 1 ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+    ] ;
+.
+foaf:Document
+  rdf:type sh:Shape ;
 .
 <https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11>
   cc:attributionName "European Commission"@en ;

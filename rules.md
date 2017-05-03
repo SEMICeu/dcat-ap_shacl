@@ -124,3 +124,21 @@ The binary mathematical operators (=,<,>,<=,>=) have priority over the logical o
 
 ## permissive datatype constraints (need to research how to allow multiple datatype and class ranges)
 dct:Catalogue must have maximum one release date but the date can be expressed as xsd:dateTime or xsd:date. Research how to allow multiple ranges.
+
+A straight forward approach would be as Andrea Perego suggests, using sh:or operator such as: 
+
+        sh:or (
+          [ sh:datatype xsd:date ] 
+          [ sh:datatype xsd:dateTime ]
+        );
+
+## Validating predicate objects belonging to a controlled list
+
+Simple example: 
+The object of dcat:theme must be one of the concepts in http://publications.europa.eu/mdr/authority/data-theme/. 
+
+Or more complex:
+
+The object of dct:spatial must be either one of the concepts in any of the concept schemes http://publications.europa.eu/mdr/authority/country/,  http://publications.europa.eu/mdr/authority/place/, http://publications.europa.eu/mdr/authority/continent/ or http://sws.geonames.org/, or else a set of coordinates expressed as WKT literal of GML literal.
+
+Andrea Perego suggests using sh:pattern propeorty for verifying the URIs structure. For my experince I can report that this operator is very slow as it checks the URIs against a regex. A more viable sollution would be to ask whether the propeorty object belongs to a certain concept scheme, i.e. whether it has for example a skos:inScheme <http://publications.europa.eu/mdr/authority/country/> statement. 
