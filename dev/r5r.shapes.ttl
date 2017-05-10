@@ -60,17 +60,6 @@
   rdf:type owl:Ontology ;
   cc:attributionName "European Commission"@en ;
   cc:attributionURL <http://ec.europa.eu/> ;
-  <http://purl.org/vocommons/voaf#classNumber> "24"^^xsd:nonNegativeInteger ;
-  <http://purl.org/vocommons/voaf#propertyNumber> "78"^^xsd:nonNegativeInteger ;
-  <http://purl.org/vocommons/voaf#reliesOn> dctype: ;
-  <http://purl.org/vocommons/voaf#reliesOn> dcterms: ;
-  <http://purl.org/vocommons/voaf#reliesOn> rdfs: ;
-  <http://purl.org/vocommons/voaf#reliesOn> <http://www.w3.org/2011/content#> ;
-  <http://purl.org/vocommons/voaf#reliesOn> adms: ;
-  <http://purl.org/vocommons/voaf#reliesOn> dcat: ;
-  <http://purl.org/vocommons/voaf#reliesOn> <http://www.w3.org/ns/locn#> ;
-  <http://purl.org/vocommons/voaf#reliesOn> prov: ;
-  <http://purl.org/vocommons/voaf#specializes> dcat: ;
   dcterms:abstract "The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalog vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable a cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals."@en ;
   dcterms:alternative "DCAT-AP"@en ;
   dcterms:conformsTo <https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies> ;
@@ -111,6 +100,17 @@
   dcterms:title "DCAT Application Profile for Data Portals in Europe"@en ;
   vann:preferredNamespacePrefix "dcat"@en ;
   vann:preferredNamespaceUri "http://www.w3.org/ns/dcat#"@en ;
+  voaf:classNumber "24"^^xsd:nonNegativeInteger ;
+  voaf:propertyNumber "78"^^xsd:nonNegativeInteger ;
+  voaf:reliesOn dctype: ;
+  voaf:reliesOn dcterms: ;
+  voaf:reliesOn rdfs: ;
+  voaf:reliesOn <http://www.w3.org/2011/content#> ;
+  voaf:reliesOn adms: ;
+  voaf:reliesOn dcat: ;
+  voaf:reliesOn <http://www.w3.org/ns/locn#> ;
+  voaf:reliesOn prov: ;
+  voaf:specializes dcat: ;
   xhv:prev <https://joinup.ec.europa.eu/node/65911> ;
   rdfs:comment "This document specifies the set of RDF classes and properties used in the DCAT Application profile for data portals in Europe (DCAT-AP)."@en ;
   rdfs:label "DCAT Application Profile for Data Portals in Europe"@en ;
@@ -151,6 +151,49 @@
       ]
     ) ;
 .
+:MandatoryAgent
+  rdf:type sh:Shape ;
+  rdfs:comment "Mandatory agent" ;
+  rdfs:label "Mandatory agent" ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:minCount 1 ;
+      sh:path [
+          sh:inversePath rdf:type ;
+        ] ;
+    ] ;
+  sh:targetNode "foaf:Agent" ;
+.
+
+:MandatoryCatalog
+  rdf:type sh:Shape ;
+  rdfs:comment "Mandatory catalog" ;
+  rdfs:label "Mandatory catalog" ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:minCount 1 ;
+      sh:path [
+          sh:inversePath rdf:type ;
+        ] ;
+    ] ;
+  sh:targetNode "dcat:Catalog" ;
+.
+
+:MandatoryDataset
+  rdf:type sh:Shape ;
+  rdfs:comment "Mandatory dataset" ;
+  rdfs:label "Mandatory dataset" ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:minCount 1 ;
+      sh:path [
+          sh:inversePath rdf:type ;
+        ] ;
+    ] ;
+  sh:targetNode "dcat:Dataset" ;
+.
+
+
 <http://publications.europa.eu/resource/authority/corporate-body/COM>
   rdf:type org:Organization ;
   foaf:homepage <http://ec.europa.eu/> ;
