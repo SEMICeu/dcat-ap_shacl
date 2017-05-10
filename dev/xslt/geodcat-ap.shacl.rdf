@@ -1,0 +1,1461 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/shacl2html.xsl"?>
+<!--
+<rdf:RDF
+  xmlns            = "http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:adms       = "http://www.w3.org/ns/adms#"
+  xmlns:cc         = "http://creativecommons.org/ns#"
+  xmlns:cnt        = "http://www.w3.org/2011/content#"
+  xmlns:dct        = "http://purl.org/dc/terms/"
+  xmlns:dctype     = "http://purl.org/dc/dcmitype/"
+  xmlns:dcat       = "http://www.w3.org/ns/dcat#"
+  xmlns:dcat-ap    = "http://www.w3.org/ns/dcat#"
+  xmlns:foaf       = "http://xmlns.com/foaf/0.1/"
+  xmlns:geodcat-ap = "http://www.w3.org/ns/dcat#"
+  xmlns:locn       = "http://www.w3.org/ns/locn#"
+  xmlns:odrs       = "http://schema.theodi.org/odrs#"
+  xmlns:org        = "http://www.w3.org/ns/org#"
+  xmlns:owl        = "http://www.w3.org/2002/07/owl#"
+  xmlns:prov       = "http://www.w3.org/ns/prov#"
+  xmlns:rdf        = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs       = "http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:schema     = "http://schema.org/"
+  xmlns:sh         = "http://www.w3.org/ns/shacl#"
+  xmlns:sioc       = "http://rdfs.org/sioc/ns#"
+  xmlns:skos       = "&skos;"
+  xmlns:spdx       = "http://spdx.org/rdf/terms#"
+  xmlns:v          = "http://www.w3.org/2006/vcard/ns#"
+  xmlns:vann       = "http://purl.org/vocab/vann/"
+  xmlns:voaf       = "http://labs.mondeca.com/vocab/voaf#"
+  xmlns:vs         = "http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:vcard      = "http://www.w3.org/2006/vcard/ns#"
+  xmlns:xsd        = "http://www.w3.org/2001/XMLSchema#"
+  xmlns:wdrs       = "http://www.w3.org/2007/05/powder-s#"
+  xmlns:sh         = "http://www.w3.org/ns/shacl#"
+>
+-->
+<!DOCTYPE rdf:RDF [
+    <!ENTITY adms "http://www.w3.org/ns/adms#" >
+    <!ENTITY cc "http://creativecommons.org/ns#" >
+    <!ENTITY cnt "http://www.w3.org/2011/content#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY dcat "http://www.w3.org/ns/dcat#" >
+    <!ENTITY dcat-ap "http://data.europa.eu/r5r/" >
+    <!ENTITY dcDoc "http://dublincore.org/documents/dcmi-terms/">
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY dctype "http://purl.org/dc/dcmitype/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY gsp "http://www.opengis.net/ont/geosparql#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY qb "http://purl.org/linked-data/cube#" >
+    <!ENTITY sdmx "http://purl.org/linked-data/sdmx#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY sf "http://sourceforge.net/api/sfelements.rdf#" >
+    <!ENTITY shacl "http://www.w3.org/ns/shacl#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY skosDoc "http://www.w3.org/TR/skos-primer/">
+    <!ENTITY spdx "http://spdx.org/rdf/terms#">
+    <!ENTITY vcard "http://www.w3.org/2006/vcard/ns#" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY voaf "http://labs.mondeca.com/vocab/voaf#" >
+    <!ENTITY xh "http://www.w3.org/1999/xhtml" >
+    <!ENTITY xhv "http://www.w3.org/1999/xhtml/vocab#">
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY wdrs "http://www.w3.org/2007/05/powder-s#" >
+
+    <!ENTITY documentation "https://joinup.ec.europa.eu/node/139283">
+    <!ENTITY documentationTitle "GeoDCAT-AP: A geospatial extension for the DCAT  application profile for data portals in Europe. Version 1.0.1">
+    <!ENTITY methodology "https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies">
+    <!ENTITY methodologyTitle "Process and Methodology for Developing Core Vocabularies">
+    <!ENTITY wgName "GeoDCAT-AP Working Group">
+    <!ENTITY wgEmail "dcat_application_profile-geo@joinup.ec.europa.eu">
+    <!ENTITY wgHomepage "https://joinup.ec.europa.eu/node/63580">
+    <!ENTITY forum "https://joinup.ec.europa.eu/node/139283">
+    <!ENTITY forumTitle "Release comments">
+    <!ENTITY coreVocUri "http://data.europa.eu/r5r#">
+    <!ENTITY vocUri "http://data.europa.eu/xyz/geodcat-ap#">
+    <!ENTITY vocTitle "GeoDCAT-AP Vocabulary">
+    <!ENTITY vocAcronym "GeoDCAT-AP">
+    <!ENTITY vocFullTitle "GeoDCAT-AP">
+    <!ENTITY nsUri "http://data.europa.eu/xyz/geodcat-ap#">
+    <!ENTITY nsPrefix "geodcat-ap">
+]>
+
+<!-- About the application profile -->
+<rdf:RDF
+  xmlns            = "http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:adms       = "http://www.w3.org/ns/adms#"
+  xmlns:cc         = "http://creativecommons.org/ns#"
+  xmlns:cnt        = "http://www.w3.org/2011/content#"
+  xmlns:dc         = "http://purl.org/dc/elements/1.1/"
+  xmlns:dct        = "http://purl.org/dc/terms/"
+  xmlns:dctype     = "http://purl.org/dc/dcmitype/"
+  xmlns:dcat       = "http://www.w3.org/ns/dcat#"
+  xmlns:dcat-ap    = "&dcat-ap;"
+  xmlns:foaf       = "http://xmlns.com/foaf/0.1/"
+  xmlns:geodcat-ap = "&nsUri;"
+  xmlns:locn       = "http://www.w3.org/ns/locn#"
+  xmlns:odrs       = "http://schema.theodi.org/odrs#"
+  xmlns:org        = "http://www.w3.org/ns/org#"
+  xmlns:owl        = "http://www.w3.org/2002/07/owl#"
+  xmlns:prov       = "http://www.w3.org/ns/prov#"
+  xmlns:rdf        = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs       = "http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:schema     = "http://schema.org/"
+  xmlns:sioc       = "http://rdfs.org/sioc/ns#"
+  xmlns:skos       = "http://www.w3.org/2004/02/skos/core#"
+  xmlns:spdx       = "http://spdx.org/rdf/terms#"
+  xmlns:v          = "http://www.w3.org/2006/vcard/ns#"
+  xmlns:vann       = "http://purl.org/vocab/vann/"
+  xmlns:voaf       = "http://labs.mondeca.com/vocab/voaf#"
+  xmlns:vs         = "http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  xmlns:vcard      = "http://www.w3.org/2006/vcard/ns#"
+  xmlns:xsd        = "http://www.w3.org/2001/XMLSchema#"
+  xmlns:xhv        = "&xhv;"
+  xmlns:xh         = "&xh;"
+  xmlns:wdrs       = "http://www.w3.org/2007/05/powder-s#"
+  xmlns:sh         = "http://www.w3.org/ns/shacl#"
+>
+  <owl:Ontology rdf:about="&vocUri;">
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    <rdf:type rdf:resource="&skos;ConceptScheme"/>
+    <rdfs:label xml:lang="en">&vocTitle;</rdfs:label>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-23</dct:created>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-23</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-23</dct:modified>
+    <dct:abstract xml:lang="en">&vocTitle; is an extension of the DCAT application profile for data portals in Europe (DCAT-AP) for describing geospatial datasets, dataset series, and services. It provides an RDF syntax binding for the union of metadata elements defined in the core profile of ISO 19115:2003 and those defined in the framework of the INSPIRE Directive. Its basic use case is to make spatial datasets, data series, and services searchable on general data portals, thereby making geospatial information better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals.</dct:abstract>
+    <cc:attributionName xml:lang="en">European Commission</cc:attributionName>
+    <rdfs:comment xml:lang="en">This document specifies the set of RDF classes and properties used in the &vocTitle;.</rdfs:comment>
+    <owl:versionInfo xml:lang="en">Version 1.0</owl:versionInfo>
+
+    <vann:preferredNamespacePrefix xml:lang="en">&nsPrefix;</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri xml:lang="en">&nsUri;</vann:preferredNamespaceUri>
+    <voaf:reliesOn rdf:resource="http://purl.org/dc/terms/"/>
+    <voaf:reliesOn rdf:resource="http://purl.org/dc/dcmitype/"/>
+    <voaf:reliesOn rdf:resource="&cnt;"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/adms#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/dcat#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/locn#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/prov#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <voaf:specializes rdf:resource="http://www.w3.org/ns/dcat#"/>
+    <voaf:classNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</voaf:classNumber>
+    <voaf:propertyNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">16</voaf:propertyNumber>
+
+    <dct:hasFormat>
+      <rdf:Description rdf:about="&vocUri;.rdf">
+        <rdfs:label xml:lang="en">RDF/XML version of the &vocTitle;</rdfs:label>
+        <dct:format rdf:resource="http://www.w3.org/ns/formats/data/RDF_XML"/>
+        <dcat:mediaType rdf:datatype="http://purl.org/dc/terms/IMT">application/rdf+xml</dcat:mediaType>
+      </rdf:Description>
+    </dct:hasFormat>
+    <dct:hasFormat>
+      <rdf:Description rdf:about="&vocUri;.ttl">
+        <rdfs:label xml:lang="en">Turtle version of the &vocTitle;</rdfs:label>
+        <dct:format rdf:resource="http://www.w3.org/ns/formats/data/Turtle"/>
+        <dcat:mediaType rdf:datatype="http://purl.org/dc/terms/IMT">text/turtle</dcat:mediaType>
+      </rdf:Description>
+    </dct:hasFormat>
+    <dct:hasFormat>
+      <rdf:Description rdf:about="&vocUri;.html">
+        <rdfs:label xml:lang="en">HTML version of the &vocTitle;</rdfs:label>
+        <dcat:mediaType rdf:datatype="http://purl.org/dc/terms/IMT">text/html</dcat:mediaType>
+      </rdf:Description>
+    </dct:hasFormat>
+
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    <dct:rightsHolder rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/EURUN"/>
+    <dct:rights>
+      <dct:RigthsStatement>
+        <rdfs:label xml:lang="en">Copyright &#xa9; European Union, 2015</rdfs:label>
+        <odrs:copyrightNotice xml:lang="en">Copyright &#xa9; European Union, 2015</odrs:copyrightNotice>
+      </dct:RigthsStatement>
+    </dct:rights>
+    <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
+    <xhv:prev rdf:resource="https://joinup.ec.europa.eu/node/65911"/>
+    <wdrs:describedby rdf:resource="https://joinup.ec.europa.eu/node/69559"/>
+    <dct:relation rdf:resource="https://joinup.ec.europa.eu/node/69559"/>
+    <dct:license>
+      <rdf:Description rdf:about="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11">
+        <dct:title>ISA Open Metadata Licence v1.1</dct:title>
+        <cc:attributionName>European Commission</cc:attributionName>
+        <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
+      </rdf:Description>
+    </dct:license>
+    <foaf:logo>
+      <rdf:Description rdf:about="https://joinup.ec.europa.eu/sites/default/files/ckeditor_files/images/DCAT-AP-GEO.png">
+        <rdfs:label>GeoDCAT-AP logo</rdfs:label>
+      </rdf:Description>
+    </foaf:logo>
+    <dct:conformsTo>
+      <rdf:Description rdf:about="&methodology;">
+        <dct:title>&methodologyTitle;</dct:title>
+      </rdf:Description>
+    </dct:conformsTo>
+    <dct:creator rdf:parseType="Resource">
+      <foaf:name>Andrea Perego</foaf:name>
+      <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    </dct:creator>
+    <foaf:maker rdf:parseType="Resource">
+      <foaf:name>&wgName;</foaf:name>
+      <foaf:page rdf:resource="{&wgHomepage;}"/>
+      <foaf:mbox rdf:resource="mailto:{&wgEmail;}"/>
+    </foaf:maker>
+
+<!-- Change log -->
+
+    <vann:changes xml:lang="en">
+    </vann:changes>
+
+  </owl:Ontology>
+
+<!-- Agents -->
+
+  <org:Organization rdf:about="http://publications.europa.eu/resource/authority/corporate-body/EURUN">
+    <foaf:name>European Union</foaf:name>
+    <foaf:homepage rdf:resource="http://europa.eu/"/>
+  </org:Organization>
+
+  <org:Organization rdf:about="http://publications.europa.eu/resource/authority/corporate-body/COM">
+    <foaf:name>European Commission</foaf:name>
+    <foaf:homepage rdf:resource="http://ec.europa.eu/"/>
+  </org:Organization>
+
+  <org:Organization rdf:about="http://publications.europa.eu/resource/authority/corporate-body/JRC">
+    <foaf:name>European Commission, Joint Research Centre (JRC)</foaf:name>
+    <foaf:homepage rdf:resource="http://ec.europa.eu/jrc/"/>
+  </org:Organization>
+
+
+<!-- Mandatory classes -->
+
+<!-- Agent -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Agent">
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;agent-mbox"/>
+    <sh:property rdf:resource="&nsUri;agent-workplaceHomepage"/>
+  </sh:NodeShape>
+
+<!-- Agent - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;agent-mbox">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:agent-mbox</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_mbox"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Agent - email</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Agent - email</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://xmlns.com/foaf/0.1/mbox"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;agent-workplaceHomepage">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:agent-workplaceHomepage</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_workplaceHomepage"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Agent - homepage</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Agent - homepage</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://xmlns.com/foaf/0.1/workplaceHomepage"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Catalogue -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Catalogue">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;catalogue-creationDate"/>
+  </sh:NodeShape>
+
+<!-- Catalogue - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;catalogue-creationDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:catalogue-creationDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-created"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Catalogue - creation date</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Catalogue - creation date</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/created"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Dataset -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Dataset">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;dataset-author"/>
+    <sh:property rdf:resource="&nsUri;dataset-conformity"/>
+    <sh:property rdf:resource="&nsUri;dataset-creationDate"/>
+    <sh:property rdf:resource="&nsUri;dataset-owner"/>
+    <sh:property rdf:resource="&nsUri;dataset-referenceSystem"/>
+    <sh:property rdf:resource="&nsUri;dataset-topicCategory"/>
+  </sh:NodeShape>
+
+<!-- Dataset - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;dataset-author">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:dataset-author</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-creator"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Dataset - author</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Dataset - author</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/creator"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;dataset-conformity">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:dataset-conformity</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-conformsTo"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Dataset - conformance result / conformity (data quality)</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Dataset - conformance result / conformity (data quality)</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;dataset-creationDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:dataset-creationDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-created"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Dataset - creation date</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Dataset - creation date</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/created"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;dataset-owner">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:dataset-owner</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-rightsHolder"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Dataset - owner</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Dataset - owner</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/rightsHolder"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;dataset-referenceSystem">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:dataset-referenceSystem</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-conformsTo"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Dataset - reference system</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Dataset - reference system</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;dataset-topicCategory">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:dataset-topicCategory</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-subject"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Dataset - topic category</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Dataset - topic category</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/subject"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Category -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Category">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;category-originatingVocabulary"/>
+  </sh:NodeShape>
+
+<!-- Category - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;category-originatingVocabulary">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:category-originatingVocabulary</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-dcat/#class-inScheme"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Category - originating controlled vocabulary</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Category - originating controlled vocabulary</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&skos;inScheme"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Category scheme -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;CategoryScheme">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;categoryScheme-creationDate"/>
+    <sh:property rdf:resource="&nsUri;categoryScheme-releaseDate"/>
+    <sh:property rdf:resource="&nsUri;categoryScheme-updateModificationDate"/>
+  </sh:NodeShape>
+
+<!-- Catalogue - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;categoryScheme-creationDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:categoryScheme-creationDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-created"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Category scheme - creation date</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Catalogue scheme - creation date</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/created"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;categoryScheme-releaseDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:categoryScheme-releaseDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-issued"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Category scheme - release date</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Catalogue scheme - release date</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;categoryScheme-updateModificationDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:categoryScheme-updateModificationDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-modified"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Category scheme - update / modification date</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Catalogue scheme - update / modification date</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Distribution -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Distribution">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;distribution-characterEncoding"/>
+    <sh:property rdf:resource="&nsUri;distribution-spatialRepresentationType"/>
+  </sh:NodeShape>
+
+<!-- Distribution - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;distribution-characterEncoding">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:distribution-characterEncoding</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/Content-in-RDF10/#characterEncodingProperty"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Distribution - character encoding</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Distribution - character encoding</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&cnt;characterEncoding"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;distribution-spatialRepresentationType">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:distribution-spatialRepresentationType</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#adms_representationTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Distribution - spatial representation type</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Distribution - spatial representation type</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&adms;representationTechnique"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Licence document -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;LicenceDocument">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;licenceDocument-nameOrDescription"/>
+  </sh:NodeShape>
+
+<!-- Licence document - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;distribution-licenceDocument-nameOrDescription">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:licenceDocument-nameOrDescription</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2004/REC-rdf-schema-20040210/#ch_label"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Licence document - name / description</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Licence document - name / description</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&rdfs;label"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Catalogue record -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;CatalogueRecord">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;catalogueRecord-characterEncoding"/>
+    <sh:property rdf:resource="&nsUri;catalogueRecord-contactPoint"/>
+    <sh:property rdf:resource="&nsUri;catalogueRecord-identifier"/>
+  </sh:NodeShape>
+
+<!-- Catalogue record - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;catalogueRecord-characterEncoding">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:catalogueRecord-characterEncoding</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/Content-in-RDF10/#characterEncodingProperty"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Catalogue record - character encoding</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Catalogue record - character encoding</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&cnt;characterEncoding"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;catalogueRecord-contactPoint">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:catalogueRecord-contactPoint</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#dcat-contactpoint"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Catalogue record - contact point</sh:name>
+    <rdfs:label xml:lang="en">Catalogue record - contact point</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dcat;contactPoint"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;catalogueRecord-identifier">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:catalogueRecord-identifier</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-identifier"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Catalogue record - identifier</sh:name>
+    <rdfs:label xml:lang="en">Catalogue record - identifier</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;identifier"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Document -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Document">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;document-description"/>
+    <sh:property rdf:resource="&nsUri;document-title"/>
+  </sh:NodeShape>
+
+<!-- Document - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;document-description">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:document-description</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-description"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Document - description</sh:name>
+    <rdfs:label xml:lang="en">Document - description</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;description"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;document-title">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:document-title</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-title"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Document - title</sh:name>
+    <rdfs:label xml:lang="en">Document - title</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;title"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Kind -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Kind">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;kind-email"/>
+    <sh:property rdf:resource="&nsUri;kind-organisationName"/>
+    <sh:property rdf:resource="&nsUri;kind-homepage"/>
+  </sh:NodeShape>
+
+<!-- Kind - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;kind-email">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:kind-email</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vcard-rdf/#d4e183"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Kind - email</sh:name>
+    <rdfs:label xml:lang="en">Kind - email</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&vcard;hasEmail"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;kind-organisationName">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:kind-organisationName</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vcard-rdf/#d4e1077"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Kind - organisation name</sh:name>
+    <rdfs:label xml:lang="en">Kind - organisation name</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&vcard;organization-name"/>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;kind-homepage">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:kind-homepage</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vcard-rdf/#d4e605"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Kind - homepage</sh:name>
+    <rdfs:label xml:lang="en">Kind - homepage</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&vcard;hasURL"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Location -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Location">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;location-identifier"/>
+    <sh:property rdf:resource="&nsUri;location-name"/>
+    <sh:property rdf:resource="&nsUri;location-identifierOrNameAuthority"/>
+    <sh:property rdf:resource="&nsUri;location-geometry"/>
+  </sh:NodeShape>
+
+<!-- Location - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;location-identifier">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:location-identifier</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-identifier"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Location - geographical identifier</sh:name>
+    <rdfs:label xml:lang="en">Location - geographical identifier</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;identifier"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;location-name">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:location-name</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/skos-reference/#prefLabel"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Location - geographical name</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Location - geographical name</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&skos;prefLabel"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;location-identifierOrNameAuthority">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:location-identifierOrNameAuthority</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/skos-reference/#inScheme"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Location - geographical identifier / name authority</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Location - geographical identifier / name authority</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&skos;inScheme"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;location-geometry">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:location-geometry</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/ns/locn#locn:geometry"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Location - geometry</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Location - geometry</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="https://www.w3.org/ns/locn#geometry"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&gsp;wktLiteral"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&gsp;gmlLiteral"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Media type or extent -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;MediaTypeOrExtent">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;mediaTypeOrExtent-label"/>
+  </sh:NodeShape>
+
+<!-- Media type or extent - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;mediaTypeOrExtent-label">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:mediaTypeOrExtent-label</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2004/REC-rdf-schema-20040210/#ch_label"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Media type or extent - label</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Media type or extent - label</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&rdfs;label"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- GeoDCAT-AP - Reference system -->
+
+  <sh:NodeShape rdf:about="&vocUri;ReferenceSystem">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:ReferenceSystem</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-Standard"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Reference system</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Reference system</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:targetClass rdf:resource="&dct;Standard"/>
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;referenceSystem-type"/>
+    <sh:property rdf:resource="&nsUri;referenceSystem-identifier"/>
+    <sh:property rdf:resource="&nsUri;referenceSystem-name"/>
+    <sh:property rdf:resource="&nsUri;referenceSystem-authority"/>
+    <sh:property rdf:resource="&nsUri;referenceSystem-version"/>
+  </sh:NodeShape>
+
+<!-- Reference system - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;referenceSystem-type">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:referenceSystem-type</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-type"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Reference system - type</sh:name>
+    <rdfs:label xml:lang="en">Reference system - type</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;type"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;referenceSystem-identifier">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:referenceSystem-identifier</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-identifier"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Reference system - identifier</sh:name>
+    <rdfs:label xml:lang="en">Reference system - identifier</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;identifier"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;referenceSystem-name">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:referenceSystem-name</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/skos-reference/#prefLabel"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Reference system - name</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Reference system - name</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&skos;prefLabel"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;referenceSystem-authority">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:referenceSystem-authority</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/skos-reference/#inScheme"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Reference system - authority</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Reference system - authority</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&skos;inScheme"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;referenceSystem-version">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:referenceSystem-version</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/owl-ref/#versionInfo-def"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Reference system - version</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Reference system - version</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&owl;versionInfo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- Rights statement -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;RightsStatement">
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;rightsStatement-nameOrDescription"/>
+  </sh:NodeShape>
+
+<!-- Rights statement - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;rightsStatement-nameOrDescription">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:rightsStatement-nameOrDescription</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2004/REC-rdf-schema-20040210/#ch_label"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Rights statement - name / description</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Rights statement - name / description</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&rdfs;label"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+<!-- GeoDCAT-AP - Service -->
+
+  <sh:NodeShape rdf:about="&vocUri;Service">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:Service</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/2012/06/14/dcmi-terms/#dcmitype-Service"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Service</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Service</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:targetClass rdf:resource="&dctype;Service"/>
+<!-- GeoDCAT-AP -->
+<!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;service-accessRights"/>
+    <sh:property rdf:resource="&nsUri;service-author"/>
+    <sh:property rdf:resource="&nsUri;service-conformity"/>
+    <sh:property rdf:resource="&nsUri;service-conformsTo"/>
+    <sh:property rdf:resource="&nsUri;service-contactPoint"/>
+    <sh:property rdf:resource="&nsUri;service-coupledResource"/>
+    <sh:property rdf:resource="&nsUri;service-creationDate"/>
+    <sh:property rdf:resource="&nsUri;service-description"/>
+    <sh:property rdf:resource="&nsUri;service-freeTextKeyword"/>
+    <sh:property rdf:resource="&nsUri;service-keywordFromVocabulary"/>
+    <sh:property rdf:resource="&nsUri;service-language"/>
+    <sh:property rdf:resource="&nsUri;service-publisher"/>
+    <sh:property rdf:resource="&nsUri;service-releaseDate"/>
+    <sh:property rdf:resource="&nsUri;service-resourceLocator"/>
+    <sh:property rdf:resource="&nsUri;service-spatialOrGeographicCoverage"/>
+    <sh:property rdf:resource="&nsUri;service-spatialDataServiceCategory"/>
+    <sh:property rdf:resource="&nsUri;service-spatialDataServiceType"/>
+    <sh:property rdf:resource="&nsUri;service-temporalCoverage"/>
+    <sh:property rdf:resource="&nsUri;service-title"/>
+    <sh:property rdf:resource="&nsUri;service-type"/>
+    <sh:property rdf:resource="&nsUri;service-updateOrModificationDate"/>
+  </sh:NodeShape>
+
+<!-- Service - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;service-accessRights">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-accessRights</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-accessRights"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - access rights</sh:name>
+    <rdfs:label xml:lang="en">Service - access rights</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;accessRights"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-author">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-author</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-creator"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - author</sh:name>
+    <rdfs:label xml:lang="en">Service - author</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;creator"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-conformity">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-conformity</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-conformsTo"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - conformance result / conformity (data quality)</sh:name>
+    <rdfs:label xml:lang="en">Service - conformance result / conformity (data quality)</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;conformsTo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-conformsTo">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-conformsTo</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-conformsTo"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - conforms to</sh:name>
+    <rdfs:label xml:lang="en">Service - conforms to</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;conformsTo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-contactPoint">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-contactPoint</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#dcat-contactpoint"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - contact point</sh:name>
+    <rdfs:label xml:lang="en">Service - contact point</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dcat;contactPoint"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-coupledResource">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-coupledResource</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-hasPart"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - coupled resource</sh:name>
+    <rdfs:label xml:lang="en">Service - coupled resource</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;hasPart"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-creationDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-creationDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-created"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - creation date</sh:name>
+    <rdfs:label xml:lang="en">Service - creation date</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;created"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-description">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-description</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-description"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - description</sh:name>
+    <rdfs:label xml:lang="en">Service - description</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;description"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-freeTextKeyword">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-freeTextKeyword</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#elements-subject"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - keyword (free text)</sh:name>
+    <rdfs:label xml:lang="en">Service - keyword (free text)</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dc;subject"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-keywordFromVocabulary">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-keywordFromVocabulary</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-subject"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - keyword (from a controlled vocabulary)</sh:name>
+    <rdfs:label xml:lang="en">Service - keyword (from a controlled vocabulary)</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;subject"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-language">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-language</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-language"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - language</sh:name>
+    <rdfs:label xml:lang="en">Service - language</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;language"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-publisher">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-publisher</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-publisher"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - publisher</sh:name>
+    <rdfs:label xml:lang="en">Service - publisher</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;publisher"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-releaseDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-releaseDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-issued"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - release date</sh:name>
+    <rdfs:label xml:lang="en">Service - release date</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;issued"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-resourceLocator">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-resourceLocator</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_homepage"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Service - resouce locator</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Service - resouce locator</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&foaf;homepage"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-spatialOrGeographicCoverage">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-spatialOrGeographicCoverage</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-spatial"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - spatial / geographic coverage</sh:name>
+    <rdfs:label xml:lang="en">Service - spatial / geographic coverage</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;spatial"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-spatialDataServiceCategory">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-spatialDataServiceCategory</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-type"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - spatial data service category</sh:name>
+    <rdfs:label xml:lang="en">Service - spatial data service category</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;type"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-spatialDataServiceType">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-spatialDataServiceType</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-type"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - spatial data service type</sh:name>
+    <rdfs:label xml:lang="en">Service - spatial data service type</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;type"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-temporalCoverage">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-temporalCoverage</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-temporal"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - temporal coverage</sh:name>
+    <rdfs:label xml:lang="en">Service - temporal coverage</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;temporal"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-title">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-title</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-title"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - title</sh:name>
+    <rdfs:label xml:lang="en">Service - title</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;title"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-type">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-type</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-type"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - type</sh:name>
+    <rdfs:label xml:lang="en">Service - type</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;type"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;service-updateOrModificationDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:service-updateOrModificationDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-modified"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Service - update / modification date</sh:name>
+    <rdfs:label xml:lang="en">Service - update / modification date</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;modified"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <!-- DCAT-AP - Standard -->
+
+  <sh:NodeShape rdf:about="&coreVocUri;Service">
+  <!-- GeoDCAT-AP -->
+  <!-- Optional properties -->
+    <sh:property rdf:resource="&nsUri;standard-creationDate"/>
+    <sh:property rdf:resource="&nsUri;standard-releaseDate"/>
+    <sh:property rdf:resource="&nsUri;standard-title"/>
+    <sh:property rdf:resource="&nsUri;standard-updateOrModificationDate"/>
+  </sh:NodeShape>
+
+  <!-- Standard - properties - GeoDCAT-AP - optional -->
+
+  <sh:PropertyShape rdf:about="&nsUri;standard-creationDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:standard-creationDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-created"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Standard - creation date</sh:name>
+    <rdfs:label xml:lang="en">Standard - creation date</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;created"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;standard-releaseDate">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:standad-releaseDate</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-issued"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Standard - release date</sh:name>
+    <rdfs:label xml:lang="en">Standard - release date</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;issued"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:or rdf:parseType="Collection">
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;date"/>
+      </rdf:Description>
+      <rdf:Description>
+        <sh:datatype rdf:resource="&xsd;dateTime"/>
+      </rdf:Description>
+    </sh:or>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;standard-title">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:standard-title</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-title"/>
+    <rdfs:isDefinedBy rdf:resource="&nsUri;"/>
+    <sh:name xml:lang="en">Standard - title</sh:name>
+    <rdfs:label xml:lang="en">Standard - title</rdfs:label>
+    <sh:description xml:lang="en"></sh:description>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:path rdf:resource="&dct;title"/>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+  <sh:PropertyShape rdf:about="&nsUri;standard-version">
+    <dct:identifier rdf:datatype="&xsd;string">&nsPrefix;:standard-version</dct:identifier>
+    <vs:term_status></vs:term_status>
+    <vann:usageNote xml:lang="en"></vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/owl-ref/#versionInfo-def"/>
+    <rdfs:isDefinedBy rdf:resource="&vocUri;"/>;
+    <rdfs:label xml:lang="en">Standard - version</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <sh:name xml:lang="en">Standard - version</sh:name>
+    <sh:description xml:lang="en"></sh:description>
+    <sh:path rdf:resource="&owl;versionInfo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:datatype rdf:resource="&rdfs;Literal"/>
+    <sh:severity rdf:resource="&shacl;Info"/>
+  </sh:PropertyShape>
+
+</rdf:RDF>

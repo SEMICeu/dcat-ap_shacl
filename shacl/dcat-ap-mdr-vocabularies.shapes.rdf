@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:spdx="http://spdx.org/rdf/terms#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:gr="http://purl.org/goodrelations/v1#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
+    xmlns:dcam="http://purl.org/dc/dcam/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:wot="http://xmlns.com/wot/0.1/"
+    xmlns:sh="http://www.w3.org/ns/shacl#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:org="http://www.w3.org/ns/org#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+    xmlns:schema="http://schema.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:tosh="http://topbraid.org/tosh#"
+    xmlns:xh="http://www.w3.org/1999/xhtml"
+    xmlns:owlTime="http://www.w3.org/2006/time#"
+    xmlns="http://data.europa.eu/r5r/mdrcv#"
+    xmlns:swa="http://topbraid.org/swa#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dctype="http://purl.org/dc/dcmitype/"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:odrs="http://schema.theodi.org/odrs#"
+    xmlns:v="http://www.w3.org/2006/vcard/ns#"
+    xmlns:schemax="http://topbraid.org/schemax/"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dash="http://datashapes.org/dash#"
+  xml:base="http://data.europa.eu/r5r/mdrcv">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+    <rdfs:comment xml:lang="en">This document specifies controlled vocabulary constraints on propoerties used in the DCAT Application (DCAT-AP).</rdfs:comment>
+    <owl:imports rdf:resource="http://www.w3.org/ns/adms"/>
+    <owl:imports rdf:resource="http://vocab.deri.ie/void"/>
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <owl:imports rdf:resource="http://www.w3.org/2008/05/skos-xl"/>
+    <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+    <owl:imports rdf:resource="http://datashapes.org/dash"/>
+    <owl:imports rdf:resource="http://www.w3.org/ns/dcat"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <rdfs:label xml:lang="en">Controlled Vocabulary Constraints of DCAT Application Profile for Data Portals in Europe</rdfs:label>
+    <owl:imports rdf:resource="http://creativecommons.org/ns"/>
+    <owl:imports rdf:resource="http://topbraid.org/schema/"/>
+  </owl:Ontology>
+  <sh:Shape rdf:about="http://www.w3.org/ns/dcat#Dataset">
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="DataThemeRestriction">
+          <sh:property rdf:parseType="Resource">
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>in scheme</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </sh:property>
+          <owl:versionInfo>1</owl:versionInfo>
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+          <rdfs:label>Data Theme Restriction</rdfs:label>
+          <rdfs:comment>Data Theme Restriction</rdfs:comment>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>theme</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#theme"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape>
+          <sh:or rdf:parseType="Collection">
+            <sh:Shape rdf:ID="CountryRestriction">
+              <sh:property rdf:parseType="Resource">
+                <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+                <sh:name>in scheme</sh:name>
+                <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >1</sh:minCount>
+                <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/country"/>
+                <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+                <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+              </sh:property>
+              <owl:versionInfo>1</owl:versionInfo>
+              <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+              <rdfs:label>Country restriction</rdfs:label>
+              <rdfs:comment>Country restriction</rdfs:comment>
+            </sh:Shape>
+            <sh:Shape rdf:ID="PlaceRestriction">
+              <sh:property rdf:parseType="Resource">
+                <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+                <sh:name>in scheme</sh:name>
+                <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >1</sh:minCount>
+                <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/place"/>
+                <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+                <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+              </sh:property>
+              <owl:versionInfo>1</owl:versionInfo>
+              <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+              <rdfs:label>Place restriction</rdfs:label>
+              <rdfs:comment>Place restriction</rdfs:comment>
+            </sh:Shape>
+            <sh:Shape rdf:ID="ContinentRestriction">
+              <sh:property rdf:parseType="Resource">
+                <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+                <sh:name>in scheme</sh:name>
+                <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >1</sh:minCount>
+                <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+                <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+                <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+              </sh:property>
+              <owl:versionInfo>1</owl:versionInfo>
+              <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+              <rdfs:label>Continent restriction</rdfs:label>
+              <rdfs:comment>Continent restriction</rdfs:comment>
+            </sh:Shape>
+            <sh:Shape rdf:ID="GeoNamesRestriction">
+              <sh:property rdf:parseType="Resource">
+                <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+                <sh:name>in scheme</sh:name>
+                <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >1</sh:minCount>
+                <sh:hasValue rdf:resource="http://sws.geonames.org"/>
+                <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+                <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+              </sh:property>
+              <owl:versionInfo>1</owl:versionInfo>
+              <rdfs:label>Geo names restriction</rdfs:label>
+              <rdfs:comment>Geo names restriction</rdfs:comment>
+            </sh:Shape>
+          </sh:or>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>theme</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/spatial"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="CorporateBodyRestriction">
+          <sh:property rdf:parseType="Resource">
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>in scheme</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/corporate-body"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </sh:property>
+          <owl:versionInfo>1</owl:versionInfo>
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+          <rdfs:label>Corporate Body Restriction</rdfs:label>
+          <rdfs:comment>Corporate Body Restriction</rdfs:comment>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>publisher</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/publisher"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="LanguageRestriction">
+          <sh:property rdf:parseType="Resource">
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>in scheme</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/language"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </sh:property>
+          <owl:versionInfo>1</owl:versionInfo>
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+          <rdfs:label>Language Restriction</rdfs:label>
+          <rdfs:comment>Language Restriction</rdfs:comment>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>language</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/language"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="FrequencyRestriction">
+          <sh:property rdf:parseType="Resource">
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>in scheme</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/frequency"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </sh:property>
+          <owl:versionInfo>1</owl:versionInfo>
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+          <rdfs:label>Frequency Restriction</rdfs:label>
+          <rdfs:comment>Frequency Restriction</rdfs:comment>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>accrual periodicity</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/accrualPeriodicity"/>
+    </sh:property>
+  </sh:Shape>
+  <sh:Shape rdf:about="http://purl.org/dc/terms/LicenseDocument">
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="LicenceTypeRestriction">
+          <sh:property rdf:parseType="Resource">
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>in scheme</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:hasValue rdf:resource="http://purl.org/adms/licencetype/1.0"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </sh:property>
+          <owl:versionInfo>1</owl:versionInfo>
+          <rdfs:label>Licence type restriction</rdfs:label>
+          <rdfs:comment>Licence type restriction</rdfs:comment>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>type</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/type"/>
+    </sh:property>
+  </sh:Shape>
+  <sh:Shape rdf:about="http://www.w3.org/ns/dcat#Catalog">
+    <sh:property rdf:parseType="Resource">
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>theme taxonomy</sh:name>
+      <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#themeTaxonomy"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape>
+          <sh:or rdf:parseType="Collection">
+            <sh:Shape rdf:about="#CountryRestriction"/>
+            <sh:Shape rdf:about="#PlaceRestriction"/>
+            <sh:Shape rdf:about="#ContinentRestriction"/>
+            <sh:Shape rdf:about="#GeoNamesRestriction"/>
+          </sh:or>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>theme</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/spatial"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape rdf:resource="#CorporateBodyRestriction"/>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>publisher</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/publisher"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape rdf:resource="#LanguageRestriction"/>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>language</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/language"/>
+    </sh:property>
+  </sh:Shape>
+  <sh:Shape rdf:about="http://www.w3.org/ns/dcat#CatalogRecord"/>
+  <sh:Shape rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="PublisherTypeRestriction">
+          <sh:property rdf:parseType="Resource">
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>in scheme</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:hasValue rdf:resource="http://purl.org/adms/publishertype/1.0"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </sh:property>
+          <owl:versionInfo>1</owl:versionInfo>
+          <rdfs:label>Publisher type restriction</rdfs:label>
+          <rdfs:comment>Publisher type restriction</rdfs:comment>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>type</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/type"/>
+    </sh:property>
+  </sh:Shape>
+  <sh:Shape rdf:about="http://www.w3.org/ns/dcat#Distribution">
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="StatusRestriction">
+          <sh:property rdf:parseType="Resource">
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>in scheme</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:hasValue rdf:resource="http://purl.org/adms/status/1.0"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </sh:property>
+          <owl:versionInfo>1</owl:versionInfo>
+          <rdfs:label>Status restriction</rdfs:label>
+          <rdfs:comment>Status restriction</rdfs:comment>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>status</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/adms#status"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="FileTypeRestriction">
+          <sh:property rdf:parseType="Resource">
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>in scheme</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:hasValue rdf:resource="http://publications.europa.eu/resource/authority/file-type"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </sh:property>
+          <owl:versionInfo>1</owl:versionInfo>
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+          <rdfs:label>File Type Restriction</rdfs:label>
+          <rdfs:comment>File Type Restriction</rdfs:comment>
+        </sh:Shape>
+      </sh:shape>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>format</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/format"/>
+    </sh:property>
+  </sh:Shape>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

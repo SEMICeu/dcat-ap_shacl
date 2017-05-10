@@ -1,0 +1,1554 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/shacl2html.xsl"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:adms="http://www.example.org/ns/adms#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:org="http://www.w3.org/ns/org#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sh="http://www.w3.org/ns/shacl#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:voaf="http://labs.mondeca.com/vocab/voaf#" xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" xmlns:wdrs="http://www.w3.org/2007/05/powder-s#" xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <owl:Ontology xmlns="http://www.w3.org/2000/01/rdf-schema#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:odrs="http://schema.theodi.org/odrs#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:v="http://www.w3.org/2006/vcard/ns#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xh="http://www.w3.org/1999/xhtml" rdf:about="http://data.europa.eu/r5r#">
+    <rdfs:label xml:lang="en">DCAT Application Profile for Data Portals in Europe</rdfs:label>
+    <dct:title xml:lang="en">DCAT Application Profile for Data Portals in Europe</dct:title>
+    <dct:alternative xml:lang="en">DCAT-AP</dct:alternative>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-08</dct:modified>
+    <dct:abstract xml:lang="en">The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalogue vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable a cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals.</dct:abstract>
+    <foaf:depiction>
+      <rdf:Description rdf:about="https://joinup.ec.europa.eu/system/files/project/dcat-ap_.1.bmp">
+        <rdfs:label xml:lang="en">DCAT-AP UML diagram</rdfs:label>
+      </rdf:Description>
+    </foaf:depiction>
+    <cc:attributionName xml:lang="en">European Commission</cc:attributionName>
+    <rdfs:comment xml:lang="en">This document specifies the set of RDF classes and properties used in the DCAT Application profile for data portals in Europe (DCAT-AP).</rdfs:comment>
+    <owl:versionInfo xml:lang="en">1.1</owl:versionInfo>
+    <vann:preferredNamespacePrefix xml:lang="en">dcat</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri xml:lang="en">http://www.w3.org/ns/dcat#</vann:preferredNamespaceUri>
+    <dct:rightsHolder rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/EURUN"/>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    <dct:rights>
+      <dct:RigthsStatement>
+        <rdfs:label xml:lang="en">Copyright © European Union, 2015</rdfs:label>
+        <odrs:copyrightNotice xml:lang="en">Copyright © European Union, 2015</odrs:copyrightNotice>
+      </dct:RigthsStatement>
+    </dct:rights>
+    <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
+    <xhv:prev rdf:resource="https://joinup.ec.europa.eu/node/65911"/>
+    <wdrs:describedby rdf:resource="https://joinup.ec.europa.eu/node/69559"/>
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    <voaf:specializes rdf:resource="http://www.w3.org/ns/dcat#"/>
+    <voaf:reliesOn rdf:resource="http://purl.org/dc/terms/"/>
+    <voaf:reliesOn rdf:resource="http://purl.org/dc/dcmitype/"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/2011/content#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/adms#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/dcat#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/locn#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/prov#"/>
+    <voaf:reliesOn rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <voaf:classNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">24</voaf:classNumber>
+    <voaf:propertyNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">78</voaf:propertyNumber>
+    <dct:relation rdf:resource="https://joinup.ec.europa.eu/node/69559"/>
+    <dct:license>
+      <rdf:Description rdf:about="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11">
+        <dct:title xml:lang="en">ISA Open Metadata Licence v1.1</dct:title>
+        <cc:attributionName xml:lang="en">European Commission</cc:attributionName>
+        <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
+      </rdf:Description>
+    </dct:license>
+    <foaf:logo>
+      <rdf:Description rdf:about="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png">
+        <rdfs:label xml:lang="en">DCAT-AP logo</rdfs:label>
+      </rdf:Description>
+    </foaf:logo>
+    <dct:conformsTo>
+      <rdf:Description rdf:about="https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies">
+        <dct:title xml:lang="en">Process and Methodology for Developing Core Vocabularies</dct:title>
+      </rdf:Description>
+    </dct:conformsTo>
+    <dct:creator rdf:parseType="Resource">
+      <rdfs:seeAlso rdf:resource="http://makxdekkers.com/"/>
+      <foaf:name>Makx Dekkers</foaf:name>
+      <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
+      <org:memberOf rdf:resource="http://www.ami-consult.com/"/>
+    </dct:creator>
+    <dct:creator rdf:parseType="Resource">
+      <rdfs:seeAlso rdf:resource="http://www.deri.ie/users/vassilios-peristeras/"/>
+      <foaf:name>Vassilios Peristeras</foaf:name>
+      <foaf:homepage rdf:resource="http://www.deri.ie/users/vassilios-peristeras/"/>
+      <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    </dct:creator>
+    <dct:creator rdf:parseType="Resource">
+      <rdfs:seeAlso rdf:resource="http://nikosloutas.com/"/>
+      <foaf:name>Nikolaos Loutas</foaf:name>
+      <foaf:homepage rdf:resource="http://nikosloutas.com/"/>
+      <org:memberOf rdf:resource="http://www.pwc.com/gx/en/eu-institutions-services"/>
+    </dct:creator>
+    <foaf:maker rdf:parseType="Resource">
+      <foaf:name>DCAT-AP Working Group</foaf:name>
+      <foaf:page rdf:resource="https://joinup.ec.europa.eu/node/63580"/>
+      <foaf:mbox rdf:resource="mailto:dcat_application_profile@joinup.ec.europa.eu"/>
+    </foaf:maker>
+  </owl:Ontology>
+  <org:Organization xmlns="http://www.w3.org/2000/01/rdf-schema#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:odrs="http://schema.theodi.org/odrs#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:v="http://www.w3.org/2006/vcard/ns#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xh="http://www.w3.org/1999/xhtml" rdf:about="http://publications.europa.eu/resource/authority/corporate-body/EURUN">
+    <foaf:name>European Union</foaf:name>
+    <foaf:homepage rdf:resource="http://europa.eu/"/>
+  </org:Organization>
+  <org:Organization xmlns="http://www.w3.org/2000/01/rdf-schema#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:odrs="http://schema.theodi.org/odrs#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:v="http://www.w3.org/2006/vcard/ns#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xh="http://www.w3.org/1999/xhtml" rdf:about="http://publications.europa.eu/resource/authority/corporate-body/COM">
+    <foaf:name>European Commission</foaf:name>
+    <foaf:homepage rdf:resource="http://ec.europa.eu/"/>
+  </org:Organization>
+  <org:Organization xmlns="http://www.w3.org/2000/01/rdf-schema#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:odrs="http://schema.theodi.org/odrs#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:v="http://www.w3.org/2006/vcard/ns#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xh="http://www.w3.org/1999/xhtml" rdf:about="http://www.ami-consult.com/">
+    <foaf:name>AMI Consult</foaf:name>
+    <foaf:homepage rdf:resource="http://www.makxdekkers.com/"/>
+  </org:Organization>
+  <org:Organization xmlns="http://www.w3.org/2000/01/rdf-schema#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:odrs="http://schema.theodi.org/odrs#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:v="http://www.w3.org/2006/vcard/ns#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xh="http://www.w3.org/1999/xhtml" rdf:about="http://www.pwc.com/gx/en/eu-institutions-services">
+    <foaf:name>PwC EU Services</foaf:name>
+    <foaf:homepage rdf:resource="http://www.pwc.com/gx/en/eu-institutions-services"/>
+  </org:Organization>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Catalogue">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Catalogue</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory class. A catalogue or repository that hosts the Datasets being described.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue</sh:name>
+    <rdfs:label xml:lang="en">Catalogue</rdfs:label>
+    <sh:description xml:lang="en">A curated collection of metadata about datasets</sh:description>
+    <rdfs:comment xml:lang="en">A curated collection of metadata about datasets</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-dataset"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-description"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-publisher"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-title"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-homepage"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-language"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-licence"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-releaseDate"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-themes"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-updateModificationDate"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-record"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-rights"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-spatialGeographicCoverage"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-hasPart"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogue-isPartOf"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Agent">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Agent</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory class. An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology is recommended.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_Agent"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Agent</sh:name>
+    <rdfs:label xml:lang="en">Agent</rdfs:label>
+    <sh:description xml:lang="en">An agent (eg. person, group, software or physical artifact).</sh:description>
+    <rdfs:comment xml:lang="en">An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+    <sh:targetClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#agent-name"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#agent-type"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Dataset">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Dataset</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory class. A conceptual entity that represents the information published.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset</sh:name>
+    <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    <sh:description xml:lang="en">A collection of data, published or curated by a single source, and available for access or download in one or more formats</sh:description>
+    <rdfs:comment xml:lang="en">A collection of data, published or curated by a single source, and available for access or download in one or more formats</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-description"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-title"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-contactPoint"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-datasetDistribution"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-keywordTag"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-publisher"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-themeCategory"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-conformsTo"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-frequency"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-identifier"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-landingPage"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-language"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-otherIdentifier"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-releaseDate"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-spatialGeographicalCoverage"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-temporalCoverage"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-updateModificationDate"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-provenance"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-sample"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-source"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-type"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-relatedResource"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-version"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-versionNotes"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-isVersionOf"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-hasVersion"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-documentation"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#dataset-accessRights"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Literal">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Literal</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory class. A literal value such as a string or integer; Literals may be typed, e.g. as a date according to xsd:date. Literals that contain human-readable text have an optional language tag as defined by BCP 47.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-concepts/#section-Literals"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Literal</sh:name>
+    <rdfs:label xml:lang="en">Literal</rdfs:label>
+    <sh:description xml:lang="en">The class rdfs:Literal is the class of literal values such as strings and integers. Property values such as textual strings are examples of RDF literals.</sh:description>
+    <rdfs:comment xml:lang="en">The class rdfs:Literal is the class of literal values such as strings and integers. Property values such as textual strings are examples of RDF literals.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Resource">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Resource</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory class. Anything described by RDF.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-schema/#ch_resource"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Resource</sh:name>
+    <rdfs:label xml:lang="en">Resource</rdfs:label>
+    <sh:description xml:lang="en">All things described by RDF are called resources, and are instances of the class rdfs:Resource. This is the class of everything. All other classes are subclasses of this class. rdfs:Resource is an instance of rdfs:Class.</sh:description>
+    <rdfs:comment xml:lang="en">All things described by RDF are called resources, and are instances of the class rdfs:Resource. This is the class of everything. All other classes are subclasses of this class. rdfs:Resource is an instance of rdfs:Class.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Category">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Category</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended class. Category: a subject of a Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Category</sh:name>
+    <rdfs:label xml:lang="en">Category</rdfs:label>
+    <sh:description xml:lang="en">An abstract idea or notion; a unit of thought.</sh:description>
+    <rdfs:comment xml:lang="en">An abstract idea or notion; a unit of thought.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#category-preferredLabel"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#PublisherType">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:PublisherType</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. Publisher type: A type of organisation that acts as a publisher.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Publisher Type</sh:name>
+    <rdfs:label xml:lang="en">Publisher Type</rdfs:label>
+    <sh:description xml:lang="en">An abstract idea or notion; a unit of thought.</sh:description>
+    <rdfs:comment xml:lang="en">An abstract idea or notion; a unit of thought.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Status">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Status</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. Status: an indication of the maturity of a Distribution.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Status</sh:name>
+    <rdfs:label xml:lang="en">Status</rdfs:label>
+    <sh:description xml:lang="en">An abstract idea or notion; a unit of thought.</sh:description>
+    <rdfs:comment xml:lang="en">An abstract idea or notion; a unit of thought.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Distribution">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Distribution</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended class. A physical embodiment of the Dataset in a particular format.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution</sh:name>
+    <rdfs:label xml:lang="en">Distribution</rdfs:label>
+    <sh:description xml:lang="en">Represents a specific available form of a dataset. Each dataset might be available in different forms, these forms might represent different formats of the dataset, different endpoints,... Examples of Distribution include a downloadable CSV file, an XLS file representing the dataset, an RSS feed…</sh:description>
+    <rdfs:comment xml:lang="en">Represents a specific available form of a dataset. Each dataset might be available in different forms, these forms might represent different formats of the dataset, different endpoints,... Examples of Distribution include a downloadable CSV file, an XLS file representing the dataset, an RSS feed…</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-accessURL"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-description"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-format"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-licence"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-byteSize"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-downloadURL"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-mediaType"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-releaseDate"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-rights"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-status"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-title"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-updateModificationDate"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-linkedSchemas"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-language"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#distribution-documentation"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#LicenceDocument">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:LicenceDocument</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended class. A legal document giving official permission to do something with a resource.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Licence Document</sh:name>
+    <rdfs:label xml:lang="en">Licence Document</rdfs:label>
+    <sh:description xml:lang="en">A legal document giving official permission to do something with a Resource.</sh:description>
+    <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a Resource.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#licenceDocument-licenceType"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#CategoryScheme">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:CategoryScheme</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended class. A concept collection (e.g. controlled vocabulary) in which the Category is defined.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Category scheme</sh:name>
+    <rdfs:label xml:lang="en">Category scheme</rdfs:label>
+    <sh:description xml:lang="en">An abstract idea or notion; a unit of thought.</sh:description>
+    <rdfs:comment xml:lang="en">An abstract idea or notion; a unit of thought.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#CatalogueRecord">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:CatalogueRecord</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A description of a Dataset’s entry in the Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record</rdfs:label>
+    <sh:description xml:lang="en">A record in a data catalog, describing a single dataset.</sh:description>
+    <rdfs:comment xml:lang="en">A record in a data catalog, describing a single dataset.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-primaryTopic"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-updateModificationDate"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-listingDate"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-changeType"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-conformsTo"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-description"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-title"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-language"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#catalogueRecord-sourceMetadata"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Checksum">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Checksum</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">A value that allows the contents of a file to be authenticated. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://spdx.org/rdf/terms#Checksum"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Checksum</sh:name>
+    <rdfs:label xml:lang="en">Checksum</rdfs:label>
+    <sh:description xml:lang="en">A value that allows the contents of a file to be authenticated. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented.</sh:description>
+    <rdfs:comment xml:lang="en">A value that allows the contents of a file to be authenticated. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://spdx.org/rdf/terms#Checksum"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#checksum-algorithm"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#checksum-checksumValue"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Document">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Document</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_Document"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Document</sh:name>
+    <rdfs:label xml:lang="en">Document</rdfs:label>
+    <sh:description xml:lang="en">A document.</sh:description>
+    <rdfs:comment xml:lang="en">A document.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Frequency">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Frequency</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A rate at which something recurs, e.g. the publication of a Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-Frequency"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Frequency</sh:name>
+    <rdfs:label xml:lang="en">Frequency</rdfs:label>
+    <sh:description xml:lang="en">A rate at which something recurs.</sh:description>
+    <rdfs:comment xml:lang="en">A rate at which something recurs.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/Frequency"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Identifier">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Identifier</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. An identifier in a particular context, consisting of the string that is the identifier; an optional identifier for the identifier scheme; an optional identifier for the version of the identifier scheme; an optional identifier for the agency that manages the identifier scheme</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#identifier"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Identifier</sh:name>
+    <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    <sh:description xml:lang="en">This class is based on the UN/CEFACT Identifier complex type defined in See Section 5.8 of Core Components Data Type Catalogue Version 3.1 (http://www.unece.org/fileadmin/DAM/cefact/codesfortrade/CCTS/CCTS-DTCatalogueVersion3p1.pdf). In RDF this is expressed using the following properties: - the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); - use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal. Although not part of the ADMS conceptual model, it may be useful to provide further properties to the Identifier class such as dcterms:created to provide the date on which the identifier was issued.</sh:description>
+    <rdfs:comment xml:lang="en">This class is based on the UN/CEFACT Identifier complex type defined in See Section 5.8 of Core Components Data Type Catalogue Version 3.1 (http://www.unece.org/fileadmin/DAM/cefact/codesfortrade/CCTS/CCTS-DTCatalogueVersion3p1.pdf). In RDF this is expressed using the following properties: - the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); - use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal. Although not part of the ADMS conceptual model, it may be useful to provide further properties to the Identifier class such as dcterms:created to provide the date on which the identifier was issued.</rdfs:comment>
+    <sh:targetClass rdf:resource="https://www.w3.org/ns/adms#Identifier"/>
+    <sh:property rdf:resource="http://data.europa.eu/r5r#identifier-notation"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Kind">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Kind</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group).</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/2006/vcard/ns#"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Kind</sh:name>
+    <rdfs:label xml:lang="en">Kind</rdfs:label>
+    <sh:description xml:lang="en">A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group).</sh:description>
+    <rdfs:comment xml:lang="en">A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group).</rdfs:comment>
+    <sh:targetClass rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#LinguisticSystem">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:LinguisticSystem</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LinguisticSystem"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Linguistic system</sh:name>
+    <rdfs:label xml:lang="en">Linguistic system</rdfs:label>
+    <sh:description xml:lang="en">A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language.</sh:description>
+    <rdfs:comment xml:lang="en">A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Location">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Location</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A spatial region or named place. It can be represented using a controlled vocabulary or with geographic coordinates. In the latter case, the use of the Core Location Vocabulary is recommended.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#Location"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Location</sh:name>
+    <rdfs:label xml:lang="en">Location</rdfs:label>
+    <sh:description xml:lang="en">A spatial region or named place.</sh:description>
+    <rdfs:comment xml:lang="en">A spatial region or named place.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/Location"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#MediaTypeOrExtent">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:MediaTypeOrExtent</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A media type or extent, e.g. the format of a computer file.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-MediaTypeOrExtent"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Media type or extent</sh:name>
+    <rdfs:label xml:lang="en">Media type or extent</rdfs:label>
+    <sh:description xml:lang="en">A media type or extent, e.g. the format of a computer file.</sh:description>
+    <rdfs:comment xml:lang="en">A media type or extent, e.g. the format of a computer file.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#PeriodOfTime">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:PeriodOfTime</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. An interval of time that is named or defined by its start and end dates.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-PeriodOfTime"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Period of time</sh:name>
+    <rdfs:label xml:lang="en">Period of time</rdfs:label>
+    <sh:description xml:lang="en">An interval of time that is named or defined by its start and end dates.</sh:description>
+    <rdfs:comment xml:lang="en">An interval of time that is named or defined by its start and end dates.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#RightsStatement">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:RightsStatement</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Rights statement</sh:name>
+    <rdfs:label xml:lang="en">Rights statement</rdfs:label>
+    <sh:description xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</sh:description>
+    <rdfs:comment xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#ProvenanceStatement">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:ProvenanceStatement</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Provenance Statement</sh:name>
+    <rdfs:label xml:lang="en">Provenance Statement</rdfs:label>
+    <sh:description xml:lang="en">A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</sh:description>
+    <rdfs:comment xml:lang="en">A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/ProvenanceStatement"/>
+  </sh:NodeShape>
+  <sh:NodeShape rdf:about="http://data.europa.eu/r5r#Standard">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:Standard</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional class. A standard or other specification to which a Dataset conforms.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-Standard"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Standard</sh:name>
+    <rdfs:label xml:lang="en">Standard</rdfs:label>
+    <sh:description xml:lang="en">A basis for comparison; a reference point against which other things can be evaluated.</sh:description>
+    <rdfs:comment xml:lang="en">A basis for comparison; a reference point against which other things can be evaluated.</rdfs:comment>
+    <sh:targetClass rdf:resource="http://purl.org/dc/terms/Standard"/>
+  </sh:NodeShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-dataset">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-dataset</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property links the Catalogue with a Dataset that is part of the Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - dataset</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - dataset</rdfs:label>
+    <sh:description xml:lang="en">A dataset that is part of the catalog.</sh:description>
+    <rdfs:comment xml:lang="en">A dataset that is part of the catalog.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-description">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-description</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-description"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - description</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - description</rdfs:label>
+    <sh:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</sh:description>
+    <rdfs:comment xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-publisher">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-publisher</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property refers to an entity (organisation) responsible for making the Catalogue available.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-publisher"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - publisher</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - publisher</rdfs:label>
+    <sh:description xml:lang="en">This property refers to an entity (organisation) responsible for making the Catalogue available.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to an entity (organisation) responsible for making the Catalogue available.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/publisher"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-title">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-title</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-title"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - title</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - title</rdfs:label>
+    <sh:description xml:lang="en">This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-homepage">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-homepage</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to a web page that acts as the main page for the Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_homepage"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - homepage</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - homepage</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a web page that acts as the main page for the Catalogue.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a web page that acts as the main page for the Catalogue.</rdfs:comment>
+    <sh:path rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-language">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-language</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-language"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - language</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - language</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-licence">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-licence</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to the licence under which the Catalogue can be used or reused.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-license"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - licence</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - licence</rdfs:label>
+    <sh:description xml:lang="en">This property refers to the licence under which the Catalogue can be used or reused.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to the licence under which the Catalogue can be used or reused.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/license"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-releaseDate">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-releaseDate</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property contains the date of formal issuance (e.g., publication) of the Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-issued"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - release date</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - release date</rdfs:label>
+    <sh:description xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Catalogue.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Catalogue.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-themes">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-themes</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to a knowledge organization system (KOS) used to classify the Catalogue's Datasets.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - themes</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - themes</rdfs:label>
+    <sh:description xml:lang="en">The knowledge organization system (KOS) used to classify catalog's datasets</sh:description>
+    <rdfs:comment xml:lang="en">The knowledge organization system (KOS) used to classify catalog's datasets</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#themeTaxonomy"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-updateModificationDate">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-updateModificationDate</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property contains the most recent date on which the Catalogue was changed or modified.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-modified"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - update/ modification date</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - update/ modification date</rdfs:label>
+    <sh:description xml:lang="en">This property contains the most recent date on which the Catalogue was changed or modified.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the most recent date on which the Catalogue was changed or modified.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-record">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-record</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a Catalogue Record that is part of the Catalogue</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-dcat/#Property:catalog_catalog_record"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - record</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - record</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a Catalogue Record that is part of the Catalogue</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a Catalogue Record that is part of the Catalogue</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#record"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-rights">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-rights</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a statement that specifies rights associated with the Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-rights"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - rights</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - rights</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a statement that specifies rights associated with the Catalogue.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a statement that specifies rights associated with the Catalogue.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/rights"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-spatialGeographicCoverage">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-spatialGeographicCoverage</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a geographical area covered by the Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-spatial"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - spatial / geographic coverage</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - spatial / geographic coverage</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a geographical area covered by the Catalogue.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a geographical area covered by the Catalogue.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/spatial"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-hasPart">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-hasPart</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a related Catalogue that is part of the described Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-hasPart"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - has part</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - has part</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a related Catalogue that is part of the described Catalogue</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a related Catalogue that is part of the described Catalogue</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/hasPart"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogue-isPartOf">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogue-isPartOf</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-isPartOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue - is part of</sh:name>
+    <rdfs:label xml:lang="en">Catalogue - is part of</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-primaryTopic">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-primaryTopic</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property links the Catalogue Record to the Dataset described in the record.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_primaryTopic"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - primary topic</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - primary topic</rdfs:label>
+    <sh:description xml:lang="en">This property links the Catalogue Record to the Dataset described in the record.</sh:description>
+    <rdfs:comment xml:lang="en">This property links the Catalogue Record to the Dataset described in the record.</rdfs:comment>
+    <sh:path rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-updateModificationDate">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-updateModificationDate</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains the most recent date on which the Catalogue entry was changed or modified.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-modified"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - update / modification date</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - update / modification date</rdfs:label>
+    <sh:description xml:lang="en">This property contains the most recent date on which the Catalogue entry was changed or modified.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the most recent date on which the Catalogue entry was changed or modified.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-listingDate">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-listingDate</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property contains the date on which the description of the Dataset was included in the Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-issued"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - listing date</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - listing date</rdfs:label>
+    <sh:description xml:lang="en">This property contains the date on which the description of the Dataset was included in the Catalogue.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the date on which the description of the Dataset was included in the Catalogue.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-changeType">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-changeType</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. The type of the latest revision of a Dataset's entry in the Catalogue. It MUST take one of the values :created, :updated or :deleted depending on whether this latest revision is a result of a creation, update or deletion.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#adms-status"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - change type</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - change type</rdfs:label>
+    <sh:description xml:lang="en">The type of the latest revision of a Dataset's entry in the Catalogue. It MUST take one of the values :created, :updated or :deleted depending on whether this latest revision is a result of a creation, update or deletion.</sh:description>
+    <rdfs:comment xml:lang="en">The type of the latest revision of a Dataset's entry in the Catalogue. It MUST take one of the values :created, :updated or :deleted depending on whether this latest revision is a result of a creation, update or deletion.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/adms#status"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-conformsTo">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-conformsTo</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to an Application Profile that the Dataset’s metadata conforms to.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-conformsTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - conforms to</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - conforms to</rdfs:label>
+    <sh:description xml:lang="en">This property refers to an Application Profile that the Dataset’s metadata conforms to.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to an Application Profile that the Dataset’s metadata conforms to.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-description">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-description</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-description"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - description</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - description</rdfs:label>
+    <sh:description xml:lang="en">This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-title">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-title</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-title"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - title</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - title</rdfs:label>
+    <sh:description xml:lang="en">This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-language">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-language</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-language"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - language</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - language</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#catalogueRecord-sourceMetadata">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:catalogueRecord-sourceMetadata</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to the original metadata that was used in creating metadata for the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-source"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Catalogue Record - source metadata</sh:name>
+    <rdfs:label xml:lang="en">Catalogue Record - source metadata</rdfs:label>
+    <sh:description xml:lang="en">This property refers to the original metadata that was used in creating metadata for the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to the original metadata that was used in creating metadata for the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/source"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-description">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-description</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-description"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - description</sh:name>
+    <rdfs:label xml:lang="en">Dataset - description</rdfs:label>
+    <sh:description xml:lang="en">This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-title">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-title</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-title"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - title</sh:name>
+    <rdfs:label xml:lang="en">Dataset - title</rdfs:label>
+    <sh:description xml:lang="en">This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-contactPoint">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-contactPoint</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property.This property contains contact information that can be used for sending comments about the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#dcat-contactpoint"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - contact point</sh:name>
+    <rdfs:label xml:lang="en">Dataset - contact point</rdfs:label>
+    <sh:description xml:lang="en">This property contains contact information that can be used for sending comments about the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains contact information that can be used for sending comments about the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="https://www.w3.org/ns/dcat#contactPoint"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-datasetDistribution">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-datasetDistribution</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property links the Dataset to an available Distribution.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - dataset distribution</sh:name>
+    <rdfs:label xml:lang="en">Dataset - dataset distribution</rdfs:label>
+    <sh:description xml:lang="en">This property links the Dataset to an available Distribution.</sh:description>
+    <rdfs:comment xml:lang="en">This property links the Dataset to an available Distribution.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#distribution"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-keywordTag">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-keywordTag</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property contains a keyword or tag describing the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-dcat/#Property:dataset_keyword"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - keyword/ tag</sh:name>
+    <rdfs:label xml:lang="en">Dataset - keyword/ tag</rdfs:label>
+    <sh:description xml:lang="en">This property contains a keyword or tag describing the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a keyword or tag describing the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#keyword"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-publisher">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-publisher</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to an entity (organisation) responsible for making the Dataset available.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-publisher"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - publisher</sh:name>
+    <rdfs:label xml:lang="en">Dataset - publisher</rdfs:label>
+    <sh:description xml:lang="en">This property refers to an entity (organisation) responsible for making the Dataset available.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to an entity (organisation) responsible for making the Dataset available.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/publisher"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-themeCategory">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-themeCategory</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes. Subproperty of dct:subject.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-dcat/#Property:dataset_theme"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - theme/category</sh:name>
+    <rdfs:label xml:lang="en">Dataset - theme/category</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a category of the Dataset. A Dataset may be associated with multiple themes. Subproperty of dct:subject</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a category of the Dataset. A Dataset may be associated with multiple themes. Subproperty of dct:subject</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#theme"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-conformsTo">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-conformsTo</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to an implementing rule or other specification.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-conformsTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - conforms to</sh:name>
+    <rdfs:label xml:lang="en">Dataset - conforms to</rdfs:label>
+    <sh:description xml:lang="en">This property refers to an implementing rule or other specification.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to an implementing rule or other specification.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-frequency">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-frequency</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to the frequency at which Dataset is updated.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-acrualPeriodicity"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - frequency</sh:name>
+    <rdfs:label xml:lang="en">Dataset - frequency</rdfs:label>
+    <sh:description xml:lang="en">This property refers to the frequency at which Dataset is updated.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to the frequency at which Dataset is updated.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/acrualPeriodicity"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-identifier">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-identifier</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-identifier"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - identifier</sh:name>
+    <rdfs:label xml:lang="en">Dataset - identifier</rdfs:label>
+    <sh:description xml:lang="en">This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-landingPage">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-landingPage</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-dcat/#Property:dataset_landingpage"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - landing page</sh:name>
+    <rdfs:label xml:lang="en">Dataset - landing page</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#landingPage"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-language">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-language</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-language"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - language</sh:name>
+    <rdfs:label xml:lang="en">Dataset - language</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-otherIdentifier">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-otherIdentifier</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#adms-identifier"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - other identifier</sh:name>
+    <rdfs:label xml:lang="en">Dataset - other identifier</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/adms#identifier"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-releaseDate">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-releaseDate</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains the date of formal issuance (e.g., publication) of the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-issued"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - release date</sh:name>
+    <rdfs:label xml:lang="en">Dataset - release date</rdfs:label>
+    <sh:description xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-spatialGeographicalCoverage">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-spatialGeographicalCoverage</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a geographic region that is covered by the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-spatial"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - spatial/ geographical coverage</sh:name>
+    <rdfs:label xml:lang="en">Dataset - spatial/ geographical coverage</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a geographic region that is covered by the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a geographic region that is covered by the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/spatial"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-temporalCoverage">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-temporalCoverage</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a temporal period that the Dataset covers.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-temporal"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - temporal coverage</sh:name>
+    <rdfs:label xml:lang="en">Dataset - temporal coverage</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a temporal period that the Dataset covers.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a temporal period that the Dataset covers.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/temporal"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-updateModificationDate">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-updateModificationDate</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains the most recent date on which the Dataset was changed or modified.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-modified"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - update/ modification date</sh:name>
+    <rdfs:label xml:lang="en">Dataset - update/ modification date</rdfs:label>
+    <sh:description xml:lang="en">This property contains the most recent date on which the Dataset was changed or modified.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the most recent date on which the Dataset was changed or modified.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-provenance">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-provenance</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains a statement about the lineage of a Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-provenance"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - provenance</sh:name>
+    <rdfs:label xml:lang="en">Dataset - provenance</rdfs:label>
+    <sh:description xml:lang="en">This property contains a statement about the lineage of a Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a statement about the lineage of a Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/provenance"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-sample">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-sample</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a sample distribution of the dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#adms-sample"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - sample</sh:name>
+    <rdfs:label xml:lang="en">Dataset - sample</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a sample distribution of the dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a sample distribution of the dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/adms#sample"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-source">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-source</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a related Dataset from which the described Dataset is derived.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-source"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - source </sh:name>
+    <rdfs:label xml:lang="en">Dataset - source </rdfs:label>
+    <sh:description xml:lang="en">This property refers to a related Dataset from which the described Dataset is derived.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a related Dataset from which the described Dataset is derived.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/source"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-type">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-type</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-type"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - type </sh:name>
+    <rdfs:label xml:lang="en">Dataset - type </rdfs:label>
+    <sh:description xml:lang="en">This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/type"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-relatedResource">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-relatedResource</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a related resource.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-relation"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - related resource</sh:name>
+    <rdfs:label xml:lang="en">Dataset - related resource</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a related resource.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a related resource.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/relation"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-version">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-version</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains a version number or other version designation of the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/2002/07/owl#"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - version</sh:name>
+    <rdfs:label xml:lang="en">Dataset - version</rdfs:label>
+    <sh:description xml:lang="en">This property contains a version number or other version designation of the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a version number or other version designation of the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-versionNotes">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-versionNotes</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains a description of the differences between this version and a previous version of the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-adms/#adms-versionnotes"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - version notes</sh:name>
+    <rdfs:label xml:lang="en">Dataset - version notes</rdfs:label>
+    <sh:description xml:lang="en">This property contains a description of the differences between this version and a previous version of the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a description of the differences between this version and a previous version of the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/adms#versionNotes"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-isVersionOf">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-isVersionOf</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-isVersionOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - is Version Of</sh:name>
+    <rdfs:label xml:lang="en">Dataset - is Version Of</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/isVersionOf"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-hasVersion">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-hasVersion</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property.This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-hasVersion"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - has Version</sh:name>
+    <rdfs:label xml:lang="en">Dataset - has Version</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/hasVersion"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-documentation">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-documentation</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a page or document about this Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_page"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - documentation</sh:name>
+    <rdfs:label xml:lang="en">Dataset - documentation</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a page or document about this Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a page or document about this Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#dataset-accessRights">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:dataset-accessRights</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-accessRights"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Dataset - access Rights</sh:name>
+    <rdfs:label xml:lang="en">Dataset - access Rights</rdfs:label>
+    <sh:description xml:lang="en">This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/accessRights"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-accessURL">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-accessURL</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-dcat/#Property:distribution_accessurl"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - access URL</sh:name>
+    <rdfs:label xml:lang="en">Distribution - access URL</rdfs:label>
+    <sh:description xml:lang="en">This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#accessURL"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-description">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-description</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-description"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - description</sh:name>
+    <rdfs:label xml:lang="en">Distribution - description</rdfs:label>
+    <sh:description xml:lang="en">This property can be repeated for parallel language versions of the description.</sh:description>
+    <rdfs:comment xml:lang="en">This property can be repeated for parallel language versions of the description.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-format">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-format</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to the file format of the Distribution.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-format"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - format</sh:name>
+    <rdfs:label xml:lang="en">Distribution - format</rdfs:label>
+    <sh:description xml:lang="en">This property refers to the file format of the Distribution.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to the file format of the Distribution.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/format"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-licence">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-licence</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to the licence under which the Distribution is made available.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-license"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - licence</sh:name>
+    <rdfs:label xml:lang="en">Distribution - licence</rdfs:label>
+    <sh:description xml:lang="en">This property refers to the licence under which the Distribution is made available.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to the licence under which the Distribution is made available.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/license"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-byteSize">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-byteSize</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains the size of a Distribution in bytes.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/vocab-dcat/#Property:distribution_size"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - byte size</sh:name>
+    <rdfs:label xml:lang="en">Distribution - byte size</rdfs:label>
+    <sh:description xml:lang="en">This property contains the size of a Distribution in bytes.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the size of a Distribution in bytes.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#byteSize"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-downloadURL">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-downloadURL</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains a URL that is direct link to a downloadable file in a given format.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/vocab-dcat/#Property:distribution_downloadurl"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - download URL</sh:name>
+    <rdfs:label xml:lang="en">Distribution - download URL</rdfs:label>
+    <sh:description xml:lang="en">This property contains a URL that is direct link to a downloadable file in a given format.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a URL that is direct link to a downloadable file in a given format.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/dcat#downloadURL"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-mediaType">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-mediaType</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. subproperty of dct:format. This property refers to the media type of the Distribution if this is defined in IANA.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-mediaType"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - media type</sh:name>
+    <rdfs:label xml:lang="en">Distribution - media type</rdfs:label>
+    <sh:description xml:lang="en">This property refers to the media type of the Distribution if this is defined in IANA.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to the media type of the Distribution if this is defined in IANA.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/mediaType"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-releaseDate">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-releaseDate</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains the date of formal issuance (e.g., publication) of the Distribution.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-issued"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - release date</sh:name>
+    <rdfs:label xml:lang="en">Distribution - release date</rdfs:label>
+    <sh:description xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Distribution.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Distribution.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-rights">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-rights</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a statement that specifies rights associated with the Distribution.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-rights"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - rights</sh:name>
+    <rdfs:label xml:lang="en">Distribution - rights</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a statement that specifies rights associated with the Distribution.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a statement that specifies rights associated with the Distribution.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/rights"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-status">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-status</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to the maturity of the Distribution.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/vocab-adms/#status"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - status</sh:name>
+    <rdfs:label xml:lang="en">Distribution - status</rdfs:label>
+    <sh:description xml:lang="en">This property refers to the maturity of the Distribution</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to the maturity of the Distribution</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/ns/adms#status"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-title">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-title</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-title"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - title</sh:name>
+    <rdfs:label xml:lang="en">Distribution - title</rdfs:label>
+    <sh:description xml:lang="en">This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-updateModificationDate">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-updateModificationDate</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains the most recent date on which the Distribution was changed or modified.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-modified"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - update/modification date</sh:name>
+    <rdfs:label xml:lang="en">Distribution - update/modification date</rdfs:label>
+    <sh:description xml:lang="en">This property contains the most recent date on which the Distribution was changed or modified.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the most recent date on which the Distribution was changed or modified.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-linkedSchemas">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-linkedSchemas</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to an established schema to which the described Distribution conforms.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-conformsTo"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - linked schemas</sh:name>
+    <rdfs:label xml:lang="en">Distribution - linked schemas</rdfs:label>
+    <sh:description xml:lang="en">This property refers to an established schema to which the described Distribution conforms.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to an established schema to which the described Distribution conforms.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-language">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-language</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-language"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - language</sh:name>
+    <rdfs:label xml:lang="en">Distribution - language</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a language used in the Distribution.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a language used in the Distribution.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-checksum">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-checksum</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property.This property provides a mechanism that can be used to verify that the contents of a distribution have not changed.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://spdx.org/rdf/terms/#checksum"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">distribution - checksum</sh:name>
+    <rdfs:label xml:lang="en">distribution - checksum</rdfs:label>
+    <sh:description xml:lang="en">This property provides a mechanism that can be used to verify that the contents of a distribution have not changed.</sh:description>
+    <rdfs:comment xml:lang="en">This property provides a mechanism that can be used to verify that the contents of a distribution have not changed.</rdfs:comment>
+    <sh:path rdf:resource="http://spdx.org/rdf/terms#checksum"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#distribution-documentation">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:distribution-documentation</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property.This property refers to a page or document about this Distribution.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_page"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Distribution - documentation</sh:name>
+    <rdfs:label xml:lang="en">Distribution - documentation</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a page or document about this Distribution.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a page or document about this Distribution.</rdfs:comment>
+    <sh:path rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#agent-name">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:agent-name</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/spec/#term_name"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Agent - name</sh:name>
+    <rdfs:label xml:lang="en">Agent - name</rdfs:label>
+    <sh:description xml:lang="en">This property can be repeated for different versions of the name (e.g. the name in different languages)</sh:description>
+    <rdfs:comment xml:lang="en">This property can be repeated for different versions of the name (e.g. the name in different languages)</rdfs:comment>
+    <sh:path rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#agent-type">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:agent-type</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to a type of the agent that makes the Catalogue or Dataset available</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-type"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Agent - type</sh:name>
+    <rdfs:label xml:lang="en">Agent - type</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a type of the agent that makes the Catalogue or Dataset available</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a type of the agent that makes the Catalogue or Dataset available</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/type"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#categoryScheme-title">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:categoryScheme-title</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a name of the category scheme. May be repeated for different versions of the name</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-title"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Category Scheme - title</sh:name>
+    <rdfs:label xml:lang="en">Category Scheme - title</rdfs:label>
+    <sh:description xml:lang="en">This property contains a name of the category scheme. May be repeated for different versions of the name</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a name of the category scheme. May be repeated for different versions of the name</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#checksum-algorithm">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:checksum-algorithm</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://spdx.org/rdf/terms/#algorithm"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Checksum - algorithm</sh:name>
+    <rdfs:label xml:lang="en">Checksum - algorithm</rdfs:label>
+    <sh:description xml:lang="en">Identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.</sh:description>
+    <rdfs:comment xml:lang="en">Identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.</rdfs:comment>
+    <sh:path rdf:resource="http://spdx.org/rdf/terms#algorithm"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#checksum-checksumValue">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:checksum-checksumValue</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://spdx.org/rdf/terms/#checksumValue"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Checksum - checksum value</sh:name>
+    <rdfs:label xml:lang="en">Checksum - checksum value</rdfs:label>
+    <sh:description xml:lang="en">This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm.</sh:description>
+    <rdfs:comment xml:lang="en">This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm.</rdfs:comment>
+    <sh:path rdf:resource="http://spdx.org/rdf/terms#checksumValue"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#category-preferredLabel">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:category-preferredLabel</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/2009/08/skos-reference/skos.html#prefLabel"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Category - preferred label</sh:name>
+    <rdfs:label xml:lang="en">Category - preferred label</rdfs:label>
+    <sh:description xml:lang="en">This property can be repeated for parallel language versions of the label.</sh:description>
+    <rdfs:comment xml:lang="en">This property can be repeated for parallel language versions of the label.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#licenceDocument-licenceType">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:licenceDocument-licenceType</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Recommended property. This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-terms/#terms-type"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Licence Document - licence type</sh:name>
+    <rdfs:label xml:lang="en">Licence Document - licence type</rdfs:label>
+    <sh:description xml:lang="en">This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’.</sh:description>
+    <rdfs:comment xml:lang="en">This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’.</rdfs:comment>
+    <sh:path rdf:resource="http://purl.org/dc/terms/type"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#identifier-notation">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:identifier-notation</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Mandatory property. This property contains a string that is an identifier in the context of the identifier scheme referenced by its datatype.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/2009/08/skos-reference/skos.html#notation"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Identifier - notation</sh:name>
+    <rdfs:label xml:lang="en">Identifier - notation</rdfs:label>
+    <sh:description xml:lang="en">This property contains a string that is an identifier in the context of the identifier scheme referenced by its datatype.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains a string that is an identifier in the context of the identifier scheme referenced by its datatype.</rdfs:comment>
+    <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#periodOfTime-startDateTime">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:periodOfTime-startDateTime</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains the start of the period.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://schema.org/startDate"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Period Of Time - start date/time</sh:name>
+    <rdfs:label xml:lang="en">Period Of Time - start date/time</rdfs:label>
+    <sh:description xml:lang="en">This property contains the start of the period.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the start of the period.</rdfs:comment>
+    <sh:path rdf:resource="http://schema.org/startDate"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="http://data.europa.eu/r5r#periodOfTime-endDateTime">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcat-ap:periodOfTime-endDateTime</dct:identifier>
+    <vs:term_status>stable</vs:term_status>
+    <vann:usageNote xml:lang="en">Optional property. This property contains the end of the period.</vann:usageNote>
+    <rdfs:seeAlso rdf:resource="http://schema.org/endDate"/>
+    <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/r5r#"/>
+    <sh:name xml:lang="en">Period Of Time - end date/time</sh:name>
+    <rdfs:label xml:lang="en">Period Of Time - end date/time</rdfs:label>
+    <sh:description xml:lang="en">This property contains the end of the period.</sh:description>
+    <rdfs:comment xml:lang="en">This property contains the end of the period.</rdfs:comment>
+    <sh:path rdf:resource="http://schema.org/endDate"/>
+    <sh:minCount>1</sh:minCount>
+    <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
+  </sh:PropertyShape>
+</rdf:RDF>

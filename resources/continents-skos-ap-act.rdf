@@ -1,0 +1,2199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://publications.europa.eu/resource/authority/continent#"
+         xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:core="http://www.w3.org/2004/02/skos/core#"
+         xmlns:cdm="http://publications.europa.eu/ontology/cdm#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:euvoc="http://publications.europa.eu/ontology/euvoc#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:geowgs84="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:isothes="http://purl.org/iso25964/skos-thes#"
+         xmlns:lemon="http://lemon-model.net/lemon#"
+         xmlns:lexinfo="http://www.lexinfo.net/ontology/2.0/lexinfo#"
+         xmlns:lexvo="http://lexvo.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:prov="http://www.w3.org/ns/prov#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:skos-xl="http://www.w3.org/2008/05/skos-xl#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:void="http://rdfs.org/ns/void#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:time="http://www.w3.org/2006/time#"
+         xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+         xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+         xmlns:eli-o="http://data.europa.eu/eli/ontology#"
+         xmlns:at="http://publications.europa.eu/ontology/authority/"
+         xmlns:atold="http://publications.europa.eu/resource/authority/"
+         xml:base="http://publications.europa.eu/resource/authority/continent">
+   <owl:Ontology rdf:about="http://publications.europa.eu/resource/authority/continent">
+      <owl:imports rdf:resource="http://publications.europa.eu/ontology/euvoc"/>
+      <owl:versionInfo>20161225-1</owl:versionInfo>
+      <owl:versionIRI rdf:resource="http://publications.europa.eu/resource/authority/continent/20161225-1"/>
+      <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Continent Named Authority List</rdfs:comment>
+   </owl:Ontology>
+   <skos:ConceptScheme rdf:about="http://publications.europa.eu/resource/authority/continent"
+                       at:table.id="continent"
+                       at:table.version.number="20161225-1">
+      <rdfs:label xml:lang="en">Continent Named Authority List</rdfs:label>
+      <skos:prefLabel xml:lang="en">Continent Named Authority List</skos:prefLabel>
+      <at:prefLabel xml:lang="en">Continent Named Authority List</at:prefLabel>
+      <dct:identifier>http://publications.europa.eu/resource/authority/continent</dct:identifier>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/LONGLABEL"/>
+            <skos-xl:literalForm xml:lang="en">Continent Named Authority List</skos-xl:literalForm>
+            <rdfs:label xml:lang="en">Continent Named Authority List</rdfs:label>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/continent/AFRICA"
+                 at:deprecated="false">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#Continent"/>
+      <dc:identifier>AFRICA</dc:identifier>
+      <at:authority-code>AFRICA</at:authority-code>
+      <at:op-code>AFRICA</at:op-code>
+      <atold:op-code>AFRICA</atold:op-code>
+      <at:start.use>1952-07-24</at:start.use>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+      <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+      <owl:versionInfo>20161225-1</owl:versionInfo>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+      <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+      <!--in template name="specific-part-temporary"-->
+      <skos:prefLabel xml:lang="bg">Африка</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="bg">Африка</skos-xl:literalForm>
+            <rdfs:label xml:lang="bg">Африка</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="cs">Africa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="cs">Africa</skos-xl:literalForm>
+            <rdfs:label xml:lang="cs">Africa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="da">Africa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="da">Africa</skos-xl:literalForm>
+            <rdfs:label xml:lang="da">Africa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="de">Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="de">Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="de">Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="el">Αφρική</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="el">Αφρική</skos-xl:literalForm>
+            <rdfs:label xml:lang="el">Αφρική</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="en">Africa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="en">Africa</skos-xl:literalForm>
+            <rdfs:label xml:lang="en">Africa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="et">Aafrica</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="et">Aafrica</skos-xl:literalForm>
+            <rdfs:label xml:lang="et">Aafrica</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fi">Afrikka</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fi">Afrikka</skos-xl:literalForm>
+            <rdfs:label xml:lang="fi">Afrikka</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fr">Afrique</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fr">Afrique</skos-xl:literalForm>
+            <rdfs:label xml:lang="fr">Afrique</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ga">An Afraic</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ga">An Afraic</skos-xl:literalForm>
+            <rdfs:label xml:lang="ga">An Afraic</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hr">Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hr">Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="hr">Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hu">Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hu">Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="hu">Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="it">Africa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="it">Africa</skos-xl:literalForm>
+            <rdfs:label xml:lang="it">Africa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lv">Āfrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lv">Āfrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="lv">Āfrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lt">Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lt">Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="lt">Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="mt">L-Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="mt">L-Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="mt">L-Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="nl">Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="nl">Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="nl">Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pl">Afryka</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pl">Afryka</skos-xl:literalForm>
+            <rdfs:label xml:lang="pl">Afryka</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pt">África</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pt">África</skos-xl:literalForm>
+            <rdfs:label xml:lang="pt">África</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ro">Africa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ro">Africa</skos-xl:literalForm>
+            <rdfs:label xml:lang="ro">Africa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sk">Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sk">Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="sk">Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sl">Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sl">Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="sl">Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="es">África</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="es">África</skos-xl:literalForm>
+            <rdfs:label xml:lang="es">África</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sv">Afrika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sv">Afrika</skos-xl:literalForm>
+            <rdfs:label xml:lang="sv">Afrika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <!--in template name="specific-part-invariant"-->
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/continent/AMERICA"
+                 at:deprecated="false">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#Continent"/>
+      <dc:identifier>AMERICA</dc:identifier>
+      <at:authority-code>AMERICA</at:authority-code>
+      <at:op-code>AMERICA</at:op-code>
+      <atold:op-code>AMERICA</atold:op-code>
+      <at:start.use>1952-07-24</at:start.use>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+      <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+      <owl:versionInfo>20161225-1</owl:versionInfo>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+      <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+      <!--in template name="specific-part-temporary"-->
+      <skos:prefLabel xml:lang="bg">Америка</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="bg">Америка</skos-xl:literalForm>
+            <rdfs:label xml:lang="bg">Америка</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="cs">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="cs">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="cs">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="da">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="da">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="da">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="de">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="de">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="de">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="el">Αμερική</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="el">Αμερική</skos-xl:literalForm>
+            <rdfs:label xml:lang="el">Αμερική</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="en">America</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="en">America</skos-xl:literalForm>
+            <rdfs:label xml:lang="en">America</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="et">Ameerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="et">Ameerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="et">Ameerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fi">Amerikka</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fi">Amerikka</skos-xl:literalForm>
+            <rdfs:label xml:lang="fi">Amerikka</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fr">Amérique</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fr">Amérique</skos-xl:literalForm>
+            <rdfs:label xml:lang="fr">Amérique</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ga">Meiriceá</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ga">Meiriceá</skos-xl:literalForm>
+            <rdfs:label xml:lang="ga">Meiriceá</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hr">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hr">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="hr">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hu">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hu">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="hu">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="it">America</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="it">America</skos-xl:literalForm>
+            <rdfs:label xml:lang="it">America</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lv">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lv">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="lv">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lt">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lt">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="lt">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="mt">L-Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="mt">L-Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="mt">L-Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="nl">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="nl">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="nl">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pl">Ameryka</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pl">Ameryka</skos-xl:literalForm>
+            <rdfs:label xml:lang="pl">Ameryka</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pt">América</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pt">América</skos-xl:literalForm>
+            <rdfs:label xml:lang="pt">América</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ro">America</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ro">America</skos-xl:literalForm>
+            <rdfs:label xml:lang="ro">America</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sk">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sk">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="sk">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sl">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sl">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="sl">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="es">América</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="es">América</skos-xl:literalForm>
+            <rdfs:label xml:lang="es">América</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sv">Amerika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sv">Amerika</skos-xl:literalForm>
+            <rdfs:label xml:lang="sv">Amerika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <!--in template name="specific-part-invariant"-->
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/continent/ANTARCTICA"
+                 at:deprecated="false">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#Continent"/>
+      <dc:identifier>ANTARCTICA</dc:identifier>
+      <at:authority-code>ANTARCTICA</at:authority-code>
+      <at:op-code>ANTARCTICA</at:op-code>
+      <atold:op-code>ANTARCTICA</atold:op-code>
+      <at:start.use>1952-07-24</at:start.use>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+      <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+      <owl:versionInfo>20161225-1</owl:versionInfo>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+      <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+      <!--in template name="specific-part-temporary"-->
+      <skos:prefLabel xml:lang="bg">Антарктида</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="bg">Антарктида</skos-xl:literalForm>
+            <rdfs:label xml:lang="bg">Антарктида</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="cs">Antarktida</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="cs">Antarktida</skos-xl:literalForm>
+            <rdfs:label xml:lang="cs">Antarktida</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="da">Antarktis</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="da">Antarktis</skos-xl:literalForm>
+            <rdfs:label xml:lang="da">Antarktis</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="de">Antarktis</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="de">Antarktis</skos-xl:literalForm>
+            <rdfs:label xml:lang="de">Antarktis</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="el">Ανταρκτική</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="el">Ανταρκτική</skos-xl:literalForm>
+            <rdfs:label xml:lang="el">Ανταρκτική</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="en">Antarctica</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="en">Antarctica</skos-xl:literalForm>
+            <rdfs:label xml:lang="en">Antarctica</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="et">Antarktis</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="et">Antarktis</skos-xl:literalForm>
+            <rdfs:label xml:lang="et">Antarktis</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fi">Etelämanner</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fi">Etelämanner</skos-xl:literalForm>
+            <rdfs:label xml:lang="fi">Etelämanner</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fr">Antarctique</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fr">Antarctique</skos-xl:literalForm>
+            <rdfs:label xml:lang="fr">Antarctique</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ga">Antartaice</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ga">Antartaice</skos-xl:literalForm>
+            <rdfs:label xml:lang="ga">Antartaice</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hr">Antarktika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hr">Antarktika</skos-xl:literalForm>
+            <rdfs:label xml:lang="hr">Antarktika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hu">Antarktisz</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hu">Antarktisz</skos-xl:literalForm>
+            <rdfs:label xml:lang="hu">Antarktisz</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="it">Antartide</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="it">Antartide</skos-xl:literalForm>
+            <rdfs:label xml:lang="it">Antartide</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lv">Antarktīda</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lv">Antarktīda</skos-xl:literalForm>
+            <rdfs:label xml:lang="lv">Antarktīda</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lt">Antarktida</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lt">Antarktida</skos-xl:literalForm>
+            <rdfs:label xml:lang="lt">Antarktida</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="mt">L-Antartika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="mt">L-Antartika</skos-xl:literalForm>
+            <rdfs:label xml:lang="mt">L-Antartika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="nl">Antarctica</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="nl">Antarctica</skos-xl:literalForm>
+            <rdfs:label xml:lang="nl">Antarctica</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pl">Antarktyda</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pl">Antarktyda</skos-xl:literalForm>
+            <rdfs:label xml:lang="pl">Antarktyda</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pt">Antártica</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pt">Antártica</skos-xl:literalForm>
+            <rdfs:label xml:lang="pt">Antártica</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ro">Antarctica</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ro">Antarctica</skos-xl:literalForm>
+            <rdfs:label xml:lang="ro">Antarctica</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sk">Antarktída</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sk">Antarktída</skos-xl:literalForm>
+            <rdfs:label xml:lang="sk">Antarktída</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sl">Antarktika</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sl">Antarktika</skos-xl:literalForm>
+            <rdfs:label xml:lang="sl">Antarktika</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="es">Antártida</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="es">Antártida</skos-xl:literalForm>
+            <rdfs:label xml:lang="es">Antártida</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sv">Antarktis</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sv">Antarktis</skos-xl:literalForm>
+            <rdfs:label xml:lang="sv">Antarktis</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <!--in template name="specific-part-invariant"-->
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/continent/ASIA"
+                 at:deprecated="false">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#Continent"/>
+      <dc:identifier>ASIA</dc:identifier>
+      <at:authority-code>ASIA</at:authority-code>
+      <at:op-code>ASIA</at:op-code>
+      <atold:op-code>ASIA</atold:op-code>
+      <at:start.use>1952-07-24</at:start.use>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+      <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+      <owl:versionInfo>20161225-1</owl:versionInfo>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+      <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+      <!--in template name="specific-part-temporary"-->
+      <skos:prefLabel xml:lang="bg">Азия</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="bg">Азия</skos-xl:literalForm>
+            <rdfs:label xml:lang="bg">Азия</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="cs">Asie</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="cs">Asie</skos-xl:literalForm>
+            <rdfs:label xml:lang="cs">Asie</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="da">Asien</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="da">Asien</skos-xl:literalForm>
+            <rdfs:label xml:lang="da">Asien</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="de">Asien</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="de">Asien</skos-xl:literalForm>
+            <rdfs:label xml:lang="de">Asien</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="el">Ασία</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="el">Ασία</skos-xl:literalForm>
+            <rdfs:label xml:lang="el">Ασία</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="en">Asia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="en">Asia</skos-xl:literalForm>
+            <rdfs:label xml:lang="en">Asia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="et">Aasia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="et">Aasia</skos-xl:literalForm>
+            <rdfs:label xml:lang="et">Aasia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fi">Aasia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fi">Aasia</skos-xl:literalForm>
+            <rdfs:label xml:lang="fi">Aasia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fr">Asie</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fr">Asie</skos-xl:literalForm>
+            <rdfs:label xml:lang="fr">Asie</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ga">An Áise</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ga">An Áise</skos-xl:literalForm>
+            <rdfs:label xml:lang="ga">An Áise</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hr">Azija</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hr">Azija</skos-xl:literalForm>
+            <rdfs:label xml:lang="hr">Azija</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hu">Ázsia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hu">Ázsia</skos-xl:literalForm>
+            <rdfs:label xml:lang="hu">Ázsia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="it">Asia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="it">Asia</skos-xl:literalForm>
+            <rdfs:label xml:lang="it">Asia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lv">Āzija</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lv">Āzija</skos-xl:literalForm>
+            <rdfs:label xml:lang="lv">Āzija</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lt">Azija</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lt">Azija</skos-xl:literalForm>
+            <rdfs:label xml:lang="lt">Azija</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="mt">L-Asia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="mt">L-Asia</skos-xl:literalForm>
+            <rdfs:label xml:lang="mt">L-Asia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="nl">Azië</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="nl">Azië</skos-xl:literalForm>
+            <rdfs:label xml:lang="nl">Azië</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pl">Azja</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pl">Azja</skos-xl:literalForm>
+            <rdfs:label xml:lang="pl">Azja</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pt">Ásia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pt">Ásia</skos-xl:literalForm>
+            <rdfs:label xml:lang="pt">Ásia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ro">Asia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ro">Asia</skos-xl:literalForm>
+            <rdfs:label xml:lang="ro">Asia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sk">Ázia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sk">Ázia</skos-xl:literalForm>
+            <rdfs:label xml:lang="sk">Ázia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sl">Azija</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sl">Azija</skos-xl:literalForm>
+            <rdfs:label xml:lang="sl">Azija</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="es">Asia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="es">Asia</skos-xl:literalForm>
+            <rdfs:label xml:lang="es">Asia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sv">Asien</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sv">Asien</skos-xl:literalForm>
+            <rdfs:label xml:lang="sv">Asien</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <!--in template name="specific-part-invariant"-->
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/continent/EUROPE"
+                 at:deprecated="false">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#Continent"/>
+      <dc:identifier>EUROPE</dc:identifier>
+      <at:authority-code>EUROPE</at:authority-code>
+      <at:op-code>EUROPE</at:op-code>
+      <atold:op-code>EUROPE</atold:op-code>
+      <at:start.use>1952-07-24</at:start.use>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+      <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+      <owl:versionInfo>20161225-1</owl:versionInfo>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+      <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+      <!--in template name="specific-part-temporary"-->
+      <skos:prefLabel xml:lang="bg">Европа</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="bg">Европа</skos-xl:literalForm>
+            <rdfs:label xml:lang="bg">Европа</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="cs">Evropa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="cs">Evropa</skos-xl:literalForm>
+            <rdfs:label xml:lang="cs">Evropa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="da">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="da">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="da">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="de">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="de">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="de">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="el">Ευρώπη</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="el">Ευρώπη</skos-xl:literalForm>
+            <rdfs:label xml:lang="el">Ευρώπη</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="en">Europe</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="en">Europe</skos-xl:literalForm>
+            <rdfs:label xml:lang="en">Europe</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="et">Euroopa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="et">Euroopa</skos-xl:literalForm>
+            <rdfs:label xml:lang="et">Euroopa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fi">Eurooppa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fi">Eurooppa</skos-xl:literalForm>
+            <rdfs:label xml:lang="fi">Eurooppa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fr">Europe</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fr">Europe</skos-xl:literalForm>
+            <rdfs:label xml:lang="fr">Europe</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ga">An Eoraip</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ga">An Eoraip</skos-xl:literalForm>
+            <rdfs:label xml:lang="ga">An Eoraip</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hr">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hr">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="hr">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hu">Európa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hu">Európa</skos-xl:literalForm>
+            <rdfs:label xml:lang="hu">Európa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="it">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="it">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="it">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lv">Eiropa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lv">Eiropa</skos-xl:literalForm>
+            <rdfs:label xml:lang="lv">Eiropa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lt">Europe</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lt">Europe</skos-xl:literalForm>
+            <rdfs:label xml:lang="lt">Europe</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="mt">L-Ewropa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="mt">L-Ewropa</skos-xl:literalForm>
+            <rdfs:label xml:lang="mt">L-Ewropa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="nl">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="nl">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="nl">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pl">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pl">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="pl">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pt">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pt">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="pt">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ro">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ro">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="ro">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sk">Európa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sk">Európa</skos-xl:literalForm>
+            <rdfs:label xml:lang="sk">Európa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sl">Evropa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sl">Evropa</skos-xl:literalForm>
+            <rdfs:label xml:lang="sl">Evropa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="es">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="es">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="es">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sv">Europa</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sv">Europa</skos-xl:literalForm>
+            <rdfs:label xml:lang="sv">Europa</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <!--in template name="specific-part-invariant"-->
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/continent/OCEANIA"
+                 at:deprecated="false">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#Continent"/>
+      <dc:identifier>OCEANIA</dc:identifier>
+      <at:authority-code>OCEANIA</at:authority-code>
+      <at:op-code>OCEANIA</at:op-code>
+      <atold:op-code>OCEANIA</atold:op-code>
+      <at:start.use>1952-07-24</at:start.use>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+      <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+      <owl:versionInfo>20161225-1</owl:versionInfo>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+      <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+      <!--in template name="specific-part-temporary"-->
+      <skos:prefLabel xml:lang="bg">Океания</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="bg">Океания</skos-xl:literalForm>
+            <rdfs:label xml:lang="bg">Океания</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="cs">Oceánie</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="cs">Oceánie</skos-xl:literalForm>
+            <rdfs:label xml:lang="cs">Oceánie</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="da">Oceanien</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="da">Oceanien</skos-xl:literalForm>
+            <rdfs:label xml:lang="da">Oceanien</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="de">Ozeanien</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="de">Ozeanien</skos-xl:literalForm>
+            <rdfs:label xml:lang="de">Ozeanien</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="el">Ωκεανία</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="el">Ωκεανία</skos-xl:literalForm>
+            <rdfs:label xml:lang="el">Ωκεανία</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="en">Oceania</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="en">Oceania</skos-xl:literalForm>
+            <rdfs:label xml:lang="en">Oceania</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="et">Okeaania</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="et">Okeaania</skos-xl:literalForm>
+            <rdfs:label xml:lang="et">Okeaania</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fi">Oseania</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fi">Oseania</skos-xl:literalForm>
+            <rdfs:label xml:lang="fi">Oseania</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="fr">Océanie</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fr">Océanie</skos-xl:literalForm>
+            <rdfs:label xml:lang="fr">Océanie</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ga">An Aigéine</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ga">An Aigéine</skos-xl:literalForm>
+            <rdfs:label xml:lang="ga">An Aigéine</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hr">Oceanija</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hr">Oceanija</skos-xl:literalForm>
+            <rdfs:label xml:lang="hr">Oceanija</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="hu">Óceánia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hu">Óceánia</skos-xl:literalForm>
+            <rdfs:label xml:lang="hu">Óceánia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="it">Oceania</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="it">Oceania</skos-xl:literalForm>
+            <rdfs:label xml:lang="it">Oceania</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lv">Okeānija</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lv">Okeānija</skos-xl:literalForm>
+            <rdfs:label xml:lang="lv">Okeānija</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="lt">Okeanija</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lt">Okeanija</skos-xl:literalForm>
+            <rdfs:label xml:lang="lt">Okeanija</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="mt">L-Oċeanja</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="mt">L-Oċeanja</skos-xl:literalForm>
+            <rdfs:label xml:lang="mt">L-Oċeanja</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="nl">Oceanië</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="nl">Oceanië</skos-xl:literalForm>
+            <rdfs:label xml:lang="nl">Oceanië</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pl">Oceania</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pl">Oceania</skos-xl:literalForm>
+            <rdfs:label xml:lang="pl">Oceania</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="pt">Oceânia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pt">Oceânia</skos-xl:literalForm>
+            <rdfs:label xml:lang="pt">Oceânia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="ro">Oceania</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ro">Oceania</skos-xl:literalForm>
+            <rdfs:label xml:lang="ro">Oceania</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sk">Oceánia</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sk">Oceánia</skos-xl:literalForm>
+            <rdfs:label xml:lang="sk">Oceánia</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sl">Oceanija</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sl">Oceanija</skos-xl:literalForm>
+            <rdfs:label xml:lang="sl">Oceanija</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="es">Oceanía</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="es">Oceanía</skos-xl:literalForm>
+            <rdfs:label xml:lang="es">Oceanía</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos:prefLabel xml:lang="sv">Oceanien</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-24</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sv">Oceanien</skos-xl:literalForm>
+            <rdfs:label xml:lang="sv">Oceanien</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <!--in template name="specific-part-invariant"-->
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/continent/OP_DATPRO">
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/continent"/>
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#Continent"/>
+      <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+      <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+      <at:op-code>OP_DATPRO</at:op-code>
+      <atold:op-code>OP_DATPRO</atold:op-code>
+      <dc:identifier>OP_DATPRO</dc:identifier>
+      <owl:versionInfo>20161225-1</owl:versionInfo>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+      <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+      <skos:prefLabel xml:lang="bg">НЕОКОНЧАТЕЛНИ ДАННИ</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Předběžné údaje</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Midlertidige data</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Vorläufige Daten</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Provisional data</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Προσωρινά δεδομένα</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Datos provisionales</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Esialgsed andmed</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Alustavat tiedot</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Données provisoires</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Sonraí sealadacha</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Privremeni podaci</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Ideiglenes adatok</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Dati provvisori</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Laikinieji duomenys</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Provizoriski dati</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Dejta provviżorja</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Voorlopige gegevens</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Dane tymczasowe</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Dados provisórios</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Date provizorii</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Predbežné údaje</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Začasni podatki</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Tillfälliga uppgifter</skos:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="bg">НЕОКОНЧАТЕЛНИ ДАННИ</skos-xl:literalForm>
+            <rdfs:label xml:lang="bg">НЕОКОНЧАТЕЛНИ ДАННИ</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="cs">Předběžné údaje</skos-xl:literalForm>
+            <rdfs:label xml:lang="cs">Předběžné údaje</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="da">Midlertidige data</skos-xl:literalForm>
+            <rdfs:label xml:lang="da">Midlertidige data</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="de">Vorläufige Daten</skos-xl:literalForm>
+            <rdfs:label xml:lang="de">Vorläufige Daten</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="en">Provisional data</skos-xl:literalForm>
+            <rdfs:label xml:lang="en">Provisional data</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="el">Προσωρινά δεδομένα</skos-xl:literalForm>
+            <rdfs:label xml:lang="el">Προσωρινά δεδομένα</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="es">Datos provisionales</skos-xl:literalForm>
+            <rdfs:label xml:lang="es">Datos provisionales</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="et">Esialgsed andmed</skos-xl:literalForm>
+            <rdfs:label xml:lang="et">Esialgsed andmed</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fi">Alustavat tiedot</skos-xl:literalForm>
+            <rdfs:label xml:lang="fi">Alustavat tiedot</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="fr">Données provisoires</skos-xl:literalForm>
+            <rdfs:label xml:lang="fr">Données provisoires</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ga">Sonraí sealadacha</skos-xl:literalForm>
+            <rdfs:label xml:lang="ga">Sonraí sealadacha</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hr">Privremeni podaci</skos-xl:literalForm>
+            <rdfs:label xml:lang="hr">Privremeni podaci</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="hu">Ideiglenes adatok</skos-xl:literalForm>
+            <rdfs:label xml:lang="hu">Ideiglenes adatok</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="it">Dati provvisori</skos-xl:literalForm>
+            <rdfs:label xml:lang="it">Dati provvisori</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lt">Laikinieji duomenys</skos-xl:literalForm>
+            <rdfs:label xml:lang="lt">Laikinieji duomenys</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="lv">Provizoriski dati</skos-xl:literalForm>
+            <rdfs:label xml:lang="lv">Provizoriski dati</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="mt">Dejta provviżorja</skos-xl:literalForm>
+            <rdfs:label xml:lang="mt">Dejta provviżorja</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="nl">Voorlopige gegevens</skos-xl:literalForm>
+            <rdfs:label xml:lang="nl">Voorlopige gegevens</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pl">Dane tymczasowe</skos-xl:literalForm>
+            <rdfs:label xml:lang="pl">Dane tymczasowe</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="pt">Dados provisórios</skos-xl:literalForm>
+            <rdfs:label xml:lang="pt">Dados provisórios</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="ro">Date provizorii</skos-xl:literalForm>
+            <rdfs:label xml:lang="ro">Date provizorii</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sk">Predbežné údaje</skos-xl:literalForm>
+            <rdfs:label xml:lang="sk">Predbežné údaje</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sl">Začasni podatki</skos-xl:literalForm>
+            <rdfs:label xml:lang="sl">Začasni podatki</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+      <skos-xl:prefLabel>
+         <skos-xl:Label>
+            <rdf:type rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
+            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</dct:created>
+            <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</euvoc:startDate>
+            <euvoc:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT"/>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/label-type/STANDARDLABEL"/>
+            <skos-xl:literalForm xml:lang="sv">Tillfälliga uppgifter</skos-xl:literalForm>
+            <rdfs:label xml:lang="sv">Tillfälliga uppgifter</rdfs:label>
+         </skos-xl:Label>
+      </skos-xl:prefLabel>
+   </skos:Concept>
+</rdf:RDF>

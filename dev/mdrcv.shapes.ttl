@@ -1,0 +1,370 @@
+# baseURI: http://data.europa.eu/r5r/mdrcv
+# imports: http://datashapes.org/dash
+# imports: http://purl.org/dc/terms/
+# imports: http://www.semanticweb.org/owl/owlapi/turtle
+# imports: http://www.w3.org/ns/adms
+# imports: http://www.w3.org/ns/dcat
+# imports: http://xmlns.com/foaf/0.1/
+
+@prefix : <http://data.europa.eu/r5r/mdrcv#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix odrs: <http://schema.theodi.org/odrs#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlTime: <http://www.w3.org/2006/time#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix tosh: <http://topbraid.org/tosh#> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xh: <http://www.w3.org/1999/xhtml> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.europa.eu/r5r/mdrcv>
+  rdf:type owl:Ontology ;
+  rdfs:comment "This document specifies controlled vocabulary constraints on propoerties used in the DCAT Application (DCAT-AP)."@en ;
+  rdfs:label "Controlled Vocabulary Constraints of DCAT Application Profile for Data Portals in Europe"@en ;
+  owl:imports <http://datashapes.org/dash> ;
+   owl:imports <http://creativecommons.org/ns> ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports dcterms: ;
+  owl:imports <http://topbraid.org/schema/> ;
+  owl:imports <http://vocab.deri.ie/void> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <http://www.w3.org/2006/vcard/ns> ;
+  owl:imports <http://www.w3.org/2008/05/skos-xl> ;
+  owl:imports <http://www.w3.org/ns/adms> ;
+  owl:imports <http://www.w3.org/ns/dcat> ;
+  owl:imports org: ;
+  owl:imports foaf: ;
+.
+:ContinentRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Continent restriction" ;
+  rdfs:label "Continent restriction" ;
+  rdfs:subClassOf rdfs:Resource ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/continent> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:CorporateBodyRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Corporate Body Restriction" ;
+  rdfs:label "Corporate Body Restriction" ;
+  rdfs:subClassOf rdfs:Resource ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/corporate-body> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:CountryRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Country restriction" ;
+  rdfs:label "Country restriction" ;
+  rdfs:subClassOf rdfs:Resource ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/country> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:DataThemeRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Data Theme Restriction" ;
+  rdfs:label "Data Theme Restriction" ;
+  rdfs:subClassOf rdfs:Resource ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:FileTypeRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "File Type Restriction" ;
+  rdfs:label "File Type Restriction" ;
+  rdfs:subClassOf rdfs:Resource ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/file-type> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:FrequencyRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Frequency Restriction" ;
+  rdfs:label "Frequency Restriction" ;
+  rdfs:subClassOf rdfs:Resource ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/frequency> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:GeoNamesRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Geo names restriction" ;
+  rdfs:label "Geo names restriction" ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://sws.geonames.org> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:LanguageRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Language Restriction" ;
+  rdfs:label "Language Restriction" ;
+  rdfs:subClassOf rdfs:Resource ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/language> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:LicenceTypeRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Licence type restriction" ;
+  rdfs:label "Licence type restriction" ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://purl.org/adms/licencetype/1.0> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:PlaceRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Place restriction" ;
+  rdfs:label "Place restriction" ;
+  rdfs:subClassOf rdfs:Resource ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/place> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:PublisherTypeRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Publisher type restriction" ;
+  rdfs:label "Publisher type restriction" ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://purl.org/adms/publishertype/1.0> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+:StatusRestriction
+  rdf:type sh:Shape ;
+  rdfs:comment "Status restriction" ;
+  rdfs:label "Status restriction" ;
+  owl:versionInfo "1" ;
+  sh:property [
+      sh:predicate skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://purl.org/adms/status/1.0> ;
+      sh:minCount 1 ;
+      sh:name "in scheme" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+<http://purl.org/dc/terms/LicenseDocument>
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/type> ;
+      sh:class skos:Concept ;
+      sh:name "type" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :LicenceTypeRestriction ;
+    ] ;
+.
+<http://www.w3.org/ns/dcat#Catalog>
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/language> ;
+      sh:class skos:Concept ;
+      sh:name "language" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :LanguageRestriction ;
+    ] ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/publisher> ;
+      sh:class skos:Concept ;
+      sh:name "publisher" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :CorporateBodyRestriction ;
+    ] ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/spatial> ;
+      sh:class skos:Concept ;
+      sh:name "theme" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape [
+          rdf:type sh:Shape ;
+          sh:or (
+              :CountryRestriction
+              :PlaceRestriction
+              :ContinentRestriction
+              :GeoNamesRestriction
+            ) ;
+        ] ;
+    ] ;
+  sh:property [
+      sh:predicate <http://www.w3.org/ns/dcat#themeTaxonomy> ;
+      sh:class skos:ConceptScheme ;
+      sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+      sh:name "theme taxonomy" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+<http://www.w3.org/ns/dcat#CatalogRecord>
+  rdf:type sh:Shape ;
+.
+<http://www.w3.org/ns/dcat#Dataset>
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/accrualPeriodicity> ;
+      sh:class skos:Concept ;
+      sh:name "accrual periodicity" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :FrequencyRestriction ;
+    ] ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/language> ;
+      sh:class skos:Concept ;
+      sh:name "language" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :LanguageRestriction ;
+    ] ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/publisher> ;
+      sh:class skos:Concept ;
+      sh:name "publisher" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :CorporateBodyRestriction ;
+    ] ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/spatial> ;
+      sh:class skos:Concept ;
+      sh:name "theme" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape [
+          rdf:type sh:Shape ;
+          sh:or (
+              :CountryRestriction
+              :PlaceRestriction
+              :ContinentRestriction
+              :GeoNamesRestriction
+            ) ;
+        ] ;
+    ] ;
+  sh:property [
+      sh:predicate <http://www.w3.org/ns/dcat#theme> ;
+      sh:class skos:Concept ;
+      sh:name "theme" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :DataThemeRestriction ;
+    ] ;
+.
+<http://www.w3.org/ns/dcat#Distribution>
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/format> ;
+      sh:class skos:Concept ;
+      sh:name "format" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :FileTypeRestriction ;
+    ] ;
+  sh:property [
+      sh:predicate <http://www.w3.org/ns/adms#status> ;
+      sh:class skos:Concept ;
+      sh:name "status" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :StatusRestriction ;
+    ] ;
+.
+<http://xmlns.com/foaf/0.1/Agent>
+  rdf:type sh:Shape ;
+  sh:property [
+      sh:predicate <http://purl.org/dc/terms/type> ;
+      sh:class skos:Concept ;
+      sh:name "type" ;
+      sh:nodeKind sh:IRI ;
+      sh:shape :PublisherTypeRestriction ;
+    ] ;
+.
