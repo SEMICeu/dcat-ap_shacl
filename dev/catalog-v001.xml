@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    
+    <uri id="User Entered Import Resolution" name="http://purl.org/NET/dc_owl2dl/elements" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/dl-dc/dc.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.org/NET/dc_owl2dl/terms_od" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/dl-dc/dcterms_od.ttl"/>
+    
+    <uri id="User Entered Import Resolution" name="http://purl.org/NET/dc_owl2dl/dcmitype" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/dl-dc/dcmitype.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.org/dc/terms/" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/dl-dc/dcterms_od.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://topbraid.org/tosh" uri="file:/D:/Work/workspace_tbc/TopBraid/SHACL/tosh.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://datashapes.org/dash" uri="file:/D:/Work/workspace_tbc/TopBraid/SHACL/dash.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.w3.org/2004/02/skos/core" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/skos/skos-owl1-dl.rdf"/>
+    <uri id="User Entered Import Resolution" name="http://www.w3.org/2008/05/skos-xl" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/skos/skos-xl.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.w3.org/ns/adms" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/dcat/adms.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.w3.org/ns/org#" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/org/org.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.w3.org/ns/org" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/org/org.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://xmlns.com/foaf/0.1/" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/org/topbraid-version/foaf.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://xmlns.com/foaf/0.1" uri="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/org/topbraid-version/foaf.ttl"/>
+    <group id="Import By Name Repository, directory=file:/D:/Work/workspace_tbc/TopBraid/, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="file:/D:/Work/workspace_tbc/TopBraid/">
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://purl.org/goodrelations/v1" uri="Common/gr.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://purl.org/rss/1.0/schema" uri="Common/rss-1.0.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="duplicate:http://rdfs.org/sioc/ns#" uri="SIOC/sioc-types.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="duplicate:http://rdfs.org/sioc/ns#" uri="SIOC/sioc.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://spinrdf.org/imports" uri="SPIN/imports.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://spinrdf.org/sp" uri="SPIN/sp.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://topbraid.org/change" uri="TBC/change.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://topbraid.org/examples/kennedys" uri="Examples/kennedys.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://topbraid.org/fibo-all" uri="FIBO/fibo-all.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="duplicate:http://topbraid.org/schema/" uri="Schema.org/schema-single-range.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="duplicate:http://topbraid.org/schema/" uri="Schema.org/schema.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://topbraid.org/tables" uri="TBC/tables.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://topbraid.org/visual" uri="TBC/visual.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://uispin.org/uilink" uri="SWP/uilink.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://vocab.deri.ie/void" uri="Common/void.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl" uri="Schema.org/faocountries.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.geonames.org/ontology" uri="Common/geonames.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.linkedmodel.org/1.0/schema/vaem" uri="LinkedModels/vaem-v1.0.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.linkedmodel.org/2.0/schema/vaem" uri="LinkedModels/vaem.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.linkedmodel.org/schema/vaem" uri="LinkedModels/vaem.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.omg.org/spec/EDMC-FIBO/BE/20160201/LegalEntities/CorporateBodies/" uri="FIBO/fibo-all.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.omg.org/spec/LCC/Countries/CountryRepresentation/" uri="FIBO/zzz/CountryRepresentation-Placeholder.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.topbraid.org/2007/01/forms.owl" uri="TBC/forms.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.topbraid.org/2007/05/composite.owl" uri="TBC/composite.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl" uri="TBC/spreadsheets.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.w3.org/2000/01/rdf-schema#" uri="Common/rdf-schema.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.w3.org/2003/01/geo/wgs84_pos" uri="Common/wgs84_pos.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.w3.org/2004/02/skos/core" uri="SKOS/skos-core.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.w3.org/2005/01/wf/flow" uri="Common/flow.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.w3.org/2006/vcard/ns" uri="Common/ns.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.w3.org/ns/shacl#" uri="SHACL/shacl.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922939797" name="http://www.w3.org/ns/sparql-service-description" uri="Common/sd.ttl"/>
+    </group>
+    <group id="Import By Name Repository, directory=file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/">
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://creativecommons.org/ns" uri="law/creative-commons-schema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://lemon-model.net/lemon" uri="language/lemon.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://lexvo.org/ontology" uri="language/lexvo.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://purl.org/NET/dc_owl2dl/dcam" uri="dl-dc/dcam.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://vocab.deri.ie/void" uri="dcat/void.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.opengis.net/ont/gml" uri="space/gml_32_geometries.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.opengis.net/ont/sf" uri="space/simple_features_geometries.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/2003/01/geo/wgs84_pos" uri="space/topbraid-version/wgs84_pos.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/2004/02/skos/core" uri="skos/skos-owl1-dl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/2006/vcard/ns" uri="org/vcard.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/TR/skos-reference/skos-owl1-dl.rdf" uri="skos/skos-owl1-dl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/ns/adms" uri="dcat/adms.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/ns/dcat" uri="dcat/dcat.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/ns/locn" uri="space/locn.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/ns/org#" uri="org/org.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1494922895644" name="http://www.w3.org/ns/person" uri="org/person.ttl"/>
+    </group>
+    <group id="Folder Repository, directory=file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="file:/D:/Work/MDR/euvoc/dev/EuVocOntology/ontologies-lib-release/">
+        <uri id="Automatically generated entry, Timestamp=1494922817148" name="http://creativecommons.org/ns" uri="law/creative-commons-schema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922817148" name="http://data.europa.eu/eli/ontology" uri="law/eli.owl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922817148" name="http://lexvo.org/ontology" uri="language/lexvo.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922817148" name="http://www.lexinfo.net/ontology/2.0/lexinfo" uri="language/lexinfo.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922817148" name="http://www.opengis.net/ont/geosparql" uri="space/geosparql_vocab_all.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922817148" name="http://www.opengis.net/ont/gml" uri="space/gml_32_geometries.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922817148" name="http://www.opengis.net/ont/sf" uri="space/simple_features_geometries.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922817148" name="http://www.w3.org/2004/02/skos/core" uri="skos/skos-owl1-dl.rdf"/>
+    </group>
+    <group id="Folder Repository, directory=file:/D:/Work/workspace_tbc/TopBraid/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="file:/D:/Work/workspace_tbc/TopBraid/">
+        <uri id="Automatically generated entry, Timestamp=1494922766136" name="http://www.topbraid.org/2007/01/forms.owl" uri="TBC/forms.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922766136" name="http://www.topbraid.org/2007/04/mapmodel.owl" uri="TBC/mapmodel.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922766136" name="http://www.topbraid.org/2007/05/composite.owl" uri="TBC/composite.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922766136" name="http://www.topbraid.org/2007/06/inference.owl" uri="TBC/inference.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922766136" name="http://www.topbraidcomposer.org/owl/2006/08/spreadsheets.owl" uri="TBC/spreadsheets.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494922766136" name="http://www.topbraidcomposer.org/owl/2006/09/sparql.owl" uri="TBC/sparql.rdf"/>
+    </group>
+</catalog>

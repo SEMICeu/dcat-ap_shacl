@@ -1,8 +1,6 @@
 # baseURI: http://data.europa.eu/r5r
-# imports: http://creativecommons.org/ns
 # imports: http://datashapes.org/dash
 # imports: http://purl.org/dc/terms/
-# imports: http://vocab.deri.ie/void
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.w3.org/2006/vcard/ns
 # imports: http://www.w3.org/2008/05/skos-xl
@@ -13,93 +11,67 @@
 
 @prefix : <http://data.europa.eu/r5r#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix cc: <http://creativecommons.org/ns#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcam: <http://purl.org/dc/dcam/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix gr: <http://purl.org/goodrelations/v1#> .
-@prefix odrs: <http://schema.theodi.org/odrs#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
-@prefix swa: <http://topbraid.org/swa#> .
 @prefix tosh: <http://topbraid.org/tosh#> .
-
-
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix voaf: <http://purl.org/vocommons/voaf#> .
-@prefix void: <http://rdfs.org/ns/void#> .
-
-
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://data.europa.eu/r5r>
-  
-  rdf:type owl:Ontology ;
 
-  dcterms:abstract "The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalog vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable a cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals."@en ;
-  dcterms:alternative "DCAT-AP"@en ;
-  dcterms:conformsTo <https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies> ;
-  dcterms:creator [
+<http://data.europa.eu/r5r>
+
+  rdf:type owl:Ontology ;
+  dct:abstract "The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalog vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable a cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals."@en ;
+  dct:alternative "DCAT-AP"@en ;
+  dct:conformsTo <https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies> ;
+  dct:creator [
       rdfs:seeAlso <http://eugeniu.costezki.ro#me> ;
       org:memberOf <http://publications.europa.eu/resource/authority/corporate-body/PUBL> ;
       foaf:homepage <http://costezki.ro> ;
       foaf:name "Eugeniu Costetchi" ;
     ] ;
-  dcterms:creator [
+  dct:creator [
       rdfs:seeAlso <http://makxdekkers.com/#me> ;
       org:memberOf <http://ami-consult.com/#id> ;
       foaf:homepage <http://makxdekkers.com/> ;
       foaf:name "Makx Dekkers" ;
     ] ;
-  dcterms:creator [
+  dct:creator [
       rdfs:seeAlso <http://nikosloutas.com/> ;
       org:memberOf <http://www.pwc.com/gx/en/eu-institutions-services> ;
       foaf:homepage <http://nikosloutas.com/> ;
       foaf:name "Nikolaos Loutas" ;
     ] ;
-  dcterms:creator [
+  dct:creator [
       rdfs:seeAlso <http://www.deri.ie/users/vassilios-peristeras/> ;
       org:memberOf <http://publications.europa.eu/resource/authority/corporate-body/COM> ;
       foaf:homepage <http://www.deri.ie/users/vassilios-peristeras/> ;
       foaf:name "Vassilios Peristeras" ;
     ] ;
-  dcterms:license <https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11> ;
-  dcterms:modified "2017-06-03"^^xsd:date ;
-  dcterms:publisher <http://publications.europa.eu/resource/authority/corporate-body/COM> ;
-  dcterms:relation <https://joinup.ec.europa.eu/node/69559> ;
-  dcterms:rights [
-      rdf:type dcterms:RigthsStatement ;
-      odrs:copyrightNotice "Copyright © European Union, 2015"@en ;
-      rdfs:label "Copyright © European Union, 2015"@en ;
-    ] ;
-  dcterms:rightsHolder <http://publications.europa.eu/resource/authority/corporate-body/EURUN> ;
-  dcterms:title "DCAT Application Profile for Data Portals in Europe"@en ;
- 
+  dct:license <https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11> ;
+  dct:modified "2017-06-03"^^xsd:date ;
+  dct:publisher <http://publications.europa.eu/resource/authority/corporate-body/COM> ;
+  dct:relation <https://joinup.ec.europa.eu/node/69559> ;
+  dct:rightsHolder <http://publications.europa.eu/resource/authority/corporate-body/EURUN> ;
+  dct:title "DCAT Application Profile for Data Portals in Europe"@en ;
   rdfs:comment "This document specifies the set of RDF classes and properties used in the DCAT Application profile for data portals in Europe (DCAT-AP)."@en ;
   rdfs:label "DCAT Application Profile for Data Portals in Europe"@en ;
-  owl:imports <http://creativecommons.org/ns> ;
   owl:imports <http://datashapes.org/dash> ;
-  owl:imports dcterms: ;
-  owl:imports <http://vocab.deri.ie/void> ;
+  owl:imports dct: ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <http://www.w3.org/2006/vcard/ns> ;
   owl:imports <http://www.w3.org/2008/05/skos-xl> ;
@@ -108,8 +80,8 @@
   owl:imports org: ;
   owl:imports foaf: ;
   owl:versionInfo "1.2" ;
-  foaf:homepage <https://joinup.ec.europa.eu/node/69559> ;
   foaf:depiction <https://joinup.ec.europa.eu/system/files/project/dcat-ap_.1.bmp> ;
+  foaf:homepage <https://joinup.ec.europa.eu/node/69559> ;
   foaf:logo <https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png> ;
   foaf:maker [
       foaf:mbox <mailto:dcat_application_profile@joinup.ec.europa.eu> ;
@@ -117,9 +89,11 @@
       foaf:page <https://joinup.ec.europa.eu/node/63580> ;
     ] ;
 .
+
+
 :DateOrDateTimeDataType
   rdf:type sh:Shape ;
-  rdfs:comment "Date time date disjunction shape checks that a datatype propety receives a date or a dateTime literal" ;
+  rdfs:comment "Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal" ;
   rdfs:label "Date time date disjunction" ;
   sh:message "The values must be data typed as either xsd:date or xsd:dateTime" ;
   sh:or (
@@ -133,9 +107,8 @@
 .
 :MandatoryAgent
   rdf:type sh:Shape ;
-  rdfs:comment "Mandatory agent" ;
+  rdfs:comment "Mandatory agent " ;
   rdfs:label "Mandatory agent" ;
-
   sh:property [
       sh:minCount 1 ;
       sh:path [
@@ -148,7 +121,6 @@
   rdf:type sh:Shape ;
   rdfs:comment "Mandatory catalog" ;
   rdfs:label "Mandatory catalog" ;
-
   sh:property [
       sh:minCount 1 ;
       sh:path [
@@ -161,7 +133,6 @@
   rdf:type sh:Shape ;
   rdfs:comment "Mandatory dataset" ;
   rdfs:label "Mandatory dataset" ;
-
   sh:property [
       sh:minCount 1 ;
       sh:path [
@@ -170,14 +141,13 @@
     ] ;
   sh:targetNode "dcat:Dataset" ;
 .
-
-dcterms:Frequency
+dct:Frequency
   rdf:type sh:Shape ;
 .
-dcterms:LicenseDocument
+dct:LicenseDocument
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate dcterms:type ;
+      sh:predicate dct:type ;
       sh:class skos:Concept ;
       sh:maxCount 1 ;
       sh:name "type" ;
@@ -185,16 +155,16 @@ dcterms:LicenseDocument
       sh:severity sh:Violation ;
     ] ;
 .
-dcterms:LinguisticSystem
+dct:LinguisticSystem
   rdf:type sh:Shape ;
 .
-dcterms:Location
+dct:Location
   rdf:type sh:Shape ;
 .
-dcterms:MediaTypeOrExtent
+dct:MediaTypeOrExtent
   rdf:type sh:Shape ;
 .
-dcterms:PeriodOfTime
+dct:PeriodOfTime
   rdf:type sh:Shape ;
   sh:property [
       sh:predicate schema:endDate ;
@@ -210,13 +180,13 @@ dcterms:PeriodOfTime
       sh:shape :DateOrDateTimeDataType ;
     ] ;
 .
-dcterms:ProvenanceStatement
+dct:ProvenanceStatement
   rdf:type sh:Shape ;
 .
-dcterms:RightsStatement
+dct:RightsStatement
   rdf:type sh:Shape ;
 .
-dcterms:Standard
+dct:Standard
   rdf:type sh:Shape ;
 .
 spdx:Checksum
@@ -238,7 +208,6 @@ spdx:Checksum
       sh:severity sh:Violation ;
     ] ;
 .
-
 skos:Concept
   rdf:type sh:Shape ;
   sh:property [
@@ -252,7 +221,7 @@ skos:Concept
 skos:ConceptScheme
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate dcterms:title ;
+      sh:predicate dct:title ;
       sh:minCount 1 ;
       sh:name "title" ;
       sh:nodeKind sh:Literal ;
@@ -274,77 +243,76 @@ adms:Identifier
 .
 dcat:Catalog
   rdf:type sh:Shape ;
-  
   sh:name "Catalog"@en ;
   sh:property [
-      sh:predicate dcterms:description ;
+      sh:predicate dct:description ;
       sh:minCount 1 ;
       sh:name "description" ;
       sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:hasPart ;
+      sh:predicate dct:hasPart ;
       sh:class dcat:Catalog ;
       sh:name "has part" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:isPartOf ;
+      sh:predicate dct:isPartOf ;
       sh:class dcat:Catalog ;
       sh:maxCount 1 ;
       sh:name "is part of" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:issued ;
+      sh:predicate dct:issued ;
       sh:maxCount 1 ;
       sh:name "issued" ;
       sh:severity sh:Violation ;
       sh:shape :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate dcterms:language ;
-      sh:class dcterms:LinguisticSystem ;
+      sh:predicate dct:language ;
+      sh:class dct:LinguisticSystem ;
       sh:name "language" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:license ;
-      sh:class dcterms:LicenseDocument ;
+      sh:predicate dct:license ;
+      sh:class dct:LicenseDocument ;
       sh:maxCount 1 ;
       sh:name "license" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:modified ;
+      sh:predicate dct:modified ;
       sh:maxCount 1 ;
       sh:name "modified" ;
       sh:severity sh:Violation ;
       sh:shape :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate dcterms:publisher ;
+      sh:predicate dct:publisher ;
       sh:class foaf:Agent ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
       sh:name "publisher" ;
     ] ;
   sh:property [
-      sh:predicate dcterms:rights ;
-      sh:class dcterms:RightsStatement ;
+      sh:predicate dct:rights ;
+      sh:class dct:RightsStatement ;
       sh:maxCount 1 ;
       sh:name "rights" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:spatial ;
-      sh:class dcterms:Location ;
+      sh:predicate dct:spatial ;
+      sh:class dct:Location ;
       sh:name "spatial" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:title ;
+      sh:predicate dct:title ;
       sh:minCount 1 ;
       sh:name "title" ;
       sh:nodeKind sh:Literal ;
@@ -380,42 +348,42 @@ dcat:Catalog
 dcat:CatalogRecord
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate dcterms:conformsTo ;
-      sh:class dcterms:Standard ;
+      sh:predicate dct:conformsTo ;
+      sh:class dct:Standard ;
       sh:maxCount 1 ;
       sh:name "conforms to" ;
       sh:nodeKind sh:BlankNodeOrIRI ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:issued ;
+      sh:predicate dct:issued ;
       sh:maxCount 1 ;
       sh:name "issued" ;
       sh:severity sh:Violation ;
       sh:shape :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate dcterms:language ;
-      sh:class dcterms:LinguisticSystem ;
+      sh:predicate dct:language ;
+      sh:class dct:LinguisticSystem ;
       sh:name "language" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:modified ;
+      sh:predicate dct:modified ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
       sh:name "modified" ;
       sh:shape :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate dcterms:source ;
+      sh:predicate dct:source ;
       sh:class dcat:CatalogRecord ;
       sh:maxCount 1 ;
       sh:name "source" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:title ;
+      sh:predicate dct:title ;
       sh:name "title" ;
       sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
@@ -439,110 +407,110 @@ dcat:CatalogRecord
 dcat:Dataset
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate dcterms:accessRights ;
-      sh:class dcterms:RightsStatement ;
+      sh:predicate dct:accessRights ;
+      sh:class dct:RightsStatement ;
       sh:maxCount 1 ;
       sh:name "access rights" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:accrualPeriodicity ;
-      sh:class dcterms:Frequency ;
+      sh:predicate dct:accrualPeriodicity ;
+      sh:class dct:Frequency ;
       sh:maxCount 1 ;
       sh:name "accrual periodicity" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:conformsTo ;
-      sh:class dcterms:Standard ;
+      sh:predicate dct:conformsTo ;
+      sh:class dct:Standard ;
       sh:name "conforms to" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:description ;
+      sh:predicate dct:description ;
       sh:minCount 1 ;
       sh:name "description" ;
       sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:hasVersion ;
+      sh:predicate dct:hasVersion ;
       sh:class dcat:Dataset ;
       sh:name "has version" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:isVersionOf ;
+      sh:predicate dct:isVersionOf ;
       sh:class dcat:Dataset ;
       sh:name "is version of" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:issued ;
+      sh:predicate dct:issued ;
       sh:maxCount 1 ;
       sh:name "issued" ;
       sh:severity sh:Violation ;
       sh:shape :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate dcterms:language ;
-      sh:class dcterms:LinguisticSystem ;
+      sh:predicate dct:language ;
+      sh:class dct:LinguisticSystem ;
       sh:name "language" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:modified ;
+      sh:predicate dct:modified ;
       sh:maxCount 1 ;
       sh:name "modified" ;
       sh:severity sh:Violation ;
       sh:shape :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate dcterms:provenance ;
-      sh:class dcterms:ProvenanceStatement ;
+      sh:predicate dct:provenance ;
+      sh:class dct:ProvenanceStatement ;
       sh:name "provenance" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:publisher ;
+      sh:predicate dct:publisher ;
       sh:class foaf:Agent ;
       sh:maxCount 1 ;
       sh:name "publisher" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:relation ;
+      sh:predicate dct:relation ;
       sh:class rdfs:Resource ;
       sh:name "relation" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:source ;
+      sh:predicate dct:source ;
       sh:class dcat:Dataset ;
       sh:name "source" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:spatial ;
-      sh:class dcterms:Location ;
+      sh:predicate dct:spatial ;
+      sh:class dct:Location ;
       sh:name "spatial" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:temporal ;
-      sh:class dcterms:PeriodOfTime ;
+      sh:predicate dct:temporal ;
+      sh:class dct:PeriodOfTime ;
       sh:name "temporal" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:title ;
+      sh:predicate dct:title ;
       sh:minCount 1 ;
       sh:name "title" ;
       sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:type ;
+      sh:predicate dct:type ;
       sh:class skos:Concept ;
       sh:maxCount 1 ;
       sh:name "type" ;
@@ -602,60 +570,60 @@ dcat:Dataset
 dcat:Distribution
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate dcterms:conformsTo ;
+      sh:predicate dct:conformsTo ;
       sh:name "conforms to" ;
       sh:nodeKind sh:BlankNodeOrIRI ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:description ;
+      sh:predicate dct:description ;
       sh:name "description" ;
       sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:format ;
-      sh:class dcterms:MediaTypeOrExtent ;
+      sh:predicate dct:format ;
+      sh:class dct:MediaTypeOrExtent ;
       sh:maxCount 1 ;
       sh:name "format" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:issued ;
+      sh:predicate dct:issued ;
       sh:maxCount 1 ;
       sh:name "issued" ;
       sh:severity sh:Violation ;
       sh:shape :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate dcterms:language ;
-      sh:class dcterms:LinguisticSystem ;
+      sh:predicate dct:language ;
+      sh:class dct:LinguisticSystem ;
       sh:name "language" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:license ;
-      sh:class dcterms:LicenseDocument ;
+      sh:predicate dct:license ;
+      sh:class dct:LicenseDocument ;
       sh:maxCount 1 ;
       sh:name "license" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:modified ;
+      sh:predicate dct:modified ;
       sh:maxCount 1 ;
       sh:name "modified" ;
       sh:severity sh:Violation ;
       sh:shape :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate dcterms:rights ;
-      sh:class dcterms:RightsStatement ;
+      sh:predicate dct:rights ;
+      sh:class dct:RightsStatement ;
       sh:maxCount 1 ;
       sh:name "rights" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate dcterms:title ;
+      sh:predicate dct:title ;
       sh:name "title" ;
       sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
@@ -697,7 +665,7 @@ dcat:Distribution
     ] ;
   sh:property [
       sh:predicate dcat:mediaType ;
-      sh:class dcterms:MediaTypeOrExtent ;
+      sh:class dct:MediaTypeOrExtent ;
       sh:maxCount 1 ;
       sh:name "media type" ;
       sh:severity sh:Violation ;
@@ -712,7 +680,7 @@ dcat:Distribution
 foaf:Agent
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate dcterms:type ;
+      sh:predicate dct:type ;
       sh:class skos:Concept ;
       sh:maxCount 1 ;
       sh:name "type" ;

@@ -8,55 +8,34 @@
 
 @prefix : <http://data.europa.eu/r5r/mdrcv#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
-@prefix cc: <http://creativecommons.org/ns#> .
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcam: <http://purl.org/dc/dcam/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix gr: <http://purl.org/goodrelations/v1#> .
-@prefix odrs: <http://schema.theodi.org/odrs#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix owlTime: <http://www.w3.org/2006/time#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix schemax: <http://topbraid.org/schemax/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix sioc: <http://rdfs.org/sioc/ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
-@prefix swa: <http://topbraid.org/swa#> .
 @prefix tosh: <http://topbraid.org/tosh#> .
-@prefix v: <http://www.w3.org/2006/vcard/ns#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix voaf: <http://purl.org/vocommons/voaf#> .
-@prefix void: <http://rdfs.org/ns/void#> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
-@prefix wot: <http://xmlns.com/wot/0.1/> .
-@prefix xh: <http://www.w3.org/1999/xhtml> .
-@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://data.europa.eu/r5r/mdrcv>
   rdf:type owl:Ontology ;
-  rdfs:comment "This document specifies controlled vocabulary constraints on propoerties used in the DCAT Application (DCAT-AP)."@en ;
+  rdfs:comment "This document specifies controlled vocabulary constraints on properties used in the DCAT Application (DCAT-AP)."@en ;
   rdfs:label "Controlled Vocabulary Constraints of DCAT Application Profile for Data Portals in Europe"@en ;
   owl:imports <http://datashapes.org/dash> ;
    owl:imports <http://creativecommons.org/ns> ;
   owl:imports <http://datashapes.org/dash> ;
-  owl:imports dcterms: ;
+  owl:imports dct: ;
   owl:imports <http://topbraid.org/schema/> ;
   owl:imports <http://vocab.deri.ie/void> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;

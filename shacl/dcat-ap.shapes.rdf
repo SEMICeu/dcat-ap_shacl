@@ -1,173 +1,83 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:spdx="http://spdx.org/rdf/terms#"
-    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-    xmlns:voaf="http://purl.org/vocommons/voaf#"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:adms="http://www.w3.org/ns/adms#"
-    xmlns:gr="http://purl.org/goodrelations/v1#"
-    xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
-    xmlns:dcam="http://purl.org/dc/dcam/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:wot="http://xmlns.com/wot/0.1/"
-    xmlns:sh="http://www.w3.org/ns/shacl#"
-    xmlns:vann="http://purl.org/vocab/vann/"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:org="http://www.w3.org/ns/org#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
     xmlns:schema="http://schema.org/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:void="http://rdfs.org/ns/void#"
     xmlns:tosh="http://topbraid.org/tosh#"
-    xmlns:xh="http://www.w3.org/1999/xhtml"
-    xmlns:owlTime="http://www.w3.org/2006/time#"
-    xmlns:swa="http://topbraid.org/swa#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns="http://data.europa.eu/r5r#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:dctype="http://purl.org/dc/dcmitype/"
-    xmlns:sioc="http://rdfs.org/sioc/ns#"
-    xmlns:odrs="http://schema.theodi.org/odrs#"
-    xmlns:v="http://www.w3.org/2006/vcard/ns#"
-    xmlns:schemax="http://topbraid.org/schemax/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:sh="http://www.w3.org/ns/shacl#"
     xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:org="http://www.w3.org/ns/org#"
     xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:dash="http://datashapes.org/dash#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xml:base="http://data.europa.eu/r5r">
-  <voaf:Vocabulary rdf:about="">
-    <dcterms:creator rdf:parseType="Resource">
-      <foaf:name>Eugeniu Costetchi</foaf:name>
-      <foaf:homepage rdf:resource="http://costezki.ro"/>
-      <org:memberOf>
-        <org:Organization rdf:about="http://publications.europa.eu/resource/authority/corporate-body/PUBL">
-          <foaf:name>Publication Office</foaf:name>
-          <foaf:homepage rdf:resource="http://publications.europa.eu"/>
-        </org:Organization>
-      </org:memberOf>
-      <rdfs:seeAlso rdf:resource="http://costezki.ro"/>
-    </dcterms:creator>
+  <owl:Ontology rdf:about="">
+    <dct:creator rdf:parseType="Resource">
+      <foaf:name>Nikolaos Loutas</foaf:name>
+      <foaf:homepage rdf:resource="http://nikosloutas.com/"/>
+      <org:memberOf rdf:resource="http://www.pwc.com/gx/en/eu-institutions-services"/>
+      <rdfs:seeAlso rdf:resource="http://nikosloutas.com/"/>
+    </dct:creator>
+    <foaf:logo rdf:resource="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png"/>
+    <owl:imports rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+    <dct:creator rdf:parseType="Resource">
+      <foaf:name>Vassilios Peristeras</foaf:name>
+      <foaf:homepage rdf:resource="http://www.deri.ie/users/vassilios-peristeras/"/>
+      <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+      <rdfs:seeAlso rdf:resource="http://www.deri.ie/users/vassilios-peristeras/"/>
+    </dct:creator>
+    <foaf:homepage rdf:resource="https://joinup.ec.europa.eu/node/69559"/>
+    <owl:imports rdf:resource="http://www.w3.org/2008/05/skos-xl"/>
+    <dct:relation rdf:resource="https://joinup.ec.europa.eu/node/69559"/>
+    <owl:versionInfo>1.2</owl:versionInfo>
     <foaf:maker rdf:parseType="Resource">
       <foaf:page rdf:resource="https://joinup.ec.europa.eu/node/63580"/>
       <foaf:name>DCAT-AP Working Group</foaf:name>
       <foaf:mbox rdf:resource="mailto:dcat_application_profile@joinup.ec.europa.eu"/>
     </foaf:maker>
-    <dcterms:rights>
-      <dcterms:RigthsStatement>
-        <rdfs:label xml:lang="en">Copyright © European Union, 2015</rdfs:label>
-        <odrs:copyrightNotice xml:lang="en">Copyright © European Union, 2015</odrs:copyrightNotice>
-      </dcterms:RigthsStatement>
-    </dcterms:rights>
-    <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
-    <voaf:reliesOn rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
-    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-    <owl:imports rdf:resource="http://www.w3.org/2008/05/skos-xl"/>
-    <voaf:reliesOn rdf:resource="http://www.w3.org/2011/content#"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2017-06-03</dcterms:modified>
-    <dcterms:abstract xml:lang="en">The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalog vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable a cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals.</dcterms:abstract>
-    <owl:imports rdf:resource="http://www.w3.org/ns/dcat"/>
-    <wdrs:describedby rdf:resource="https://joinup.ec.europa.eu/node/69559"/>
-    <dcterms:creator rdf:parseType="Resource">
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:comment xml:lang="en">This document specifies the set of RDF classes and properties used in the DCAT Application profile for data portals in Europe (DCAT-AP).</rdfs:comment>
+    <foaf:depiction rdf:resource="https://joinup.ec.europa.eu/system/files/project/dcat-ap_.1.bmp"/>
+    <dct:creator rdf:parseType="Resource">
+      <foaf:name>Eugeniu Costetchi</foaf:name>
+      <foaf:homepage rdf:resource="http://costezki.ro"/>
+      <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/PUBL"/>
+      <rdfs:seeAlso rdf:resource="http://eugeniu.costezki.ro#me"/>
+    </dct:creator>
+    <dct:abstract xml:lang="en">The DCAT Application profile for data portals in Europe (DCAT-AP) is a specification based on the Data Catalog vocabulary (DCAT) for describing public sector datasets in Europe. Its basic use case is to enable a cross-data portal search for data sets and make public sector data better searchable across borders and sectors. This can be achieved by the exchange of descriptions of data sets among data portals.</dct:abstract>
+    <dct:creator rdf:parseType="Resource">
       <foaf:name>Makx Dekkers</foaf:name>
       <foaf:homepage rdf:resource="http://makxdekkers.com/"/>
-      <org:memberOf>
-        <org:Organization rdf:about="http://www.ami-consult.com/">
-          <foaf:name>AMI Consult</foaf:name>
-          <foaf:homepage rdf:resource="http://www.makxdekkers.com/"/>
-        </org:Organization>
-      </org:memberOf>
-      <rdfs:seeAlso rdf:resource="http://makxdekkers.com/"/>
-    </dcterms:creator>
-    <voaf:classNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-    >24</voaf:classNumber>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <dcterms:alternative xml:lang="en">DCAT-AP</dcterms:alternative>
-    <vann:preferredNamespacePrefix xml:lang="en">dcat</vann:preferredNamespacePrefix>
-    <dcterms:rightsHolder>
-      <org:Organization rdf:about="http://publications.europa.eu/resource/authority/corporate-body/EURUN">
-        <foaf:name>European Union</foaf:name>
-        <foaf:homepage rdf:resource="http://europa.eu/"/>
-      </org:Organization>
-    </dcterms:rightsHolder>
-    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-    <owl:imports rdf:resource="http://www.w3.org/ns/adms"/>
+      <org:memberOf rdf:resource="http://ami-consult.com/#id"/>
+      <rdfs:seeAlso rdf:resource="http://makxdekkers.com/#me"/>
+    </dct:creator>
     <owl:imports rdf:resource="http://datashapes.org/dash"/>
-    <foaf:logo>
-      <rdf:Description rdf:about="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png">
-        <rdfs:label xml:lang="en">DCAT-AP logo</rdfs:label>
-      </rdf:Description>
-    </foaf:logo>
-    <dcterms:publisher>
-      <org:Organization rdf:about="http://publications.europa.eu/resource/authority/corporate-body/COM">
-        <foaf:name>European Commission</foaf:name>
-        <foaf:homepage rdf:resource="http://ec.europa.eu/"/>
-      </org:Organization>
-    </dcterms:publisher>
-    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/prov#"/>
-    <dcterms:creator rdf:parseType="Resource">
-      <foaf:name>Vassilios Peristeras</foaf:name>
-      <foaf:homepage rdf:resource="http://www.deri.ie/users/vassilios-peristeras/"/>
-      <org:memberOf rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
-      <rdfs:seeAlso rdf:resource="http://www.deri.ie/users/vassilios-peristeras/"/>
-    </dcterms:creator>
-    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/dcat#"/>
-    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
-    <owl:versionInfo>1.2</owl:versionInfo>
-    <owl:imports rdf:resource="http://creativecommons.org/ns"/>
+    <dct:title xml:lang="en">DCAT Application Profile for Data Portals in Europe</dct:title>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2017-06-03</dct:modified>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <dct:rightsHolder rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/EURUN"/>
+    <dct:license rdf:resource="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"/>
+    <dct:conformsTo rdf:resource="https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies"/>
+    <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+    <owl:imports rdf:resource="http://www.w3.org/ns/adms"/>
     <rdfs:label xml:lang="en">DCAT Application Profile for Data Portals in Europe</rdfs:label>
-    <cc:attributionName xml:lang="en">European Commission</cc:attributionName>
-    <owl:imports rdf:resource="http://topbraid.org/schema/"/>
-    <dcterms:creator rdf:parseType="Resource">
-      <foaf:name>Nikolaos Loutas</foaf:name>
-      <foaf:homepage rdf:resource="http://nikosloutas.com/"/>
-      <org:memberOf>
-        <org:Organization rdf:about="http://www.pwc.com/gx/en/eu-institutions-services">
-          <foaf:name>PwC EU Services</foaf:name>
-          <foaf:homepage rdf:resource="http://www.pwc.com/gx/en/eu-institutions-services"/>
-        </org:Organization>
-      </org:memberOf>
-      <rdfs:seeAlso rdf:resource="http://nikosloutas.com/"/>
-    </dcterms:creator>
-    <dcterms:license>
-      <rdf:Description rdf:about="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11">
-        <dcterms:title xml:lang="en">ISA Open Metadata Licence v1.1</dcterms:title>
-        <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
-        <cc:attributionName xml:lang="en">European Commission</cc:attributionName>
-      </rdf:Description>
-    </dcterms:license>
-    <voaf:propertyNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-    >78</voaf:propertyNumber>
-    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/adms#"/>
-    <voaf:reliesOn rdf:resource="http://purl.org/dc/terms/"/>
-    <owl:imports rdf:resource="http://www.w3.org/2006/vcard/ns"/>
-    <xhv:prev rdf:resource="https://joinup.ec.europa.eu/node/65911"/>
-    <voaf:reliesOn rdf:resource="http://www.w3.org/ns/locn#"/>
-    <dcterms:conformsTo>
-      <rdf:Description rdf:about="https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies">
-        <dcterms:title xml:lang="en">Process and Methodology for Developing Core Vocabularies</dcterms:title>
-      </rdf:Description>
-    </dcterms:conformsTo>
-    <dcterms:relation rdf:resource="https://joinup.ec.europa.eu/node/69559"/>
-    <owl:imports rdf:resource="http://vocab.deri.ie/void"/>
-    <voaf:specializes rdf:resource="http://www.w3.org/ns/dcat#"/>
-    <foaf:depiction>
-      <rdf:Description rdf:about="https://joinup.ec.europa.eu/system/files/project/dcat-ap_.1.bmp">
-        <rdfs:label xml:lang="en">DCAT-AP UML diagram</rdfs:label>
-      </rdf:Description>
-    </foaf:depiction>
-    <dcterms:title xml:lang="en">DCAT Application Profile for Data Portals in Europe</dcterms:title>
-    <vann:preferredNamespaceUri xml:lang="en">http://www.w3.org/ns/dcat#</vann:preferredNamespaceUri>
-    <voaf:reliesOn rdf:resource="http://purl.org/dc/dcmitype/"/>
-    <rdfs:comment xml:lang="en">This document specifies the set of RDF classes and properties used in the DCAT Application profile for data portals in Europe (DCAT-AP).</rdfs:comment>
-    <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
-  </voaf:Vocabulary>
+    <owl:imports rdf:resource="http://www.w3.org/ns/dcat"/>
+    <dct:alternative xml:lang="en">DCAT-AP</dct:alternative>
+  </owl:Ontology>
   <sh:Shape rdf:ID="MandatoryDataset">
-    <sh:targetNode>dcat:Dataset</sh:targetNode>
     <sh:property rdf:parseType="Resource">
       <sh:path rdf:parseType="Resource">
         <sh:inversePath rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
@@ -175,12 +85,11 @@
       <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
       >1</sh:minCount>
     </sh:property>
-    <owl:versionInfo>1</owl:versionInfo>
+    <sh:targetNode>dcat:Dataset</sh:targetNode>
     <rdfs:label>Mandatory dataset</rdfs:label>
     <rdfs:comment>Mandatory dataset</rdfs:comment>
   </sh:Shape>
   <sh:Shape rdf:ID="MandatoryAgent">
-    <sh:targetNode>foaf:Agent</sh:targetNode>
     <sh:property rdf:parseType="Resource">
       <sh:path rdf:parseType="Resource">
         <sh:inversePath rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
@@ -188,12 +97,11 @@
       <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
       >1</sh:minCount>
     </sh:property>
-    <owl:versionInfo>1</owl:versionInfo>
+    <sh:targetNode>foaf:Agent</sh:targetNode>
     <rdfs:label>Mandatory agent</rdfs:label>
-    <rdfs:comment>Mandatory agent</rdfs:comment>
+    <rdfs:comment>Mandatory agent </rdfs:comment>
   </sh:Shape>
   <sh:Shape rdf:ID="MandatoryCatalog">
-    <sh:targetNode>dcat:Catalog</sh:targetNode>
     <sh:property rdf:parseType="Resource">
       <sh:path rdf:parseType="Resource">
         <sh:inversePath rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
@@ -201,18 +109,32 @@
       <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
       >1</sh:minCount>
     </sh:property>
-    <owl:versionInfo>1</owl:versionInfo>
+    <sh:targetNode>dcat:Catalog</sh:targetNode>
     <rdfs:label>Mandatory catalog</rdfs:label>
     <rdfs:comment>Mandatory catalog</rdfs:comment>
   </sh:Shape>
   <sh:Shape rdf:about="http://www.w3.org/ns/dcat#Dataset">
     <sh:property rdf:parseType="Resource">
+      <sh:shape>
+        <sh:Shape rdf:ID="DateOrDateTimeDataType">
+          <sh:or rdf:parseType="Collection">
+            <rdf:Description>
+              <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </rdf:Description>
+            <rdf:Description>
+              <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </rdf:Description>
+          </sh:or>
+          <rdfs:comment>Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal</rdfs:comment>
+          <rdfs:label>Date time date disjunction</rdfs:label>
+          <sh:message>The values must be data typed as either xsd:date or xsd:dateTime</sh:message>
+        </sh:Shape>
+      </sh:shape>
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-      <sh:name>title</sh:name>
-      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:minCount>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/title"/>
+      <sh:name>issued</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/issued"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -224,17 +146,193 @@
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>contact point</sh:name>
+      <sh:name>sample</sh:name>
       <sh:class>
-        <sh:Shape rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <sh:Shape rdf:about="http://www.w3.org/ns/adms#Identifier">
+          <sh:property rdf:parseType="Resource">
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+            <sh:name>notation</sh:name>
+            <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:maxCount>
+            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+          </sh:property>
+        </sh:Shape>
       </sh:class>
-      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#contactPoint"/>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/adms#identifier"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>publisher</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:class>
+        <sh:Shape rdf:about="http://xmlns.com/foaf/0.1/Agent">
+          <sh:property rdf:parseType="Resource">
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:predicate rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+          </sh:property>
+          <sh:property rdf:parseType="Resource">
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>type</sh:name>
+            <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:maxCount>
+            <sh:class>
+              <sh:Shape rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+                <sh:property rdf:parseType="Resource">
+                  <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+                  <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+                  <sh:name>pref label</sh:name>
+                  <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                  >1</sh:minCount>
+                  <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+                </sh:property>
+              </sh:Shape>
+            </sh:class>
+            <sh:predicate rdf:resource="http://purl.org/dc/terms/type"/>
+          </sh:property>
+        </sh:Shape>
+      </sh:class>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/publisher"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+      <sh:name>version info</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:predicate rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>access rights</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:class>
+        <sh:Shape rdf:about="http://purl.org/dc/terms/RightsStatement"/>
+      </sh:class>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/accessRights"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>language</sh:name>
+      <sh:class>
+        <sh:Shape rdf:about="http://purl.org/dc/terms/LinguisticSystem"/>
+      </sh:class>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/language"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>is version of</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/isVersionOf"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>spatial</sh:name>
+      <sh:class>
+        <sh:Shape rdf:about="http://purl.org/dc/terms/Location"/>
+      </sh:class>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/spatial"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>modified</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/modified"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>provenance</sh:name>
+      <sh:class>
+        <sh:Shape rdf:about="http://purl.org/dc/terms/ProvenanceStatement"/>
+      </sh:class>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/provenance"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+      <sh:name>type</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/type"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+      <sh:name>description</sh:name>
+      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:minCount>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/description"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>source</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/source"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>landing page</sh:name>
+      <sh:class>
+        <sh:Shape rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+      </sh:class>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#landingPage"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>page</sh:name>
+      <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+      <sh:predicate rdf:resource="http://xmlns.com/foaf/0.1/page"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
       <sh:name>sample</sh:name>
       <sh:class>
         <sh:Shape rdf:about="http://www.w3.org/ns/dcat#Distribution">
+          <sh:property rdf:parseType="Resource">
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+            <sh:name>description</sh:name>
+            <sh:predicate rdf:resource="http://purl.org/dc/terms/description"/>
+          </sh:property>
+          <sh:property rdf:parseType="Resource">
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:name>rights</sh:name>
+            <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:maxCount>
+            <sh:class rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+            <sh:predicate rdf:resource="http://purl.org/dc/terms/rights"/>
+          </sh:property>
+          <sh:property rdf:parseType="Resource">
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+            <sh:name>conforms to</sh:name>
+            <sh:predicate rdf:resource="http://purl.org/dc/terms/conformsTo"/>
+          </sh:property>
+          <sh:property rdf:parseType="Resource">
+            <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:name>issued</sh:name>
+            <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:maxCount>
+            <sh:predicate rdf:resource="http://purl.org/dc/terms/issued"/>
+          </sh:property>
+          <sh:property rdf:parseType="Resource">
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:name>access URL</sh:name>
+            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</sh:minCount>
+            <sh:class rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#accessURL"/>
+          </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
             <sh:name>license</sh:name>
@@ -248,18 +346,7 @@
                   <sh:name>type</sh:name>
                   <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
                   >1</sh:maxCount>
-                  <sh:class>
-                    <sh:Shape rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-                      <sh:property rdf:parseType="Resource">
-                        <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-                        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-                        <sh:name>pref label</sh:name>
-                        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-                        >1</sh:minCount>
-                        <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-                      </sh:property>
-                    </sh:Shape>
-                  </sh:class>
+                  <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
                   <sh:predicate rdf:resource="http://purl.org/dc/terms/type"/>
                 </sh:property>
               </sh:Shape>
@@ -268,17 +355,12 @@
           </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-            <sh:name>description</sh:name>
-            <sh:predicate rdf:resource="http://purl.org/dc/terms/description"/>
-          </sh:property>
-          <sh:property rdf:parseType="Resource">
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:name>byte size</sh:name>
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+            <sh:name>status</sh:name>
             <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
             >1</sh:maxCount>
-            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-            <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#byteSize"/>
+            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <sh:predicate rdf:resource="http://www.w3.org/ns/adms#status"/>
           </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -287,37 +369,12 @@
             <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#downloadURL"/>
           </sh:property>
           <sh:property rdf:parseType="Resource">
-            <sh:shape>
-              <sh:Shape rdf:ID="DateOrDateTimeDataType">
-                <sh:or rdf:parseType="Collection">
-                  <rdf:Description>
-                    <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-                  </rdf:Description>
-                  <rdf:Description>
-                    <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-                  </rdf:Description>
-                </sh:or>
-                <sh:message>The values must be data typed as either xsd:date or xsd:dateTime</sh:message>
-                <owl:versionInfo>1</owl:versionInfo>
-                <rdfs:label>Date time date disjunction</rdfs:label>
-                <rdfs:comment>Date time date disjunction shape checks that a datatype propety receives a date or a dateTime literal</rdfs:comment>
-              </sh:Shape>
-            </sh:shape>
+            <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:name>issued</sh:name>
+            <sh:name>modified</sh:name>
             <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
             >1</sh:maxCount>
-            <sh:predicate rdf:resource="http://purl.org/dc/terms/issued"/>
-          </sh:property>
-          <sh:property rdf:parseType="Resource">
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:name>rights</sh:name>
-            <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-            >1</sh:maxCount>
-            <sh:class>
-              <sh:Shape rdf:about="http://purl.org/dc/terms/RightsStatement"/>
-            </sh:class>
-            <sh:predicate rdf:resource="http://purl.org/dc/terms/rights"/>
+            <sh:predicate rdf:resource="http://purl.org/dc/terms/modified"/>
           </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -331,20 +388,11 @@
           </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
-            <sh:name>status</sh:name>
+            <sh:name>byte size</sh:name>
             <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
             >1</sh:maxCount>
-            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            <sh:predicate rdf:resource="http://www.w3.org/ns/adms#status"/>
-          </sh:property>
-          <sh:property rdf:parseType="Resource">
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:name>access URL</sh:name>
-            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-            >1</sh:minCount>
-            <sh:class rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-            <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#accessURL"/>
+            <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#byteSize"/>
           </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -379,17 +427,9 @@
           </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:name>page</sh:name>
-            <sh:class>
-              <sh:Shape rdf:about="http://xmlns.com/foaf/0.1/Document"/>
-            </sh:class>
-            <sh:predicate rdf:resource="http://xmlns.com/foaf/0.1/page"/>
-          </sh:property>
-          <sh:property rdf:parseType="Resource">
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
-            <sh:name>conforms to</sh:name>
-            <sh:predicate rdf:resource="http://purl.org/dc/terms/conformsTo"/>
+            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+            <sh:name>title</sh:name>
+            <sh:predicate rdf:resource="http://purl.org/dc/terms/title"/>
           </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -401,25 +441,15 @@
           </sh:property>
           <sh:property rdf:parseType="Resource">
             <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+            <sh:name>page</sh:name>
+            <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            <sh:predicate rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+          </sh:property>
+          <sh:property rdf:parseType="Resource">
+            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
             <sh:name>language</sh:name>
-            <sh:class>
-              <sh:Shape rdf:about="http://purl.org/dc/terms/LinguisticSystem"/>
-            </sh:class>
+            <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
             <sh:predicate rdf:resource="http://purl.org/dc/terms/language"/>
-          </sh:property>
-          <sh:property rdf:parseType="Resource">
-            <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:name>modified</sh:name>
-            <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-            >1</sh:maxCount>
-            <sh:predicate rdf:resource="http://purl.org/dc/terms/modified"/>
-          </sh:property>
-          <sh:property rdf:parseType="Resource">
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-            <sh:name>title</sh:name>
-            <sh:predicate rdf:resource="http://purl.org/dc/terms/title"/>
           </sh:property>
         </sh:Shape>
       </sh:class>
@@ -427,105 +457,21 @@
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>distribution</sh:name>
-      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#distribution"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>publisher</sh:name>
+      <sh:name>accrual periodicity</sh:name>
       <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
       >1</sh:maxCount>
       <sh:class>
-        <sh:Shape rdf:about="http://xmlns.com/foaf/0.1/Agent">
-          <sh:property rdf:parseType="Resource">
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-            <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-            >1</sh:minCount>
-            <sh:predicate rdf:resource="http://xmlns.com/foaf/0.1/name"/>
-          </sh:property>
-          <sh:property rdf:parseType="Resource">
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
-            <sh:name>type</sh:name>
-            <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-            >1</sh:maxCount>
-            <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            <sh:predicate rdf:resource="http://purl.org/dc/terms/type"/>
-          </sh:property>
-        </sh:Shape>
+        <sh:Shape rdf:about="http://purl.org/dc/terms/Frequency"/>
       </sh:class>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/publisher"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/accrualPeriodicity"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>landing page</sh:name>
-      <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
-      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#landingPage"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>modified</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/modified"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
-      <sh:name>type</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/type"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>is version of</sh:name>
-      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/isVersionOf"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>relation</sh:name>
-      <sh:class rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/relation"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-      <sh:name>description</sh:name>
-      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:minCount>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/description"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>theme</sh:name>
-      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#theme"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>has version</sh:name>
-      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/hasVersion"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-      <sh:name>version info</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:predicate rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>language</sh:name>
-      <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/language"/>
+      <sh:name>contact point</sh:name>
+      <sh:class>
+        <sh:Shape rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
+      </sh:class>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#contactPoint"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -554,74 +500,35 @@
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>page</sh:name>
-      <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
-      <sh:predicate rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+      <sh:name>relation</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/relation"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>spatial</sh:name>
-      <sh:class>
-        <sh:Shape rdf:about="http://purl.org/dc/terms/Location"/>
-      </sh:class>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/spatial"/>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+      <sh:name>title</sh:name>
+      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:minCount>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/title"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>source</sh:name>
+      <sh:name>has version</sh:name>
       <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/source"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/hasVersion"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>sample</sh:name>
-      <sh:class>
-        <sh:Shape rdf:about="http://www.w3.org/ns/adms#Identifier">
-          <sh:property rdf:parseType="Resource">
-            <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-            <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-            <sh:name>notation</sh:name>
-            <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-            >1</sh:maxCount>
-            <sh:predicate rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
-          </sh:property>
-        </sh:Shape>
-      </sh:class>
-      <sh:predicate rdf:resource="http://www.w3.org/ns/adms#identifier"/>
+      <sh:name>theme</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#theme"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>provenance</sh:name>
-      <sh:class>
-        <sh:Shape rdf:about="http://purl.org/dc/terms/ProvenanceStatement"/>
-      </sh:class>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/provenance"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>access rights</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:class rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/accessRights"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>issued</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/issued"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>accrual periodicity</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:class>
-        <sh:Shape rdf:about="http://purl.org/dc/terms/Frequency"/>
-      </sh:class>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/accrualPeriodicity"/>
+      <sh:name>distribution</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#distribution"/>
     </sh:property>
   </sh:Shape>
   <sh:Shape rdf:about="http://www.w3.org/ns/dcat#CatalogRecord">
@@ -693,24 +600,27 @@
   <sh:Shape rdf:about="http://www.w3.org/ns/dcat#Catalog">
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>record</sh:name>
-      <sh:class rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
-      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#record"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>spatial</sh:name>
-      <sh:class rdf:resource="http://purl.org/dc/terms/Location"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/spatial"/>
-    </sh:property>
-    <vs:term_status>stable</vs:term_status>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>license</sh:name>
+      <sh:name>is part of</sh:name>
       <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
       >1</sh:maxCount>
-      <sh:class rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/license"/>
+      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>issued</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/issued"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>dataset</sh:name>
+      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:minCount>
+      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -722,9 +632,17 @@
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>language</sh:name>
-      <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/language"/>
+      <sh:name>has part</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/hasPart"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>homepage</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+      <sh:predicate rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:name>publisher</sh:name>
@@ -734,6 +652,50 @@
       >1</sh:maxCount>
       <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
       <sh:predicate rdf:resource="http://purl.org/dc/terms/publisher"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>spatial</sh:name>
+      <sh:class rdf:resource="http://purl.org/dc/terms/Location"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/spatial"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>license</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:class rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/license"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>modified</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/modified"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>record</sh:name>
+      <sh:class rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#record"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+      <sh:name>title</sh:name>
+      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:minCount>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/title"/>
+    </sh:property>
+    <sh:property rdf:parseType="Resource">
+      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+      <sh:name>rights</sh:name>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+      >1</sh:maxCount>
+      <sh:class rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/rights"/>
     </sh:property>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -752,68 +714,12 @@
       </sh:class>
       <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#themeTaxonomy"/>
     </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>dataset</sh:name>
-      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:minCount>
-      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-      <sh:predicate rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>has part</sh:name>
-      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/hasPart"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>issued</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/issued"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>homepage</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
-      <sh:predicate rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
-      <sh:name>title</sh:name>
-      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:minCount>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/title"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>rights</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:class rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/rights"/>
-    </sh:property>
     <sh:name xml:lang="en">Catalog</sh:name>
     <sh:property rdf:parseType="Resource">
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>is part of</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:class rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/isPartOf"/>
-    </sh:property>
-    <sh:property rdf:parseType="Resource">
-      <sh:shape rdf:resource="#DateOrDateTimeDataType"/>
-      <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:name>modified</sh:name>
-      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-      >1</sh:maxCount>
-      <sh:predicate rdf:resource="http://purl.org/dc/terms/modified"/>
+      <sh:name>language</sh:name>
+      <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+      <sh:predicate rdf:resource="http://purl.org/dc/terms/language"/>
     </sh:property>
   </sh:Shape>
 </rdf:RDF>
