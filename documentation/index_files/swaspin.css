@@ -1,0 +1,31 @@
+
+.swa-argument-editor {
+	margin-top: 1px;
+}
+
+.swa-resource-argument-editor {
+	width: 120px !important;
+}
+
+.swa-template-call {
+	border-width: 1px;
+	border-color: #a0a0a0;
+	border-style: solid;
+	background: #fafafa;
+	padding: 4px;
+	margin-top: 2px;
+}
+
+.swa-template-call-arg-segment {
+	font-weight: bold;
+	text-decoration: underline;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.swa-template-call-text-segment {
+}
+
+.swa-float-left {
+	float: left;
+}

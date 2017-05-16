@@ -1,0 +1,26 @@
+
+body {
+	background-color: #dfe8f6;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.shapeview-header {
+	background-color: #dfe8f6 !important;
+	height: 32px !important;
+}
+
+.shapeview-header-name {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 4px;
+}
+
+
+.ui-layout-resizer {
+	background-color: #dfe8f6 !important;
+}
+
+.ui-layout-toggler {
+	background-color: #bdc6d4 !important;
+}

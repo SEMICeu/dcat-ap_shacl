@@ -1,0 +1,11 @@
+/* jQuery dialog needs a z-index or jQuery UI covers this box when editing log messages
+   added this during the jQuery core upgrade
+*/
+.ui-dialog {
+	z-index: 2;
+}
+
+.ui-button-icon-only .ui-icon {
+    left: 0;
+    top: 0;
+}

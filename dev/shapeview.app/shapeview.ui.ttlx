@@ -1,0 +1,388 @@
+# baseURI: http://publications.europa.eu/ontology/shapeview
+# imports: http://topbraid.org/swa
+# prefix: shview
+
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix arg: <http://spinrdf.org/arg#> .
+@prefix at: <http://publications.europa.eu/ontology/authority/> .
+@prefix atold: <http://publications.europa.eu/resource/authority/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cdm: <http://publications.europa.eu/ontology/cdm#> .
+@prefix cmr: <http://publications.europa.eu/ontology/cdm/cmr#> .
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix concept-status: <http://publications.europa.eu/resource/authority/concept-status#> .
+@prefix core: <http://www.w3.org/2004/02/skos/core#> .
+@prefix css: <http://uispin.org/css#> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix default: <http://uispin.org/default#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix email: <http://topbraid.org/email#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix euvocShapes: <http://publications.europa.eu/ontology/euvoc/euvocShapes#> .
+@prefix euvocShapesUtil: <http://eurovoc.europa.eu/euvocShapesUtil#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix extensionDesctiptions: <http://publications.europa.eu/ontology/euvoc/extensionDesctiptions#> .
+@prefix externalImports: <http://publications.europa.eu/ontology/euvoc/externalImports#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix geor: <http://www.opengis.net/def/rule/geosparql/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix geosparqlsf: <http://www.opengis.net/ont/sf#> .
+@prefix geowgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geowgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gml: <http://www.opengis.net/ont/gml#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix html: <http://uispin.org/html#> .
+@prefix isocat: <http://www.isocat.org/ns/dcr.rdf#> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
+@prefix label-type: <http://publications.europa.eu/resource/authority/label-type#> .
+@prefix lemon: <http://lemon-model.net/lemon#> .
+@prefix let: <http://uispin.org/let#> .
+@prefix letrs: <http://uispin.org/letrs#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix lexvo: <http://lexvo.org/ontology#> .
+@prefix linguisticDescriptions: <http://publications.europa.eu/ontology/euvoc/linguisticDescriptions#> .
+@prefix list: <http://jena.hpl.hp.com/ARQ/list#> .
+@prefix lvont: <http://lexvo.org/ontology#> .
+@prefix notation-type: <http://publications.europa.eu/resource/authority/notation-type#> .
+@prefix ogc: <http://www.opengis.net/> .
+@prefix ontology: <http://data.europa.eu/eli/ontology#> .
+@prefix op: <http://topbraid.org/swa/opoce> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owlTime: <http://www.w3.org/2006/time#> .
+@prefix person: <http://www.w3.org/ns/person#> .
+@prefix pim: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix place: <http://publications.europa.eu/resource/authority/place#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdaelements: <http://rdaregistry.info/Elements/c/> .
+@prefix rdakit: <http://metadataregistry.org/uri/profile/rdakit/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix regap: <http://metadataregistry.org/uri/profile/regap/> .
+@prefix schema: <http://schema.org/> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix search.spin: <http://topbraid.org/search.spin#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shapeview: <http://topbraid.org/swa/shapeview#> .
+@prefix shskos: <http://topbraid.org/shacl/skos.shacl#> .
+@prefix shview: <http://publications.europa.eu/ontology/shapeview#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos-xl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix skosShapes: <http://eurovoc.europa.eu/skosShapes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sm: <http://topbraid.org/sparqlmotion#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sml: <http://topbraid.org/sparqlmotionlib#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix sparqlmotionlib-swp: <http://topbraid.org/sparqlmotionlib-swp#> .
+@prefix spatialDescriptions: <http://publications.europa.eu/ontology/euvoc/spatialDescriptions#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix spl-dynamic-ranges: <http://spinrdf.org/spl-dynamic-ranges#> .
+@prefix spr: <http://spinrdf.org/spr#> .
+@prefix spra: <http://spinrdf.org/spra#> .
+@prefix style: <http://uispin.org/style#> .
+@prefix svg: <http://uispin.org/svg#> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix swon: <http://uispin.org/swon#> .
+@prefix sxml: <http://topbraid.org/sxml#> .
+@prefix tableDescriptions: <http://publications.europa.eu/ontology/euvoc/tableDescriptions#> .
+@prefix temporalDescriptions: <http://publications.europa.eu/ontology/euvoc/temporalDescriptions#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix tf: <http://publications.europa.eu/resource/authority/frequency/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tosh: <http://topbraid.org/tosh#> .
+@prefix tp: <http://publications.europa.eu/resource/authority/timeperiod/> .
+@prefix treaty: <http://publications.europa.eu/resource/authority/treaty#> .
+@prefix treaty-classification: <http://publications.europa.eu/resource/authority/treaty-classification#> .
+@prefix types: <http://psi.egovpt.org/types/> .
+@prefix tzont: <http://www.w3.org/2006/timezone#> .
+@prefix ui: <http://uispin.org/ui#> .
+@prefix use-context: <http://publications.europa.eu/resource/authority/use-context#> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix xlink: <http://www.w3.org/1999/xlink#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://publications.europa.eu/ontology/shapeview>
+  rdf:type owl:Ontology ;
+  rdfs:comment """A default application built with SWA, consisting of a class tree, a search form, a list of instances, and a form for the selected instance.
+
+This application can be used as a starting point of custom applications. The way to get started is to create a deep copy of the TopBraid/shapeview folder in your own project, and do a global replace of \"shapeview\" to \"myapp\" across all text files, folder and file names. Naming conventions in the files are consistently using \"shapeview\" for that purpose.""" ;
+  owl:imports <http://topbraid.org/swa> ;
+  owl:versionInfo "0.1.0" ;
+.
+shview:Application
+  rdf:type ui:NodeClass ;
+  spin:constraint [
+      rdf:type spl:Argument ;
+      spl:optional "true"^^xsd:boolean ;
+      spl:predicate arg:rootClass ;
+      spl:valueType rdfs:Class ;
+      rdfs:comment "The (optional) root class of the tree. If left empty, the tree will start with owl:Thing." ;
+    ] ;
+  ui:headIncludes """
+<ui:group>
+    <title>Document generator</title>
+    <link href=\"{= ui:lib() }/shapeview/css/shapeview.css\" rel=\"stylesheet\" type=\"text/css\"/>
+    <script src=\"{= ui:lib() }/shapeview/js/shapeview.js\" type=\"text/javascript\"/>
+</ui:group>
+"""^^ui:Literal ;
+  ui:prototype """
+<ui:group let:instanceSelectedEvent=\"org.shapeview.instanceSelected\">
+    <ui:setContext ui:varName=\"swaOnOpenResource\" ui:varValue=\"{= swa:openViewFormGadgetWindow(?instanceSelectedEvent) }\">
+        <swa:FullScreenBorderLayout arg:deepLinkingEvent=\"{= ?instanceSelectedEvent }\" arg:eastSize=\"{= 400 }\" arg:northFixed=\"{= true }\" arg:westSize=\"{= 300 }\" let:classSelectedEvent=\"org.shapeview.classSelected\" let:rootClass=\"{= COALESCE(?rootClass, owl:Thing) }\">
+            <applicationHeader/>
+            <swa:Window arg:id=\"shapeviewForm\" arg:layoutPanel=\"center\" arg:title=\"Selected Resource\">
+                <ui:group letrs:shapes='{#
+                        SELECT ?shape
+                        WHERE {
+                            ?shape a sh:Shape .
+                            FILTER (!CONTAINS(str(?shape), \"shacl\")) .
+                            FILTER (!CONTAINS(str(?shape), \"dash\")) .
+                        }
+                        ORDER BY (?shape) }'>
+                    <ui:forEach ui:resultSet=\"{= ?shapes }\">
+                        <p>\"{= ?shape }\"</p>
+                        <shapeFormBodyView arg:resource=\"{= ?shape }\"/>
+                    </ui:forEach>
+                </ui:group>
+            </swa:Window>
+        </swa:FullScreenBorderLayout>
+    </ui:setContext>
+</ui:group>
+"""^^ui:Literal ;
+  rdfs:comment """An SWA stand-alone application consisting of a header section, a class tree, an instances list, a search form with a result grid, and a form for the selected instance. The application can be configured to have a different root class than the default class of owl:Thing.
+
+The ui:prototype of this Application element defines the surrounding layout, while each component is defined by its own Gadget class.""" ;
+  rdfs:label "Default Application" ;
+  rdfs:subClassOf swa:Applications ;
+.
+shview:ApplicationHeader
+  rdf:type ui:NodeClass ;
+  ui:prototype """
+<ui:loadable class=\"ui-layout-north shapeview-header\" ui:loadId=\"shapeviewHeader\">
+    <div id=\"swa-dialog-parent\" style=\"visibility: none\"/>
+    <div class=\"shapeview-header-name\">TopBraid Default Application - {= ui:label(ui:graphWithoutImports(ui:currentQueryGraph())) }</div>
+</ui:loadable>
+"""^^ui:Literal ;
+  rdfs:comment "The main header, in the northern part of the application's layout. A place to display logos and drive the navigation." ;
+  rdfs:label "Application header" ;
+  rdfs:subClassOf swa:Elements ;
+.
+shview:SPARQLConstraintFormBody
+  rdf:type ui:ResourceViewClass ;
+  ui:prototype """
+<ui:setContext ui:varName=\"resourceType\" ui:varValue=\"{= sh:SPARQLConstraint }\">
+    <ui:forEach ui:resultSet=\"{#
+            SELECT DISTINCT ?group
+            WHERE {
+                ?resource swa:propertyGroupsForNode ?group .
+                BIND (COALESCE(spl:object(?group, sh:order), 9999999) AS ?order) .
+                BIND (ui:label(?group) AS ?label) .
+            }
+            ORDER BY (?order) (?label) }\">
+        <swa:ShapePropertyGroupSection arg:focusNode=\"{= ?resource }\" arg:group=\"{= ?group }\"/>
+    </ui:forEach>
+</ui:setContext>
+"""^^ui:Literal ;
+  rdfs:label "Property constraint form body" ;
+  rdfs:subClassOf swa:FormBody ;
+.
+shview:ShapeFormBodyView
+  rdf:type ui:NodeClass ;
+  ui:prototype """
+<ui:group default:subject=\"{= ?resource }\" default:this=\"{= ?resource }\" ui:id=\"form\" ui:priority=\"{= 20 }\">
+    <div class=\"swa-title\">{= ui:label(?resource) }</div>
+    <swa:ObjectsEnum arg:label=\"Shape metadata\">
+        <swa:LabeledElement arg:label=\"URI:\">{= str(?this) }</swa:LabeledElement>
+        <swa:LabeledElement arg:label=\"comment:\">
+            <ui:forEach ui:resultSet=\"{#
+                    SELECT ?comment
+                    WHERE {
+                        ?resource rdfs:comment ?comment .
+                    } }\">
+                <!-- <ui:parse ui:str=\"{= html:encodeBRs(?comment) }\"/> -->
+                <ui:if ui:condition=\"{= fn:matches(?comment, &quot;&lt;/?[^&gt;]*&gt;&quot;) }\">
+                    <ui:parse ui:str=\"{= ?comment }\"/>
+                </ui:if>
+                <ui:else>
+                    <ui:parse ui:str=\"{= html:encodeBRs(?comment) }\"/>
+                </ui:else>
+            </ui:forEach>
+        </swa:LabeledElement>
+        <!-- <swa:Objects arg:hideIfEmpty=\"true\" arg:label=\"comment\" arg:predicate=\"rdfs:comment\" arg:subject=\"{= ?resource }\"/> -->
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"version\" arg:predicate=\"{= owl:versionInfo }\" arg:subject=\"{= ?resource }\"/>
+    </swa:ObjectsEnum>
+    <swa:ObjectsEnum arg:hideIfEmpty=\"{= true }\" arg:label=\"Targeting nodes that are\">
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"defined by\" arg:predicate=\"{= sh:target }\" arg:subject=\"{= ?resource }\"/>
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"equal to\" arg:predicate=\"{= sh:targetNode }\" arg:subject=\"{= ?resource }\"/>
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"instances of\" arg:predicate=\"{= sh:targetClass }\" arg:subject=\"{= ?resource }\"/>
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"object of\" arg:predicate=\"{= sh:targetObjectsOf }\" arg:subject=\"{= ?resource }\"/>
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"subject of\" arg:predicate=\"{= sh:targetSubjectsOf }\" arg:subject=\"{= ?resource }\"/>
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"not defined by\" arg:predicate=\"{= sh:filterShape }\" arg:subject=\"{= ?resource }\"/>
+    </swa:ObjectsEnum>
+    <swa:ObjectsEnum arg:hideIfEmpty=\"{= true }\" arg:label=\"Constraints on\">
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"node propoerty\" arg:predicate=\"{= sh:property }\" arg:subject=\"{= ?resource }\"/>
+        <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"whole node\" arg:predicate=\"{= sh:sparql }\" arg:subject=\"{= ?resource }\"/>
+    </swa:ObjectsEnum>
+    <!-- 
+<ui:group arg:toolTip=\"Just a dummy tool tip\" letrs:rs='{#
+SELECT ((ui:encodeNode(?predicate)) AS ?Predicate) ((ui:encodeNode(?range)) AS ?Range) ((?cmin) AS ?Min) ((?cmax) AS ?Max) ((?description) AS ?Description)
+WHERE {
+    ?this sh:property ?pc .
+    OPTIONAL {
+        ?pc sh:predicate ?predicate .
+    } .
+    OPTIONAL {
+        ?pc sh:datatype ?datatype .
+    } .
+    OPTIONAL {
+        ?pc sh:class ?class .
+    } .
+    OPTIONAL {
+        ?pc sh:maxCount ?maxx .
+    } .
+    OPTIONAL {
+        ?pc sh:minCount ?minn .
+    } .
+    OPTIONAL {
+        ?pc sh:description ?description .
+    } .
+    BIND (IF(bound(?datatype), ?datatype, ?class) AS ?range) .
+    BIND (IF(bound(?minn), ?minn, 0) AS ?cmin) .
+    BIND (IF(bound(?maxx), ?maxx, \"*\") AS ?cmax) .
+    FILTER bound(?range) .
+}
+ORDER BY DESC (?cmin) (?predicate) }'>
+<swa:ResultSetGrid arg:colWidths=\"200px,200px,30px,30px,200px\" arg:label=\"Application profile constraints\" arg:resultSet=\"{= ?rs }\"/>
+</ui:group>
+	-->
+    <div class=\"swa-title\">
+        <span/>
+    </div>
+</ui:group>
+"""^^ui:Literal ;
+  rdfs:comment "Shape form body view" ;
+  rdfs:label "Shape form body view" ;
+  rdfs:subClassOf swa:FormBody ;
+  owl:versionInfo "EuVoc 1.1" ;
+.
+shview:ViewSelectedShapeInstances
+  rdf:type ui:NodeClass ;
+  ui:prototype """
+<div class=\"swa-titled-form\">
+    <h1> The List of Shape definitions </h1>
+    <ui:group letrs:shapes='{#
+            SELECT ?shape
+            WHERE {
+                ?shape a sh:Shape .
+                FILTER (!CONTAINS(str(?shape), \"shacl\")) .
+                FILTER (!CONTAINS(str(?shape), \"dash\")) .
+            }
+            ORDER BY (?shape) }'>
+        <ui:forEach ui:resultSet=\"{= ?shapes }\">
+            <ui:resourceView ui:matchIds=\"form\" ui:resource=\"{= ?shape }\"/>
+        </ui:forEach>
+    </ui:group>
+</div>
+"""^^ui:Literal ;
+  rdfs:comment "View selected shape instances" ;
+  rdfs:label "View selected shape instances" ;
+  rdfs:subClassOf swa:TitledForm ;
+  owl:versionInfo "EuVoc 1.1" ;
+.
+arg:rootClass
+  rdf:type rdf:Property ;
+  rdfs:subPropertyOf sp:arg ;
+.
+rdfs:Class
+  ui:instanceView [
+      rdf:type html:Application ;
+      arg:rootClass [
+          sp:varName "this" ;
+        ] ;
+      ui:id "app" ;
+    ] ;
+.
+sh:SPARQLConstraint
+  ui:instanceView """
+<shview:SPARQLConstraintFormBody arg:resource=\"{= ?this }\" ui:id=\"form\"/>
+"""^^ui:Literal ;
+.
+sh:Shape
+  ui:instanceView """
+<shview:ShapeFormBodyView arg:resource=\"{= ?this }\" ui:id=\"form\"/>
+"""^^ui:Literal ;
+  ui:view """
+<div>
+    <ui:group let:ont=\"{#
+            SELECT ?ontology
+            WHERE {
+                ?ontology a owl:Ontology .
+            } }\">
+        <!-- <div class=\"swa-header-label\">{= ui:label(?ont) }</div> -->
+        <div class=\"swa-title\">{= ui:label(?ont) }</div>
+        <swa:ObjectsEnum arg:label=\"Shape file metadata\">
+            <swa:LabeledElement arg:label=\"URI:\">{= str(?ont) }</swa:LabeledElement>
+            <swa:LabeledElement arg:label=\"comment:\">
+                <ui:forEach ui:resultSet=\"{#
+                        SELECT ?comment
+                        WHERE {
+                            ?ont rdfs:comment ?comment .
+                        } }\">
+                    <ui:if ui:condition=\"{= fn:matches(?comment, &quot;&lt;/?[^&gt;]*&gt;&quot;) }\">
+                        <ui:parse ui:str=\"{= ?comment }\"/>
+                    </ui:if>
+                    <ui:else>
+                        <ui:parse ui:str=\"{= html:encodeBRs(?comment) }\"/>
+                    </ui:else>
+                </ui:forEach>
+            </swa:LabeledElement>
+            <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"version\" arg:predicate=\"{= owl:versionInfo }\" arg:subject=\"{= ?ont }\"/>
+            <swa:Objects arg:hideIfEmpty=\"{= true }\" arg:label=\"versionIRI\" arg:predicate=\"{= owl:versionIRI }\" arg:subject=\"{= ?ont }\"/>
+        </swa:ObjectsEnum>
+    </ui:group>
+    <div class=\"swa-header-label\">
+        <span/>
+    </div>
+    <hr/>
+    <ui:group letrs:shapes='{#
+            SELECT ?shape
+            WHERE {
+                ?shape a sh:Shape .
+                FILTER (!CONTAINS(str(?shape), \"www.w3.org/ns/shacl\")) .
+                FILTER (!CONTAINS(str(?shape), \"datashapes.org\")) .
+                FILTER (!CONTAINS(str(?shape), \"topbraid.org\")) .
+            }
+            ORDER BY (?shape) }'>
+        <ui:forEach ui:resultSet=\"{= ?shapes }\">
+            <shview:ShapeFormBodyView arg:resource=\"{= ?shape }\"/>
+            <hr/>
+        </ui:forEach>
+    </ui:group>
+</div>
+"""^^ui:Literal ;
+.

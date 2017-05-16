@@ -1,0 +1,243 @@
+/*
+=resetting node height
+=defining custom icon classes
+*/
+
+.jstree {
+	font-size: 12px;
+}
+
+/* =resetting node height start */
+.jstree-default .jstree-node {
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.jstree-default .jstree-icon:empty {
+    height: 20px;
+    line-height: 20px;
+}
+
+.jstree-default .jstree-anchor {
+    height: 20px;
+    line-height: 22px;
+}
+
+.jstree-default .jstree-open > .jstree-ocl {
+    background-position-y: -5px;
+}
+
+.jstree-default .jstree-closed > .jstree-ocl {
+    background-position-y: -6px;
+}
+
+.jstree-default .jstree-leaf > .jstree-ocl {
+    background-position-y: -6px;
+}
+/* =resetting node height end */
+
+
+/* =defining custom icon classes start */
+.jstree-default .swa-icon-property {
+    /* dark blue rectangle */
+    background-image: url(../images/swa-icon-property.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-properties {
+	/* double blue layered rectangle with dropshadow */
+	background-image: url(../images/swa-icon-properties.svg);
+	background-size: 88%;
+	background-position: center;
+}
+
+.jstree-default .swa-icon-property-imported {
+    /* light blue rectangle */
+    background-image: url(../images/swa-icon-property-imported.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-property-constraint {
+	/* dark blue rectangle hollowed out */
+	background-image: url(../images/swa-icon-property-constraint.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-property-constraint-imported {
+    /* light blue rectangle hollowed out */
+    background-image: url(../images/swa-icon-property-constraint-imported.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-annotation-property {
+	/* yellow rectangle filled in */
+	background-image: url(../images/swa-icon-annotation-property.svg);
+	background-size: 74%;
+	background-position: center;
+}
+
+.jstree-default .swa-icon-annotation-property-imported {
+    /* light yellow rectangle */
+    background-image: url(../images/swa-icon-annotation-property-imported.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-annotation-property-constraint {
+	/* dark yellow rectangle hollowed out */
+	background-image: url(../images/swa-icon-annotation-property-constraint.svg);
+	background-size: 74%;
+	background-position: center;
+}
+
+.jstree-default .swa-icon-annotation-property-constraint-imported {
+	/* light yellow rectangle hollowed out */
+	background-image: url(../images/swa-icon-annotation-property-constraint-imported.svg);
+	background-size: 74%;
+	background-position: center;
+}
+
+.jstree-default .swa-icon-object-property {
+	/* dark blue rectangle with white strip on the left side */
+    background-image: url(../images/swa-icon-object-property.svg);
+    background-size: 80%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-object-property-imported {
+    /* light blue rectangle with white strip on the left side */
+    background-image: url(../images/swa-icon-object-property-imported.svg);
+    background-size: 80%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-object-property-constraint {
+	/* dark blue rectangle hollowed out with white strip on the left side */
+    background-image: url(../images/swa-icon-object-property-constraint.svg);
+    background-size: 80%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-object-property-constraint-imported {
+	/* light blue rectangle hollowed out with white strip on the left side */
+    background-image: url(../images/swa-icon-object-property-constraint-imported.svg);
+    background-size: 80%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-objects-placeholder {
+	/* double blue layered rectangle with three white dots in the middle */
+    background-image: url(../images/swa-icon-objects-placeholder.svg);
+    background-size: 88%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-datatype-property {
+    /* dark green rectangle */
+    background-image: url(../images/swa-icon-datatype-property.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-datatype-property-imported {
+    /* light green rectangle */
+    background-image: url(../images/swa-icon-datatype-property-imported.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-datatype-property-constraint {
+    /* dark green rectangle hollowed out */
+    background-image: url(../images/swa-icon-datatype-property-constraint.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-datatype-property-constraint-imported {
+    /* light green rectangle hollowed out */
+    background-image: url(../images/swa-icon-datatype-property-constraint-imported.svg);
+    background-size: 74%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-primary-key-property {
+	/* dark green key icon */
+    background-image: url(../images/swa-icon-primary-key-property.svg);
+    background-size: 65%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-primary-key-property-imported {
+	/* light green key icon */
+    background-image: url(../images/swa-icon-primary-key-property-imported.svg);
+    background-size: 65%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-inverse-property {
+    /* blue rectangle with left arrow */
+    background-image: url(../images/swa-icon-inverse-property.svg);
+    background-size: 90%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-resource {
+    /* deep purple diamond */
+    background-image: url(../images/swa-icon-resource.svg);
+    background-size: 80%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-resource-imported {
+    /* deep purple diamond */
+    background-image: url(../images/swa-icon-resource-imported.svg);
+    background-size: 80%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-class {
+    /* light yellow circle */
+    background-image: url(../images/swa-icon-class.svg);
+    background-size: 70%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-class-imported {
+    /* light yellow circle */
+    background-image: url(../images/swa-icon-class-imported.svg);
+    background-size: 70%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-concept {
+	/* manila folder */
+    background-image: url(../images/swa-icon-concept.svg);
+    background-size: 70%;
+    background-position: center;
+}
+
+.jstree-default .swa-icon-concept-scheme {
+	/* layered blue squares */
+	background-image: url(../images/swa-icon-concept-scheme.svg);
+	background-size: 75%;
+	background-position: center;
+}
+
+.jstree-default .swa-icon-shacl-shape {
+	/* dark yellow hollowed out circle */
+	background-image: url(../images/swa-icon-shacl-shape.svg);
+	background-size: 70%;
+	background-position: center;
+}
+
+.jstree-default .swa-icon-shacl-shape-imported {
+	/* light yellow hollowed out circle */
+	background-image: url(../images/swa-icon-shacl-shape-imported.svg);
+	background-size: 70%;
+	background-position: center;
+}
+/* =defining custom icon classes end */

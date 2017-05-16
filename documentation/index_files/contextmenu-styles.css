@@ -1,0 +1,25 @@
+.context-menu-list {
+	z-index: 2 !important;
+}
+
+/* Overriding context menu background color */
+
+.context-menu-item {
+	/*background-color: white !important;*/
+}
+
+.context-menu-item.hover {
+	/*background-color: #39F !important;*/
+}
+
+.context-menu-item.icon-checked {
+	background-image: url(images/KeyPropertyChecked.png);
+}
+
+.context-menu-item.icon-count {
+	background-image: url(images/KeyPropertyCount.png);
+}
+
+.context-menu-item.icon-unchecked {
+	background-image: url(images/KeyPropertyUnchecked.png);
+}
