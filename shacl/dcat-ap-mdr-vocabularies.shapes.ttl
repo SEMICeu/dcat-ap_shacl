@@ -1,9 +1,15 @@
 # baseURI: http://data.europa.eu/r5r/mdrcv
+# imports: http://creativecommons.org/ns
 # imports: http://datashapes.org/dash
 # imports: http://purl.org/dc/terms/
-# imports: http://www.semanticweb.org/owl/owlapi/turtle
+# imports: http://topbraid.org/schema/
+# imports: http://vocab.deri.ie/void
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/2006/vcard/ns
+# imports: http://www.w3.org/2008/05/skos-xl
 # imports: http://www.w3.org/ns/adms
 # imports: http://www.w3.org/ns/dcat
+# imports: http://www.w3.org/ns/org#
 # imports: http://xmlns.com/foaf/0.1/
 
 @prefix : <http://data.europa.eu/r5r/mdrcv#> .
@@ -30,10 +36,39 @@
 
 <http://data.europa.eu/r5r/mdrcv>
   rdf:type owl:Ontology ;
+  dct:conformsTo <https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies> ;
+  dct:creator [
+      rdfs:seeAlso <http://eugeniu.costezki.ro#me> ;
+      org:memberOf <http://publications.europa.eu/resource/authority/corporate-body/PUBL> ;
+      foaf:homepage <http://costezki.ro> ;
+      foaf:name "Eugeniu Costetchi" ;
+    ] ;
+  dct:creator [
+      rdfs:seeAlso <http://makxdekkers.com/#me> ;
+      org:memberOf <http://ami-consult.com/#id> ;
+      foaf:homepage <http://makxdekkers.com/> ;
+      foaf:name "Makx Dekkers" ;
+    ] ;
+  dct:creator [
+      rdfs:seeAlso <http://nikosloutas.com/> ;
+      org:memberOf <http://www.pwc.com/gx/en/eu-institutions-services> ;
+      foaf:homepage <http://nikosloutas.com/> ;
+      foaf:name "Nikolaos Loutas" ;
+    ] ;
+  dct:creator [
+      rdfs:seeAlso <http://www.deri.ie/users/vassilios-peristeras/> ;
+      org:memberOf <http://publications.europa.eu/resource/authority/corporate-body/COM> ;
+      foaf:homepage <http://www.deri.ie/users/vassilios-peristeras/> ;
+      foaf:name "Vassilios Peristeras" ;
+    ] ;
+  dct:license <https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11> ;
+  dct:modified "2017-06-03"^^xsd:date ;
+  dct:publisher <http://publications.europa.eu/resource/authority/corporate-body/COM> ;
+  dct:relation <https://joinup.ec.europa.eu/node/69559> ;
+  dct:rightsHolder <http://publications.europa.eu/resource/authority/corporate-body/EURUN> ;
   rdfs:comment "This document specifies controlled vocabulary constraints on properties used in the DCAT Application (DCAT-AP)."@en ;
   rdfs:label "Controlled Vocabulary Constraints of DCAT Application Profile for Data Portals in Europe"@en ;
-  owl:imports <http://datashapes.org/dash> ;
-   owl:imports <http://creativecommons.org/ns> ;
+  owl:imports <http://creativecommons.org/ns> ;
   owl:imports <http://datashapes.org/dash> ;
   owl:imports dct: ;
   owl:imports <http://topbraid.org/schema/> ;
@@ -45,6 +80,14 @@
   owl:imports <http://www.w3.org/ns/dcat> ;
   owl:imports org: ;
   owl:imports foaf: ;
+  foaf:depiction <https://joinup.ec.europa.eu/system/files/project/dcat-ap_.1.bmp> ;
+  foaf:homepage <https://joinup.ec.europa.eu/node/69559> ;
+  foaf:logo <https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png> ;
+  foaf:maker [
+      foaf:mbox <mailto:dcat_application_profile@joinup.ec.europa.eu> ;
+      foaf:name "DCAT-AP Working Group" ;
+      foaf:page <https://joinup.ec.europa.eu/node/63580> ;
+    ] ;
 .
 :ContinentRestriction
   rdf:type sh:Shape ;
@@ -222,34 +265,34 @@
       sh:nodeKind sh:IRI ;
     ] ;
 .
-<http://purl.org/dc/terms/LicenseDocument>
+dct:LicenseDocument
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/type> ;
+      sh:predicate dct:type ;
       sh:class skos:Concept ;
       sh:name "type" ;
       sh:nodeKind sh:IRI ;
       sh:shape :LicenceTypeRestriction ;
     ] ;
 .
-<http://www.w3.org/ns/dcat#Catalog>
+dcat:Catalog
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/language> ;
+      sh:predicate dct:language ;
       sh:class skos:Concept ;
       sh:name "language" ;
       sh:nodeKind sh:IRI ;
       sh:shape :LanguageRestriction ;
     ] ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/publisher> ;
+      sh:predicate dct:publisher ;
       sh:class skos:Concept ;
       sh:name "publisher" ;
       sh:nodeKind sh:IRI ;
       sh:shape :CorporateBodyRestriction ;
     ] ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/spatial> ;
+      sh:predicate dct:spatial ;
       sh:class skos:Concept ;
       sh:name "theme" ;
       sh:nodeKind sh:IRI ;
@@ -264,41 +307,41 @@
         ] ;
     ] ;
   sh:property [
-      sh:predicate <http://www.w3.org/ns/dcat#themeTaxonomy> ;
+      sh:predicate dcat:themeTaxonomy ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
       sh:name "theme taxonomy" ;
       sh:nodeKind sh:IRI ;
     ] ;
 .
-<http://www.w3.org/ns/dcat#CatalogRecord>
+dcat:CatalogRecord
   rdf:type sh:Shape ;
 .
-<http://www.w3.org/ns/dcat#Dataset>
+dcat:Dataset
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/accrualPeriodicity> ;
+      sh:predicate dct:accrualPeriodicity ;
       sh:class skos:Concept ;
       sh:name "accrual periodicity" ;
       sh:nodeKind sh:IRI ;
       sh:shape :FrequencyRestriction ;
     ] ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/language> ;
+      sh:predicate dct:language ;
       sh:class skos:Concept ;
       sh:name "language" ;
       sh:nodeKind sh:IRI ;
       sh:shape :LanguageRestriction ;
     ] ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/publisher> ;
+      sh:predicate dct:publisher ;
       sh:class skos:Concept ;
       sh:name "publisher" ;
       sh:nodeKind sh:IRI ;
       sh:shape :CorporateBodyRestriction ;
     ] ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/spatial> ;
+      sh:predicate dct:spatial ;
       sh:class skos:Concept ;
       sh:name "theme" ;
       sh:nodeKind sh:IRI ;
@@ -313,34 +356,34 @@
         ] ;
     ] ;
   sh:property [
-      sh:predicate <http://www.w3.org/ns/dcat#theme> ;
+      sh:predicate dcat:theme ;
       sh:class skos:Concept ;
       sh:name "theme" ;
       sh:nodeKind sh:IRI ;
       sh:shape :DataThemeRestriction ;
     ] ;
 .
-<http://www.w3.org/ns/dcat#Distribution>
+dcat:Distribution
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/format> ;
+      sh:predicate dct:format ;
       sh:class skos:Concept ;
       sh:name "format" ;
       sh:nodeKind sh:IRI ;
       sh:shape :FileTypeRestriction ;
     ] ;
   sh:property [
-      sh:predicate <http://www.w3.org/ns/adms#status> ;
+      sh:predicate adms:status ;
       sh:class skos:Concept ;
       sh:name "status" ;
       sh:nodeKind sh:IRI ;
       sh:shape :StatusRestriction ;
     ] ;
 .
-<http://xmlns.com/foaf/0.1/Agent>
+foaf:Agent
   rdf:type sh:Shape ;
   sh:property [
-      sh:predicate <http://purl.org/dc/terms/type> ;
+      sh:predicate dct:type ;
       sh:class skos:Concept ;
       sh:name "type" ;
       sh:nodeKind sh:IRI ;
