@@ -487,7 +487,7 @@ dcat:Dataset
   sh:property [
       sh:predicate adms:identifier ;
       sh:class adms:Identifier ;
-      sh:name "sample" ;
+      sh:name "identifier" ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
