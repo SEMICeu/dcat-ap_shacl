@@ -294,7 +294,7 @@ dcat:Catalog
   sh:property [
       sh:predicate dct:spatial ;
       sh:class skos:Concept ;
-      sh:name "theme" ;
+      sh:name "spatial" ;
       sh:nodeKind sh:IRI ;
       sh:shape [
           rdf:type sh:Shape ;
@@ -343,7 +343,7 @@ dcat:Dataset
   sh:property [
       sh:predicate dct:spatial ;
       sh:class skos:Concept ;
-      sh:name "theme" ;
+      sh:name "spatial" ;
       sh:nodeKind sh:IRI ;
       sh:shape [
           rdf:type sh:Shape ;
