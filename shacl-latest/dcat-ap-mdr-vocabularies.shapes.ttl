@@ -14,7 +14,7 @@
 
 @prefix : <http://data.europa.eu/r5r/mdrcv#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
-#@prefix dash: <http://datashapes.org/dash#> .
+@prefix dash: <http://datashapes.org/dash#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -29,7 +29,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
-#@prefix tosh: <http://topbraid.org/tosh#> .
+@prefix tosh: <http://topbraid.org/tosh#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -69,7 +69,7 @@
   rdfs:comment "This document specifies controlled vocabulary constraints on properties used in the DCAT Application (DCAT-AP)."@en ;
   rdfs:label "Controlled Vocabulary Constraints of DCAT Application Profile for Data Portals in Europe"@en ;
   owl:imports <http://creativecommons.org/ns> ;
-
+ owl:imports <http://datashapes.org/dash> ;
   owl:imports dct: ;
   owl:imports <http://topbraid.org/schema/> ;
   owl:imports <http://vocab.deri.ie/void> ;
@@ -90,13 +90,13 @@
     ] ;
 .
 :ContinentRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Continent restriction" ;
   rdfs:label "Continent restriction" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/continent> ;
       sh:minCount 1 ;
@@ -104,13 +104,13 @@
     ] ;
 .
 :CorporateBodyRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Corporate Body Restriction" ;
   rdfs:label "Corporate Body Restriction" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/corporate-body> ;
       sh:minCount 1 ;
@@ -118,13 +118,13 @@
     ] ;
 .
 :CountryRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Country restriction" ;
   rdfs:label "Country restriction" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/country> ;
       sh:minCount 1 ;
@@ -132,13 +132,13 @@
     ] ;
 .
 :DataThemeRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Data Theme Restriction" ;
   rdfs:label "Data Theme Restriction" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
       sh:minCount 1 ;
@@ -146,13 +146,13 @@
     ] ;
 .
 :FileTypeRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "File Type Restriction" ;
   rdfs:label "File Type Restriction" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/file-type> ;
       sh:minCount 1 ;
@@ -160,13 +160,13 @@
     ] ;
 .
 :FrequencyRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Frequency Restriction" ;
   rdfs:label "Frequency Restriction" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/frequency> ;
       sh:minCount 1 ;
@@ -174,12 +174,12 @@
     ] ;
 .
 :GeoNamesRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Geo names restriction" ;
   rdfs:label "Geo names restriction" ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://sws.geonames.org> ;
       sh:minCount 1 ;
@@ -188,13 +188,13 @@
     ] ;
 .
 :LanguageRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Language Restriction" ;
   rdfs:label "Language Restriction" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/language> ;
       sh:minCount 1 ;
@@ -202,12 +202,12 @@
     ] ;
 .
 :LicenceTypeRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Licence type restriction" ;
   rdfs:label "Licence type restriction" ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://purl.org/adms/licencetype/1.0> ;
       sh:minCount 1 ;
@@ -215,13 +215,13 @@
     ] ;
 .
 :PlaceRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Place restriction" ;
   rdfs:label "Place restriction" ;
   rdfs:subClassOf rdfs:Resource ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/place> ;
       sh:minCount 1 ;
@@ -229,12 +229,12 @@
     ] ;
 .
 :PublisherTypeRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Publisher type restriction" ;
   rdfs:label "Publisher type restriction" ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://purl.org/adms/publishertype/1.0> ;
       sh:minCount 1 ;
@@ -242,12 +242,12 @@
     ] ;
 .
 :StatusRestriction
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:comment "Status restriction" ;
   rdfs:label "Status restriction" ;
   owl:versionInfo "1" ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://purl.org/adms/status/1.0> ;
       sh:minCount 1 ;
@@ -255,34 +255,34 @@
     ] ;
 .
 dct:LicenseDocument
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate dct:type ;
+      sh:path dct:type ;
       sh:class skos:Concept ;
       sh:nodeKind sh:IRI ;
-      sh:shape :LicenceTypeRestriction ;
+      sh:node :LicenceTypeRestriction ;
     ] ;
 .
 dcat:Catalog
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate dct:language ;
+      sh:path dct:language ;
       sh:class skos:Concept ;
       sh:nodeKind sh:IRI ;
-      sh:shape :LanguageRestriction ;
+      sh:node :LanguageRestriction ;
     ] ;
   sh:property [
-      sh:predicate dct:publisher ;
+      sh:path dct:publisher ;
       sh:class skos:Concept ;
       sh:nodeKind sh:IRI ;
-      sh:shape :CorporateBodyRestriction ;
+      sh:node :CorporateBodyRestriction ;
     ] ;
   sh:property [
-      sh:predicate dct:spatial ;
+      sh:path dct:spatial ;
       sh:class skos:Concept ;
       sh:nodeKind sh:IRI ;
-      sh:shape [
-          rdf:type sh:Shape ;
+      sh:node [
+          rdf:type sh:NodeShape ;
           sh:or (
               :CountryRestriction
               :PlaceRestriction
@@ -292,7 +292,7 @@ dcat:Catalog
         ] ;
     ] ;
   sh:property [
-      sh:predicate dcat:themeTaxonomy ;
+      sh:path dcat:themeTaxonomy ;
       sh:class skos:ConceptScheme ;
       sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
             sh:nodeKind sh:IRI ;
@@ -300,31 +300,31 @@ dcat:Catalog
 .
 
 dcat:Dataset
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate dct:accrualPeriodicity ;
+      sh:path dct:accrualPeriodicity ;
       sh:class skos:Concept ;
             sh:nodeKind sh:IRI ;
-      sh:shape :FrequencyRestriction ;
+      sh:node :FrequencyRestriction ;
     ] ;
   sh:property [
-      sh:predicate dct:language ;
+      sh:path dct:language ;
       sh:class skos:Concept ;
             sh:nodeKind sh:IRI ;
-      sh:shape :LanguageRestriction ;
+      sh:node :LanguageRestriction ;
     ] ;
   sh:property [
-      sh:predicate dct:publisher ;
+      sh:path dct:publisher ;
       sh:class skos:Concept ;
             sh:nodeKind sh:IRI ;
-      sh:shape :CorporateBodyRestriction ;
+      sh:node :CorporateBodyRestriction ;
     ] ;
   sh:property [
-      sh:predicate dct:spatial ;
+      sh:path dct:spatial ;
       sh:class skos:Concept ;
             sh:nodeKind sh:IRI ;
-      sh:shape [
-          rdf:type sh:Shape ;
+      sh:node [
+          rdf:type sh:NodeShape ;
           sh:or (
               :CountryRestriction
               :PlaceRestriction
@@ -334,38 +334,38 @@ dcat:Dataset
         ] ;
     ] ;
   sh:property [
-      sh:predicate dcat:theme ;
+      sh:path dcat:theme ;
       sh:class skos:Concept ;
             sh:nodeKind sh:IRI ;
-      sh:shape :DataThemeRestriction ;
+      sh:node :DataThemeRestriction ;
     ] ;
 .
 dcat:Distribution
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate dct:format ;
+      sh:path dct:format ;
       sh:class skos:Concept ;
             sh:nodeKind sh:IRI ;
-      sh:shape :FileTypeRestriction ;
+      sh:node :FileTypeRestriction ;
     ] ;
   sh:property [
-      sh:predicate adms:status ;
+      sh:path adms:status ;
       sh:class skos:Concept ;
             sh:nodeKind sh:IRI ;
-      sh:shape :StatusRestriction ;
+      sh:node :StatusRestriction ;
     ] ;
 .
 foaf:Agent
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate dct:type ;
+      sh:path dct:type ;
       sh:class skos:Concept ;
             sh:nodeKind sh:IRI ;
       sh:maxCount 1 ;
-      sh:shape :PublisherTypeRestriction ;
+      sh:node :PublisherTypeRestriction ;
     ] ;
     sh:property [
-      sh:predicate foaf:name ;
+      sh:path foaf:name ;
       sh:minCount 1 ;
       sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
@@ -373,9 +373,9 @@ foaf:Agent
 .
 
 adms:Identifier
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate skos:notation ;
+      sh:path skos:notation ;
       sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
@@ -383,18 +383,18 @@ adms:Identifier
 .
 
 skos:Concept
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate skos:prefLabel ;
+      sh:path skos:prefLabel ;
       sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
     ] ;
 .
 skos:ConceptScheme
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate dct:title ;
+      sh:path dct:title ;
       sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
@@ -402,16 +402,16 @@ skos:ConceptScheme
 .
 
 spdx:Checksum
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate spdx:algorithm ;
+      sh:path spdx:algorithm ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
       sh:severity sh:Violation ;
     ] ;
   sh:property [
-      sh:predicate spdx:checksumValue ;
+      sh:path spdx:checksumValue ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -420,25 +420,25 @@ spdx:Checksum
 .
 
 dct:PeriodOfTime
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate schema:endDate ;
+      sh:path schema:endDate ;
       sh:maxCount 1 ;
       sh:severity sh:Violation ;
-      sh:shape :DateOrDateTimeDataType ;
+      sh:node :DateOrDateTimeDataType ;
     ] ;
   sh:property [
-      sh:predicate schema:startDate ;
+      sh:path schema:startDate ;
       sh:maxCount 1 ;
       sh:severity sh:Violation ;
-      sh:shape :DateOrDateTimeDataType ;
+      sh:node :DateOrDateTimeDataType ;
     ] ;
 .
 
 dct:LicenseDocument
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   sh:property [
-      sh:predicate dct:type ;
+      sh:path dct:type ;
       sh:class skos:Concept ;
       sh:maxCount 1 ;
             sh:nodeKind sh:IRI ;
