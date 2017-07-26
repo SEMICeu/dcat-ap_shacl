@@ -12,5 +12,15 @@ The Application Profiles (AP) offered here represent a set of integrity constrai
 * ./dev folder contains experiemntal in progress work or other sources. For example shapeview.ui.ttlx can be used to generate the DCAT-AP HTML documentation from its SHACL implementation. 
 * ./documentation folder contains the static HTML generated automatically using the SWP technology. The source code for generating this document is in ./dev/shapeview.app
 
+# Te scope of the current release
+
+* *dcat-ap.shapes.ttl* validates instance shapes with respect to:
+  * o	cardinality constraints, both for properties that have a minimum occurrence greater or equal to than *1* (for example, there needs to be at least one occurrence of the mandatory property title of a Dataset) and properties that have an explicit maximum occurrence (for example, there can be a maximum of one licence for a Distribution)
+  * o	restrictions concerning ranges (expressed as sh:nodeKind) of properties to avoid that properties, irrespective of whether they are mandatory, recommended or optional, are provided that violate range declarations.
+
+* *dcat-ap-mandatory-classes.shapes.ttl* validates that data includes the mandatory classes. 
+
+* *dcat-ap-mdr-vocabularies.shapes.ttl* validates that values of a property are taken from the mandatory controlled vocabularies
+
 # Usage Notes for ./shacl-201608
  Currently we focus on developping validation constraints for RDF data expressed as data shapes in SHACL Language ([2016-08-14 Standard Release](https://www.w3.org/TR/2016/WD-shacl-20160814/)). Note that SHACL is still an evolving draft and is not yet a standard specification. To execute these shape files use our wrapper available on [GitHub](https://github.com/HerbertKoch/shacl-cl) which is using [TopQuadrant's implementation of SHACL API](https://github.com/TopQuadrant/shacl) as it was in Dec 2016 (a version still implementing August 2016 SHACL specification).
