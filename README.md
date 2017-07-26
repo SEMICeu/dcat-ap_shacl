@@ -12,7 +12,7 @@ The Application Profiles (AP) offered here represent a set of integrity constrai
 * ./dev folder contains experiemntal in progress work or other sources. For example shapeview.ui.ttlx can be used to generate the DCAT-AP HTML documentation from its SHACL implementation. 
 * ./documentation folder contains the static HTML generated automatically using the SWP technology. The source code for generating this document is in ./dev/shapeview.app
 
-# Te scope of the current release
+# The scope of the current release
 
 * *dcat-ap.shapes.ttl* validates instance shapes with respect to:
   * o	cardinality constraints, both for properties that have a minimum occurrence greater or equal to than *1* (for example, there needs to be at least one occurrence of the mandatory property title of a Dataset) and properties that have an explicit maximum occurrence (for example, there can be a maximum of one licence for a Distribution)
