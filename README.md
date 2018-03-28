@@ -22,4 +22,4 @@ The Application Profiles (AP) offered here represent a set of integrity constrai
 * *dcat-ap-mdr-vocabularies.shapes.ttl* validates that values of a property are taken from the mandatory controlled vocabularies
 
 # Usage Notes 
- To execute these shape files use our tool available on [GitHub](https://github.com/HerbertKoch/shacl-cl) which is build on top of [TopQuadrant's implementation of SHACL API](https://github.com/TopQuadrant/shacl).
+To execute these shape files you can use [shacl-cl tool](https://github.com/HerbertKoch/shacl-cl) build on top of [TopQuadrant's implementation of SHACL API](https://github.com/TopQuadrant/shacl) or any other implementation of the SHACL standard.
