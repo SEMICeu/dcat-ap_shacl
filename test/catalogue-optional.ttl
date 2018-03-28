@@ -1,0 +1,31 @@
+# baseURI: http://data.europa.eu/r5r/catalogue-optional.test
+# imports: http://data.europa.eu/r5r
+# imports: http://datashapes.org/dash
+# prefix: ex
+
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix ex: <http://data.europa.eu/r5r/catalogue-optional.test#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix r5r: <http://data.europa.eu/r5r#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.europa.eu/r5r/catalogue-optional.test>
+  rdf:type owl:Ontology ;
+  rdfs:label "Test of catalogue-optional" ;
+  owl:imports <http://data.europa.eu/r5r> ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+ex:Catalog_1
+  rdf:type dcat:Catalog ;
+  rdfs:comment "Catalog 1" ;
+  rdfs:label "Catalog 1" ;
+  owl:versionInfo "1.2" ;
+  skos:prefLabel "Catalog 1" ;
+.
+

@@ -1,0 +1,54 @@
+# baseURI: http://data.europa.eu/r5r/mdrcv1.test
+# imports: http://data.europa.eu/r5r/mdrcv
+# imports: http://datashapes.org/dash
+# imports: http://publications.europa.eu/resource/authority/continent
+# imports: http://publications.europa.eu/resource/authority/data-theme
+# imports: http://publications.europa.eu/resource/authority/file-type
+# imports: http://publications.europa.eu/resource/authority/frequency
+# imports: http://www.semanticweb.org/owl/owlapi/turtle
+# prefix: ex
+
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <http://data.europa.eu/r5r/mdrcv1.test#> .
+@prefix file-type: <http://publications.europa.eu/resource/authority/file-type/> .
+@prefix mdrcv: <http://data.europa.eu/r5r/mdrcv#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.europa.eu/r5r/mdrcv1.test>
+  rdf:type owl:Ontology ;
+  rdfs:label "Test of mdrcv1" ;
+  owl:imports <http://data.europa.eu/r5r/mdrcv> ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://publications.europa.eu/resource/authority/continent> ;
+  owl:imports <http://publications.europa.eu/resource/authority/data-theme> ;
+  owl:imports <http://publications.europa.eu/resource/authority/file-type> ;
+  owl:imports <http://publications.europa.eu/resource/authority/frequency> ;
+  owl:imports <http://www.semanticweb.org/owl/owlapi/turtle> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+ex:Catalog_1
+  rdf:type dcat:Catalog ;
+  dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
+  dct:spatial <http://some-other.place> ;
+  rdfs:comment "Catalog 1" ;
+  rdfs:label "Catalog 1" ;
+  owl:versionInfo "1" ;
+  dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> ;
+  dcat:themeTaxonomy <http://random.reference.to.a.theme.taxonomy/right/here> ;
+.
+ex:Dataset_1
+  rdf:type dcat:Dataset ;
+  dct:accrualPeriodicity <ftp://some-other-fequency> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/MONTHLY> ;
+  rdfs:comment "Dataset 1" ;
+  rdfs:label "Dataset 1" ;
+  owl:versionInfo "1" ;
+  dcat:theme <http://inesistent.theme> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+.

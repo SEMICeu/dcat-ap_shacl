@@ -1,0 +1,53 @@
+# baseURI: http://publications.europa.eu/ontology/euvoc/datatype-disjunction.test
+# imports: http://data.europa.eu/r5r/datatype-disjunction.test
+# imports: http://datashapes.org/dash
+# prefix: ex
+
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix ex: <http://publications.europa.eu/ontology/euvoc/datatype-disjunction.test#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://publications.europa.eu/ontology/euvoc/datatype-disjunction.test>
+  rdf:type owl:Ontology ;
+  rdfs:label "Test of datatype-disjunction" ;
+  owl:imports <http://data.europa.eu/r5r/datatype-disjunction.test> ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+ex:GraphValidationTestCase
+  rdf:type dash:GraphValidationTestCase ;
+  dash:expectedResult [
+      rdf:type sh:ValidationReport ;
+      sh:conforms "false"^^xsd:boolean ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/datatype-disjunction.test#Catalog_1> ;
+          sh:resultPath <http://purl.org/dc/terms/issued> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+          sh:sourceShape [] ;
+          sh:value "1997-04-04" ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/datatype-disjunction.test#Catalog_1> ;
+          sh:resultPath <http://purl.org/dc/terms/publisher> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:NodeKindConstraintComponent ;
+          sh:sourceShape [] ;
+          sh:value [] ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/datatype-disjunction.test#Catalog_1> ;
+          sh:resultPath <http://www.w3.org/ns/dcat#dataset> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape [] ;
+        ] ;
+    ] ;
+.

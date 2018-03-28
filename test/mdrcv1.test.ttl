@@ -1,0 +1,234 @@
+# baseURI: http://publications.europa.eu/ontology/euvoc/mdrcv1.test
+# imports: http://data.europa.eu/r5r/mdrcv1.test
+# imports: http://datashapes.org/dash
+# prefix: ex
+
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix ex: <http://publications.europa.eu/ontology/euvoc/mdrcv1.test#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://publications.europa.eu/ontology/euvoc/mdrcv1.test>
+  rdf:type owl:Ontology ;
+  rdfs:label "Test of mdrcv1" ;
+  owl:imports <http://data.europa.eu/r5r/mdrcv1.test> ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+ex:GraphValidationTestCase
+  rdf:type dash:GraphValidationTestCase ;
+  dash:expectedResult [
+      rdf:type sh:ValidationReport ;
+      sh:conforms "false"^^xsd:boolean ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/eli/ontology#AdministrativeAreaTable> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/eli/ontology#InForceTable> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/eli/ontology#LegalValueTable> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/eli/ontology#ResourceTypeTable> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/eli/ontology#VersionTable> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/mdrcv1.test#Catalog_1> ;
+          sh:resultPath <http://purl.org/dc/terms/spatial> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+          sh:sourceShape _:b96348 ;
+          sh:value <http://some-other.place> ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/mdrcv1.test#Catalog_1> ;
+          sh:resultPath <http://purl.org/dc/terms/spatial> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+          sh:sourceShape _:b96348 ;
+          sh:value <http://some-other.place> ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/mdrcv1.test#Catalog_1> ;
+          sh:resultPath <http://www.w3.org/ns/dcat#themeTaxonomy> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+          sh:sourceShape [] ;
+          sh:value <http://random.reference.to.a.theme.taxonomy/right/here> ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/mdrcv1.test#Dataset_1> ;
+          sh:resultPath <http://purl.org/dc/terms/accrualPeriodicity> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+          sh:sourceShape _:b11294 ;
+          sh:value <ftp://some-other-fequency> ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/mdrcv1.test#Dataset_1> ;
+          sh:resultPath <http://purl.org/dc/terms/accrualPeriodicity> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+          sh:sourceShape _:b11294 ;
+          sh:value <ftp://some-other-fequency> ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/mdrcv1.test#Dataset_1> ;
+          sh:resultPath <http://www.w3.org/ns/dcat#theme> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+          sh:sourceShape _:b97909 ;
+          sh:value <http://inesistent.theme> ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://data.europa.eu/r5r/mdrcv1.test#Dataset_1> ;
+          sh:resultPath <http://www.w3.org/ns/dcat#theme> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+          sh:sourceShape _:b97909 ;
+          sh:value <http://inesistent.theme> ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://moustaki.org/foaf.rdf#moustaki> ;
+          sh:resultPath <http://xmlns.com/foaf/0.1/name> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape [] ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://publications.europa.eu/resource/authority/atu> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://publications.europa.eu/resource/authority/continent> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://publications.europa.eu/resource/authority/data-theme> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://publications.europa.eu/resource/authority/file-type> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://publications.europa.eu/resource/authority/frequency> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://publications.europa.eu/resource/authority/language> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://purl.org/adms/assettype/1.0> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://purl.org/adms/interoperabilitylevel/1.0> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://purl.org/adms/licencetype/1.0> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://purl.org/adms/publishertype/1.0> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://purl.org/adms/representationtechnique/1.0> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+      sh:result [
+          rdf:type sh:ValidationResult ;
+          sh:focusNode <http://purl.org/adms/status/1.0> ;
+          sh:resultPath <http://purl.org/dc/terms/title> ;
+          sh:resultSeverity sh:Violation ;
+          sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+          sh:sourceShape _:b55218 ;
+        ] ;
+    ] ;
+.
