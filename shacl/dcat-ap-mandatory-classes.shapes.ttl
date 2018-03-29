@@ -96,7 +96,7 @@
           sh:inversePath rdf:type ;
         ] ;
     ] ;
-  sh:targetNode "foaf:Agent" ;
+  sh:targetNode foaf:Agent ;
 .
 :MandatoryCatalog
   rdf:type sh:NodeShape ;
@@ -108,7 +108,7 @@
           sh:inversePath rdf:type ;
         ] ;
     ] ;
-  sh:targetNode "dcat:Catalog" ;
+  sh:targetNode dcat:Catalog ;
 .
 :MandatoryDataset
   rdf:type sh:NodeShape ;
@@ -120,5 +120,5 @@
           sh:inversePath rdf:type ;
         ] ;
     ] ;
-  sh:targetNode "dcat:Dataset" ;
+  sh:targetNode dcat:Dataset ;
 .
