@@ -313,7 +313,7 @@ dcat:Dataset
     ] ;
   sh:property [
       sh:path dct:relation ;
-      sh:class rdfs:Resource ;
+      sh:nodeKind sh:IRI ;
             sh:severity sh:Violation ;
     ] ;
   sh:property [
@@ -459,7 +459,7 @@ dcat:Distribution
     ] ;
   sh:property [
       sh:path dcat:accessURL ;
-      sh:class rdfs:Resource ;
+      sh:nodeKind sh:IRI ;
       sh:minCount 1 ;
             sh:severity sh:Violation ;
     ] ;
@@ -471,7 +471,7 @@ dcat:Distribution
     ] ;
   sh:property [
       sh:path dcat:downloadURL ;
-      sh:class rdfs:Resource ;
+      sh:nodeKind sh:IRI ;
             sh:severity sh:Violation ;
     ] ;
   sh:property [
