@@ -1,3 +1,5 @@
+Archiving note: the shacl definitions are part of DCAT-AP specifications.
+
 # DCAT-AP SHACL constraint definitions
 The Application Profiles (AP) offered here represent a set of integrity constraints used to check the physical and logical correctness or rationality of a certain dataset. The SHACL specifications for DCAT Application Profile. 
 
